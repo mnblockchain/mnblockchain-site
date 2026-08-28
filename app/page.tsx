@@ -10,8 +10,18 @@ import {
   SpeakerCard,
   SponsorCard,
   StatBlock,
+  TeamCard,
 } from "./components/ui";
-import { nextEvent, pastEvents, sponsors, stats, speakers, team, testimonials } from "@/data/content";
+import {
+  nextEvent,
+  pastEvents,
+  sponsors,
+  stats,
+  speakers,
+  boardOfficers,
+  boardMembers,
+  testimonials,
+} from "@/data/content";
 
 export default function Home() {
   return (
@@ -155,22 +165,26 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Team / committee leads */}
+      {/* Team preview */}
       <section className="bg-cloud py-20">
         <div className="mx-auto max-w-6xl px-6">
-          <SectionLabel>Meet the Team</SectionLabel>
-          <h2 className="font-heading text-3xl font-extrabold text-brand-navy sm:text-4xl">
-            The People Behind MNblockchain
-          </h2>
-          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {team.map((t) => (
-              <div key={t.role} className="rounded-2xl border border-slate-200 bg-white p-6">
-                <p className="text-xs font-bold uppercase tracking-widest text-brand-gold-dark">
-                  {t.role}
-                </p>
-                <p className="mt-2 font-heading text-lg font-bold text-brand-navy">{t.name}</p>
-                <p className="mt-2 text-sm leading-relaxed text-slate">{t.blurb}</p>
-              </div>
+          <div className="flex flex-wrap items-end justify-between gap-4">
+            <div>
+              <SectionLabel>Meet the Team</SectionLabel>
+              <h2 className="font-heading text-3xl font-extrabold text-brand-navy sm:text-4xl">
+                The People Behind MNblockchain
+              </h2>
+            </div>
+            <Link
+              href="/about"
+              className="text-sm font-bold text-brand-navy underline decoration-brand-gold decoration-2 underline-offset-4"
+            >
+              Meet the Full Board →
+            </Link>
+          </div>
+          <div className="mt-8 grid grid-cols-2 gap-6 sm:grid-cols-4">
+            {[...boardOfficers, ...boardMembers].slice(0, 4).map((p) => (
+              <TeamCard key={p.name} name={p.name} role={p.role} linkedin={p.linkedin} />
             ))}
           </div>
         </div>

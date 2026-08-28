@@ -84,6 +84,42 @@ export function SpeakerCard({ name, title }: { name: string; title: string }) {
   );
 }
 
+export function TeamCard({
+  name,
+  role,
+  linkedin,
+}: {
+  name: string;
+  role: string;
+  linkedin: string;
+}) {
+  return (
+    <div className="rounded-2xl border border-slate-200 bg-white p-6 text-center shadow-sm transition-shadow hover:shadow-md">
+      <div className="mx-auto mb-4 flex h-24 w-24 items-center justify-center rounded-2xl bg-brand-navy text-2xl font-bold text-white">
+        {name
+          .split(" ")
+          .map((p) => p[0])
+          .filter((c) => /[A-Za-z]/.test(c))
+          .slice(0, 2)
+          .join("")}
+      </div>
+      <p className="font-heading font-bold text-brand-navy">{name}</p>
+      <p className="mt-1 text-xs font-bold uppercase tracking-widest text-brand-gold-dark">
+        {role}
+      </p>
+      <a
+        href={linkedin}
+        aria-label={`${name} on LinkedIn`}
+        className="mt-3 inline-flex h-8 w-8 items-center justify-center rounded-md bg-brand-gold text-brand-navy-dark transition-colors hover:bg-brand-gold-dark"
+      >
+        <svg viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4">
+          <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.11 20.45H3.56V9h3.55v11.45z" />
+        </svg>
+      </a>
+    </div>
+  );
+}
+
 export function SponsorCard({ name, blurb }: { name: string; blurb: string }) {
   return (
     <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md">

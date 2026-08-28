@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Badge, SectionLabel } from "../components/ui";
-import { team } from "@/data/content";
+import { Badge, SectionLabel, TeamCard } from "../components/ui";
+import { boardMembers, boardOfficers, committees, staffAdvisors } from "@/data/content";
 
 export const metadata: Metadata = {
   title: "About — MNblockchain",
-  description: "MNblockchain's mission, history, and the people behind it.",
+  description: "MNblockchain's mission, board of directors, and committee structure.",
 };
 
 export default function AboutPage() {
@@ -45,36 +45,43 @@ export default function AboutPage() {
 
       <section className="bg-cloud py-20">
         <div className="mx-auto max-w-6xl px-6">
-          <SectionLabel>Leadership</SectionLabel>
+          <SectionLabel>Meet Our Team</SectionLabel>
           <h2 className="font-heading text-3xl font-extrabold text-brand-navy">
-            The People Behind MNblockchain
+            MNblockchain Board of Directors
           </h2>
-          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {team.map((t) => (
-              <div key={t.role} className="rounded-2xl border border-slate-200 bg-white p-6">
-                <p className="text-xs font-bold uppercase tracking-widest text-brand-gold-dark">
-                  {t.role}
-                </p>
-                <p className="mt-2 font-heading text-lg font-bold text-brand-navy">{t.name}</p>
-                <p className="mt-2 text-sm leading-relaxed text-slate">{t.blurb}</p>
-              </div>
+          <div className="mt-8 grid gap-6 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4">
+            {[...boardOfficers, ...boardMembers].map((p) => (
+              <TeamCard key={p.name} name={p.name} role={p.role} linkedin={p.linkedin} />
             ))}
           </div>
         </div>
       </section>
 
       <section className="bg-white py-20">
+        <div className="mx-auto max-w-6xl px-6">
+          <SectionLabel>Staff &amp; Advisors</SectionLabel>
+          <h2 className="font-heading text-3xl font-extrabold text-brand-navy">
+            Keeping the Engine Running
+          </h2>
+          <div className="mt-8 grid gap-6 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4">
+            {staffAdvisors.map((p) => (
+              <TeamCard key={p.name} name={p.name} role={p.role} linkedin={p.linkedin} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-cloud py-20">
         <div className="mx-auto max-w-4xl px-6">
           <SectionLabel>Our Committees</SectionLabel>
           <h2 className="font-heading text-3xl font-extrabold text-brand-navy">How We&rsquo;re Organized</h2>
+          <p className="mt-4 text-slate">
+            Beyond the board, our work runs through four committees. Committee leads are being
+            assigned — check back soon for who&rsquo;s driving each one.
+          </p>
           <div className="mt-8 grid gap-6 sm:grid-cols-2">
-            {[
-              { name: "Events & Programming", blurb: "Monthly meetups, flagship events, and the speaker pipeline." },
-              { name: "Membership", blurb: "The member experience, from benefits to renewals." },
-              { name: "Sponsorships & Corporate Partnerships", blurb: "Sponsor relationships and revenue." },
-              { name: "Government & Law", blurb: "Policy tracking and lawmaker relationships." },
-            ].map((c) => (
-              <div key={c.name} className="rounded-2xl border border-slate-200 bg-cloud p-6">
+            {committees.map((c) => (
+              <div key={c.name} className="rounded-2xl border border-slate-200 bg-white p-6">
                 <p className="font-heading font-bold text-brand-navy">{c.name}</p>
                 <p className="mt-2 text-sm text-slate">{c.blurb}</p>
               </div>

@@ -126,30 +126,43 @@ export const membershipTiers = [
   },
 ];
 
-export const team = [
+// Real board & staff roster (mirrors mnblockchain.org/our-team/ as of 2026-08-21).
+// LinkedIn links are placeholders ("#") until real profile URLs are supplied.
+export const boardOfficers = [
+  { name: "Brandon Ferdig", role: "President", linkedin: "#" },
+];
+
+export const boardMembers = [
+  { name: "Alex Schoephoerster", role: "Board Member", linkedin: "#" },
+  { name: "Colin Hirdman", role: "Board Member", linkedin: "#" },
+  { name: "Rafael Mojden", role: "Board Member", linkedin: "#" },
+  { name: "Matt Rogers", role: "Board Member", linkedin: "#" },
+  { name: "Ben-Collins Asongwe", role: "Board Member", linkedin: "#" },
+  { name: "Andy Adams", role: "Board Member", linkedin: "#" },
+];
+
+export const staffAdvisors = [
+  { name: "Caulden Baumann", role: "Operations", linkedin: "#" },
+  { name: "Mickey Mikeworth", role: "Advisor", linkedin: "#" },
+  { name: "Graham Christopherson", role: "Accounting", linkedin: "#" },
+];
+
+// Committee structure — leads not yet assigned to individuals (as of 2026-08-21).
+export const committees = [
   {
-    role: "President",
-    name: "Board President",
-    blurb: "Leads MNblockchain's board and sets the organization's direction.",
-  },
-  {
-    role: "Events & Programming Lead",
-    name: "Committee Lead",
+    name: "Events & Programming",
     blurb: "Owns the event calendar and speaker pipeline — monthly meetups, flagship events, and the remote spotlight series.",
   },
   {
-    role: "Membership Lead",
-    name: "Committee Lead",
+    name: "Membership",
     blurb: "Owns the member experience — benefits, renewals, and growing a community worth belonging to.",
   },
   {
-    role: "Sponsorships & Corporate Partnerships Lead",
-    name: "Committee Lead",
+    name: "Sponsorships & Corporate Partnerships",
     blurb: "Owns sponsor relationships and revenue — packaging, prospecting, and delivering real value to partners.",
   },
   {
-    role: "Government & Law Lead",
-    name: "Committee Lead",
+    name: "Government & Law",
     blurb: "Tracks state and federal policy affecting blockchain in Minnesota and maintains relationships with lawmakers.",
   },
 ];
