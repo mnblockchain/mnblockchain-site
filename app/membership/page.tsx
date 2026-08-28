@@ -25,11 +25,11 @@ export default function MembershipPage() {
 
       <section className="bg-white py-20">
         <div className="mx-auto max-w-4xl px-6">
-          <SectionLabel>Membership Tiers</SectionLabel>
+          <SectionLabel>Membership</SectionLabel>
           <h2 className="font-heading text-3xl font-extrabold text-brand-black">
-            Choose the Level That Fits
+            One Membership, Real Benefits
           </h2>
-          <div className="mt-8 grid gap-6 md:grid-cols-2">
+          <div className="mx-auto mt-8 grid max-w-md gap-6">
             {membershipTiers.map((tier) => (
               <div
                 key={tier.name}
@@ -54,7 +54,7 @@ export default function MembershipPage() {
                   ))}
                 </ul>
                 <div className="mt-8">
-                  <PrimaryButton href="/contact">Join as {tier.name}</PrimaryButton>
+                  <PrimaryButton href="/contact">Become a Member</PrimaryButton>
                 </div>
               </div>
             ))}

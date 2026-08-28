@@ -156,10 +156,24 @@ export function TeamCard({
   );
 }
 
-export function SponsorCard({ name, blurb }: { name: string; blurb: string }) {
+export function SponsorCard({
+  name,
+  blurb,
+  logo,
+}: {
+  name: string;
+  blurb: string;
+  logo?: string;
+}) {
   return (
     <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md">
-      <p className="font-heading text-lg font-bold text-brand-black">{name}</p>
+      {logo ? (
+        <div className="relative mb-4 h-12 w-full">
+          <Image src={logo} alt={name} fill sizes="200px" className="object-contain object-left" />
+        </div>
+      ) : (
+        <p className="font-heading text-lg font-bold text-brand-black">{name}</p>
+      )}
       <p className="mt-2 text-sm text-slate">{blurb}</p>
       <Link
         href="/sponsors"

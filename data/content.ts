@@ -1,25 +1,22 @@
-// Placeholder content for the MNblockchain.org rebuild.
-// Everything here is illustrative — swap in real speakers, sponsors, events,
-// team bios, and testimonials once available. Keeping it in one file makes
-// that swap a data edit, not a design edit.
+// Content pulled from the live mnblockchain.org (Events, Membership, News &
+// Articles pages) on 2026-08-28, plus items still marked placeholder below.
+// Keeping it in one file makes a content swap a data edit, not a design edit.
 
 export const nextEvent = {
-  title: "Spotlight Meetup — Roundtable Discussion",
-  date: "2026-09-14T17:30:00-05:00", // placeholder — update to the real next event
-  dateLabel: "Monday, September 14, 2026",
-  time: "5:30 – 8:00 PM",
-  location: "Frankie's Chicago Style, New Hope, MN",
+  title: "Spotlight Meetup — How to Spot Red Flags in the Industry",
+  date: "2026-08-31T17:00:00-05:00",
+  dateLabel: "Monday, August 31, 2026",
+  time: "5:00 – 8:00 PM",
+  location: "3556 Winnetka Ave N, New Hope, MN 55427",
   description:
-    "Our monthly spotlight meetup — open discussion on where Minnesota blockchain policy and industry stand right now, plus open networking.",
+    "Crypto consultant Josiah Wilson (LIBREX Crypto Consulting) leads a discussion on how to spot danger in the industry — beyond the obvious scams, what red flags should actually put you on guard.",
   learn: [
-    "What's moving in Minnesota blockchain policy this quarter",
-    "How local builders and investors are using the technology today",
-    "Where the state stands relative to federal crypto legislation",
+    "How to spot scams and red flags before they cost you",
+    "What separates a legitimate project from a dangerous one",
+    "Practical due-diligence habits for evaluating anything in the space",
     "Open Q&A and networking with the community",
   ],
-  speakers: [
-    { name: "Featured Speaker TBA", title: "Confirming for this slot" },
-  ],
+  speakers: [{ name: "Josiah Wilson", title: "Owner, LIBREX Crypto Consulting" }],
 };
 
 export const stats = [
@@ -31,36 +28,33 @@ export const stats = [
 
 export const pastEvents = [
   {
-    date: "August 3, 2026",
-    title: "Policy Roundtable: What CLARITY Means for Minnesota",
-    blurb: "A closed-door discussion on federal market-structure legislation and what it means for MN builders.",
+    date: "June 22, 2026",
+    title: "A Team of One",
+    blurb: "Builder Ben Carlson (\"Mr. Fun Guy\") on using AI to do the work of many — presented at Frankie's.",
   },
   {
-    date: "July 6, 2026",
-    title: "Stablecoins & Community Banking",
-    blurb: "Local credit union and fintech leaders on what GENIUS Act rules mean for Main Street finance.",
+    date: "June 22, 2026",
+    title: "Impressive Turnout at Crypto Spring",
+    blurb: "A packed room, topical discussion, and buzzing networking before and after the presentations.",
   },
   {
-    date: "June 1, 2026",
-    title: "Bitcoin Treasury 101 for Small Business",
-    blurb: "A practical session for SMB owners exploring Bitcoin as a treasury asset.",
+    date: "July 11, 2025",
+    title: "“Bookmarks for Your Life”",
+    blurb: "Jamie Thingelstad on the power of POAPs and the “612” Summer Scavenger Hunt — a full house at Frankie's.",
   },
   {
-    date: "May 4, 2026",
-    title: "Layer 2s and What They Mean for Builders",
-    blurb: "A technical-but-approachable look at where real economic value is being created on-chain.",
+    date: "May 23, 2025",
+    title: "MNblockchain Went to D.C.",
+    blurb: "Stand With Crypto flew Brook Oldre and Brandon Ferdig to D.C. for Stand With Crypto Day, alongside 60 blockchain professionals from around the country.",
   },
 ];
 
+// Real past speakers, pulled from News & Articles coverage of past events.
 export const speakers = [
-  { name: "Speaker Name", title: "Title, Company", tier: "flagship" },
-  { name: "Speaker Name", title: "Title, Company", tier: "flagship" },
-  { name: "Speaker Name", title: "Title, Company", tier: "monthly" },
-  { name: "Speaker Name", title: "Title, Company", tier: "monthly" },
-  { name: "Speaker Name", title: "Title, Company", tier: "remote" },
-  { name: "Speaker Name", title: "Title, Company", tier: "monthly" },
-  { name: "Speaker Name", title: "Title, Company", tier: "remote" },
-  { name: "Speaker Name", title: "Title, Company", tier: "monthly" },
+  { name: "Josiah Wilson", title: "Owner, LIBREX Crypto Consulting" },
+  { name: "Ben Carlson", title: "Builder — AI & Automation (\"Mr. Fun Guy\")" },
+  { name: "Jamie Thingelstad", title: "POAPs & the “612” Summer Scavenger Hunt" },
+  { name: "Eric Thompson", title: "CFP® — Bitcoin ETF Presentation" },
 ];
 
 export const sponsorTiers = [
@@ -96,31 +90,32 @@ export const sponsorTiers = [
   },
 ];
 
+// Real sponsor/partner logos pulled from the live site into /public/sponsors/.
+// The old site doesn't clearly distinguish paid sponsors from policy/community
+// partners (e.g. Stand With Crypto reads more like a partner) — flagged so
+// Brandon/Colin can correct the framing once real tiers are assigned.
 export const sponsors = [
-  { name: "Sponsor One", blurb: "Placeholder sponsor — supporting Minnesota blockchain education." },
-  { name: "Sponsor Two", blurb: "Placeholder sponsor — financial services partner." },
-  { name: "Sponsor Three", blurb: "Placeholder sponsor — legal & compliance partner." },
-  { name: "Sponsor Four", blurb: "Placeholder sponsor — Bitcoin-native financial services." },
+  { name: "Spencer Fane", blurb: "Law firm partner.", logo: "/sponsors/spencer-fane.png" },
+  { name: "Fredrikson", blurb: "Law firm partner.", logo: "/sponsors/fredrikson.png" },
+  { name: "Quantum Lex", blurb: "Partner.", logo: "/sponsors/quantum-lex.jpg" },
+  { name: "Dropchain", blurb: "Partner.", logo: "/sponsors/dropchain.svg" },
+  { name: "Stand With Crypto", blurb: "Policy partner.", logo: "/sponsors/stand-with-crypto.png" },
 ];
 
+// Real membership program, from mnblockchain.org/membership/ — a single paid
+// tier, not the multi-tier structure this page used to have. Skips the
+// NFT/crypto-payment mechanics (PayPal/Venmo/Coinbase QR codes) — described
+// here as plain pricing/benefits; wire up real payment flow separately if
+// wanted.
 export const membershipTiers = [
   {
-    name: "Individual",
-    price: "$50 / year",
+    name: "Annual Membership",
+    price: "$99 / year",
     perks: [
-      "Priority RSVP for all monthly meetups",
-      "Member-only newsletter",
-      "Access to the member directory",
-    ],
-  },
-  {
-    name: "Professional",
-    price: "$150 / year",
-    perks: [
-      "Everything in Individual, plus:",
-      "Early access to flagship event tickets",
-      "Listed in the member directory as a professional resource",
-      "Invitations to member-only socials",
+      "Exclusive MNblockchain Membership NFT",
+      "Special member pricing on all paid events",
+      "Members-only events",
+      "15 free courses via partner The Blockchain Academy",
     ],
     featured: true,
   },

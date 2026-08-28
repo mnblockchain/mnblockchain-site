@@ -75,7 +75,7 @@ export default function SponsorsPage() {
           </h2>
           <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {sponsors.map((s) => (
-              <SponsorCard key={s.name} name={s.name} blurb={s.blurb} />
+              <SponsorCard key={s.name} name={s.name} blurb={s.blurb} logo={s.logo} />
             ))}
           </div>
         </div>
