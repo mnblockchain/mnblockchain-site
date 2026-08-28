@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import Countdown from "./components/Countdown";
 import NewsletterForm from "./components/NewsletterForm";
@@ -27,7 +28,16 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-brand-black-soft via-brand-black to-brand-black-soft py-20 sm:py-28">
+      <section className="relative overflow-hidden bg-brand-black-soft py-20 sm:py-28">
+        <Image
+          src="/hero/twins-nft-night.jpg"
+          alt="MNblockchain community at a Twins NFT Night event"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-brand-black-soft/95 via-brand-black/90 to-brand-black-soft/95" />
         <div className="relative mx-auto max-w-4xl px-6 text-center">
           <div className="mb-6 flex justify-center">
             <Badge>Free monthly meetups · No membership required to attend</Badge>
@@ -56,6 +66,42 @@ export default function Home() {
           {stats.map((s) => (
             <StatBlock key={s.label} value={s.value} label={s.label} />
           ))}
+        </div>
+      </section>
+
+      {/* Community moments */}
+      <section className="bg-white py-16">
+        <div className="mx-auto max-w-6xl px-6">
+          <SectionLabel>From Our Community</SectionLabel>
+          <h2 className="font-heading text-2xl font-extrabold text-brand-black sm:text-3xl">
+            Real People, Real Events
+          </h2>
+          <div className="mt-8 grid gap-6 sm:grid-cols-2">
+            <div className="group relative aspect-[16/10] overflow-hidden rounded-2xl">
+              <Image
+                src="/hero/web3-law-conference.jpeg"
+                alt="Web3, AI and Law Conference"
+                fill
+                sizes="(min-width: 640px) 50vw, 100vw"
+                className="object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-5">
+                <p className="text-sm font-bold text-white">Web3, AI &amp; Law Conference</p>
+              </div>
+            </div>
+            <div className="group relative aspect-[16/10] overflow-hidden rounded-2xl">
+              <Image
+                src="/hero/course-for-2025.jpg"
+                alt="Charting the Course for 2025 event"
+                fill
+                sizes="(min-width: 640px) 50vw, 100vw"
+                className="object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-5">
+                <p className="text-sm font-bold text-white">Charting the Course for 2025</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
