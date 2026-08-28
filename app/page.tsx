@@ -27,7 +27,7 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-brand-navy-dark via-brand-navy to-brand-navy-dark py-20 sm:py-28">
+      <section className="relative overflow-hidden bg-gradient-to-br from-brand-black-soft via-brand-black to-brand-black-soft py-20 sm:py-28">
         <div className="relative mx-auto max-w-4xl px-6 text-center">
           <div className="mb-6 flex justify-center">
             <Badge>Free monthly meetups · No membership required to attend</Badge>
@@ -35,7 +35,7 @@ export default function Home() {
           <h1 className="font-heading text-4xl font-extrabold leading-tight text-white sm:text-6xl">
             Minnesota&rsquo;s Home for
             <br />
-            <span className="text-brand-gold">Blockchain &amp; Web3</span>
+            <span className="text-brand-blue">Blockchain &amp; Web3</span>
           </h1>
           <p className="mx-auto mt-6 max-w-xl text-lg text-white/70">
             Community, education, and policy advocacy for builders, investors, and the curious —
@@ -63,16 +63,16 @@ export default function Home() {
       <section className="bg-cloud py-20">
         <div className="mx-auto max-w-5xl px-6">
           <SectionLabel>Next Event</SectionLabel>
-          <h2 className="font-heading text-3xl font-extrabold text-brand-navy sm:text-4xl">
+          <h2 className="font-heading text-3xl font-extrabold text-brand-black sm:text-4xl">
             Don&rsquo;t Miss What&rsquo;s Coming Up
           </h2>
 
           <div className="mt-8 grid gap-8 rounded-3xl border border-slate-200 bg-white p-8 shadow-sm md:grid-cols-2 md:p-10">
             <div>
-              <p className="text-xs font-bold uppercase tracking-widest text-brand-gold-dark">
+              <p className="text-xs font-bold uppercase tracking-widest text-brand-blue-dark">
                 Free · Open to Everyone
               </p>
-              <h3 className="mt-2 font-heading text-2xl font-bold text-brand-navy">
+              <h3 className="mt-2 font-heading text-2xl font-bold text-brand-black">
                 {nextEvent.title}
               </h3>
               <p className="mt-3 text-sm text-slate">{nextEvent.dateLabel}</p>
@@ -84,13 +84,13 @@ export default function Home() {
               </div>
             </div>
             <div>
-              <p className="mb-3 text-sm font-bold uppercase tracking-widest text-brand-navy">
+              <p className="mb-3 text-sm font-bold uppercase tracking-widest text-brand-black">
                 You&rsquo;ll Learn
               </p>
               <ul className="space-y-3">
                 {nextEvent.learn.map((item) => (
                   <li key={item} className="flex gap-3 text-sm text-slate">
-                    <span className="mt-0.5 text-brand-gold-dark">✦</span>
+                    <span className="mt-0.5 text-brand-blue-dark">✦</span>
                     {item}
                   </li>
                 ))}
@@ -104,7 +104,7 @@ export default function Home() {
       <section className="bg-white py-20">
         <div className="mx-auto max-w-6xl px-6">
           <SectionLabel>Track Record</SectionLabel>
-          <h2 className="font-heading text-3xl font-extrabold text-brand-navy sm:text-4xl">
+          <h2 className="font-heading text-3xl font-extrabold text-brand-black sm:text-4xl">
             See What You&rsquo;ve Been Missing
           </h2>
           <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -121,13 +121,13 @@ export default function Home() {
           <div className="flex flex-wrap items-end justify-between gap-4">
             <div>
               <SectionLabel>Event Speakers</SectionLabel>
-              <h2 className="font-heading text-3xl font-extrabold text-brand-navy sm:text-4xl">
+              <h2 className="font-heading text-3xl font-extrabold text-brand-black sm:text-4xl">
                 Learn From Real Builders
               </h2>
             </div>
             <Link
               href="/speakers"
-              className="text-sm font-bold text-brand-navy underline decoration-brand-gold decoration-2 underline-offset-4"
+              className="text-sm font-bold text-brand-black underline decoration-brand-blue decoration-2 underline-offset-4"
             >
               See All Speakers →
             </Link>
@@ -146,13 +146,13 @@ export default function Home() {
           <div className="flex flex-wrap items-end justify-between gap-4">
             <div>
               <SectionLabel>Proud Sponsors</SectionLabel>
-              <h2 className="font-heading text-3xl font-extrabold text-brand-navy sm:text-4xl">
+              <h2 className="font-heading text-3xl font-extrabold text-brand-black sm:text-4xl">
                 Free Events, Powered by Great Partners
               </h2>
             </div>
             <Link
               href="/sponsors"
-              className="text-sm font-bold text-brand-navy underline decoration-brand-gold decoration-2 underline-offset-4"
+              className="text-sm font-bold text-brand-black underline decoration-brand-blue decoration-2 underline-offset-4"
             >
               Become a Sponsor →
             </Link>
@@ -171,13 +171,13 @@ export default function Home() {
           <div className="flex flex-wrap items-end justify-between gap-4">
             <div>
               <SectionLabel>Meet the Team</SectionLabel>
-              <h2 className="font-heading text-3xl font-extrabold text-brand-navy sm:text-4xl">
+              <h2 className="font-heading text-3xl font-extrabold text-brand-black sm:text-4xl">
                 The People Behind MNblockchain
               </h2>
             </div>
             <Link
               href="/about"
-              className="text-sm font-bold text-brand-navy underline decoration-brand-gold decoration-2 underline-offset-4"
+              className="text-sm font-bold text-brand-black underline decoration-brand-blue decoration-2 underline-offset-4"
             >
               Meet the Full Board →
             </Link>
@@ -194,14 +194,14 @@ export default function Home() {
       <section className="bg-white py-20">
         <div className="mx-auto max-w-6xl px-6">
           <SectionLabel>What People Say</SectionLabel>
-          <h2 className="font-heading text-3xl font-extrabold text-brand-navy sm:text-4xl">
+          <h2 className="font-heading text-3xl font-extrabold text-brand-black sm:text-4xl">
             What Members Say After Just One Event
           </h2>
           <div className="mt-8 grid gap-6 md:grid-cols-3">
             {testimonials.map((t) => (
               <div key={t.name} className="rounded-2xl border border-slate-200 bg-cloud p-6">
                 <p className="text-sm leading-relaxed text-ink">&ldquo;{t.quote}&rdquo;</p>
-                <p className="mt-4 text-sm font-bold text-brand-navy">{t.name}</p>
+                <p className="mt-4 text-sm font-bold text-brand-black">{t.name}</p>
                 <p className="text-xs text-slate">{t.detail}</p>
               </div>
             ))}
@@ -210,7 +210,7 @@ export default function Home() {
       </section>
 
       {/* Newsletter CTA */}
-      <section className="bg-brand-navy py-16">
+      <section className="bg-brand-black py-16">
         <div className="mx-auto max-w-3xl px-6 text-center">
           <h2 className="font-heading text-2xl font-extrabold text-white sm:text-3xl">
             Get Notified About Upcoming Events

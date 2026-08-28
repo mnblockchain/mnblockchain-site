@@ -1,17 +1,40 @@
 import Link from "next/link";
 import { ReactNode } from "react";
 
-export function Badge({ children }: { children: ReactNode }) {
+export function Badge({
+  children,
+  accent = "blue",
+}: {
+  children: ReactNode;
+  /** "orange" is reserved for policy/legislative content per brand standards. */
+  accent?: "blue" | "orange";
+}) {
+  const classes =
+    accent === "orange"
+      ? "border-brand-orange/40 bg-brand-orange/10 text-brand-orange"
+      : "border-brand-blue/40 bg-brand-blue/10 text-brand-blue";
   return (
-    <span className="inline-flex items-center gap-2 rounded-full border border-brand-gold/40 bg-brand-gold/10 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-brand-gold">
+    <span
+      className={`inline-flex items-center gap-2 rounded-full border px-4 py-1.5 text-xs font-bold uppercase tracking-widest ${classes}`}
+    >
       {children}
     </span>
   );
 }
 
-export function SectionLabel({ children }: { children: ReactNode }) {
+export function SectionLabel({
+  children,
+  accent = "blue",
+}: {
+  children: ReactNode;
+  accent?: "blue" | "orange";
+}) {
   return (
-    <p className="mb-3 text-xs font-bold uppercase tracking-[0.25em] text-brand-gold-dark">
+    <p
+      className={`mb-3 text-xs font-bold uppercase tracking-[0.25em] ${
+        accent === "orange" ? "text-brand-orange" : "text-brand-blue-dark"
+      }`}
+    >
       {children}
     </p>
   );
@@ -27,7 +50,7 @@ export function PrimaryButton({
   return (
     <Link
       href={href}
-      className="inline-flex items-center justify-center gap-2 rounded-full bg-brand-gold px-7 py-3.5 text-sm font-bold uppercase tracking-wide text-brand-navy-dark transition-colors hover:bg-white"
+      className="inline-flex items-center justify-center gap-2 rounded-full bg-brand-blue px-7 py-3.5 text-sm font-bold uppercase tracking-wide text-brand-black-soft transition-colors hover:bg-white"
     >
       {children}
     </Link>
@@ -49,7 +72,7 @@ export function OutlineButton({
       className={`inline-flex items-center justify-center gap-2 rounded-full border-2 px-7 py-3.5 text-sm font-bold uppercase tracking-wide transition-colors ${
         dark
           ? "border-white/30 text-white hover:border-white"
-          : "border-brand-navy/30 text-brand-navy hover:border-brand-navy"
+          : "border-brand-black/30 text-brand-black hover:border-brand-black"
       }`}
     >
       {children}
@@ -71,14 +94,14 @@ export function StatBlock({ value, label }: { value: string; label: string }) {
 export function SpeakerCard({ name, title }: { name: string; title: string }) {
   return (
     <div className="rounded-2xl border border-slate-200 bg-white p-6 text-center shadow-sm transition-shadow hover:shadow-md">
-      <div className="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-full bg-brand-navy/10 text-2xl font-bold text-brand-navy">
+      <div className="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-full bg-brand-black/10 text-2xl font-bold text-brand-black">
         {name
           .split(" ")
           .map((p) => p[0])
           .join("")
           .slice(0, 2)}
       </div>
-      <p className="font-heading font-bold text-brand-navy">{name}</p>
+      <p className="font-heading font-bold text-brand-black">{name}</p>
       <p className="mt-1 text-sm text-slate">{title}</p>
     </div>
   );
@@ -95,7 +118,7 @@ export function TeamCard({
 }) {
   return (
     <div className="rounded-2xl border border-slate-200 bg-white p-6 text-center shadow-sm transition-shadow hover:shadow-md">
-      <div className="mx-auto mb-4 flex h-24 w-24 items-center justify-center rounded-2xl bg-brand-navy text-2xl font-bold text-white">
+      <div className="mx-auto mb-4 flex h-24 w-24 items-center justify-center rounded-2xl bg-brand-black text-2xl font-bold text-white">
         {name
           .split(" ")
           .map((p) => p[0])
@@ -103,14 +126,14 @@ export function TeamCard({
           .slice(0, 2)
           .join("")}
       </div>
-      <p className="font-heading font-bold text-brand-navy">{name}</p>
-      <p className="mt-1 text-xs font-bold uppercase tracking-widest text-brand-gold-dark">
+      <p className="font-heading font-bold text-brand-black">{name}</p>
+      <p className="mt-1 text-xs font-bold uppercase tracking-widest text-brand-blue-dark">
         {role}
       </p>
       <a
         href={linkedin}
         aria-label={`${name} on LinkedIn`}
-        className="mt-3 inline-flex h-8 w-8 items-center justify-center rounded-md bg-brand-gold text-brand-navy-dark transition-colors hover:bg-brand-gold-dark"
+        className="mt-3 inline-flex h-8 w-8 items-center justify-center rounded-md bg-brand-blue text-brand-black-soft transition-colors hover:bg-brand-blue-dark"
       >
         <svg viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4">
           <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.11 20.45H3.56V9h3.55v11.45z" />
@@ -123,11 +146,11 @@ export function TeamCard({
 export function SponsorCard({ name, blurb }: { name: string; blurb: string }) {
   return (
     <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md">
-      <p className="font-heading text-lg font-bold text-brand-navy">{name}</p>
+      <p className="font-heading text-lg font-bold text-brand-black">{name}</p>
       <p className="mt-2 text-sm text-slate">{blurb}</p>
       <Link
         href="/sponsors"
-        className="mt-4 inline-block text-sm font-bold text-brand-navy underline decoration-brand-gold decoration-2 underline-offset-4"
+        className="mt-4 inline-block text-sm font-bold text-brand-black underline decoration-brand-blue decoration-2 underline-offset-4"
       >
         Learn More →
       </Link>
@@ -146,8 +169,8 @@ export function EventCard({
 }) {
   return (
     <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-      <p className="text-xs font-bold uppercase tracking-widest text-brand-gold-dark">{date}</p>
-      <p className="mt-2 font-heading text-lg font-bold text-brand-navy">{title}</p>
+      <p className="text-xs font-bold uppercase tracking-widest text-brand-blue-dark">{date}</p>
+      <p className="mt-2 font-heading text-lg font-bold text-brand-black">{title}</p>
       <p className="mt-2 text-sm text-slate">{blurb}</p>
     </div>
   );

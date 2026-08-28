@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function MembershipPage() {
   return (
     <>
-      <section className="bg-gradient-to-br from-brand-navy-dark via-brand-navy to-brand-navy-dark py-20 text-center">
+      <section className="bg-gradient-to-br from-brand-black-soft via-brand-black to-brand-black-soft py-20 text-center">
         <div className="mx-auto max-w-3xl px-6">
           <Badge>Events are free — membership makes it easier to stay plugged in</Badge>
           <h1 className="mt-6 font-heading text-4xl font-extrabold text-white sm:text-5xl">
@@ -26,7 +26,7 @@ export default function MembershipPage() {
       <section className="bg-white py-20">
         <div className="mx-auto max-w-4xl px-6">
           <SectionLabel>Membership Tiers</SectionLabel>
-          <h2 className="font-heading text-3xl font-extrabold text-brand-navy">
+          <h2 className="font-heading text-3xl font-extrabold text-brand-black">
             Choose the Level That Fits
           </h2>
           <div className="mt-8 grid gap-6 md:grid-cols-2">
@@ -35,20 +35,20 @@ export default function MembershipPage() {
                 key={tier.name}
                 className={`rounded-2xl border p-8 ${
                   tier.featured
-                    ? "border-brand-gold bg-brand-navy text-white shadow-lg"
+                    ? "border-brand-blue bg-brand-black text-white shadow-lg"
                     : "border-slate-200 bg-cloud"
                 }`}
               >
-                <p className={`font-heading text-xl font-bold ${tier.featured ? "text-white" : "text-brand-navy"}`}>
+                <p className={`font-heading text-xl font-bold ${tier.featured ? "text-white" : "text-brand-black"}`}>
                   {tier.name}
                 </p>
-                <p className={`mt-1 text-2xl font-extrabold ${tier.featured ? "text-brand-gold" : "text-brand-navy"}`}>
+                <p className={`mt-1 text-2xl font-extrabold ${tier.featured ? "text-brand-blue" : "text-brand-black"}`}>
                   {tier.price}
                 </p>
                 <ul className="mt-6 space-y-3">
                   {tier.perks.map((perk) => (
                     <li key={perk} className={`flex gap-2 text-sm ${tier.featured ? "text-white/80" : "text-slate"}`}>
-                      <span className="text-brand-gold-dark">✦</span>
+                      <span className="text-brand-blue-dark">✦</span>
                       {perk}
                     </li>
                   ))}

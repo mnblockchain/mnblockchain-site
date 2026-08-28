@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function SpeakersPage() {
   return (
     <>
-      <section className="bg-gradient-to-br from-brand-navy-dark via-brand-navy to-brand-navy-dark py-20 text-center">
+      <section className="bg-gradient-to-br from-brand-black-soft via-brand-black to-brand-black-soft py-20 text-center">
         <div className="mx-auto max-w-3xl px-6">
           <Badge>Local builders. National voices.</Badge>
           <h1 className="mt-6 font-heading text-4xl font-extrabold text-white sm:text-5xl">
@@ -35,7 +35,7 @@ export default function SpeakersPage() {
       <section className="bg-cloud py-20">
         <div className="mx-auto max-w-3xl px-6 text-center">
           <SectionLabel>Want to Speak?</SectionLabel>
-          <h2 className="font-heading text-3xl font-extrabold text-brand-navy">
+          <h2 className="font-heading text-3xl font-extrabold text-brand-black">
             Have Something Worth Sharing?
           </h2>
           <p className="mt-4 text-slate">

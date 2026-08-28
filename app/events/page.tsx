@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function EventsPage() {
   return (
     <>
-      <section className="bg-gradient-to-br from-brand-navy-dark via-brand-navy to-brand-navy-dark py-20 text-center">
+      <section className="bg-gradient-to-br from-brand-black-soft via-brand-black to-brand-black-soft py-20 text-center">
         <div className="mx-auto max-w-3xl px-6">
           <Badge>12 monthly meetups + 2–3 flagship events every year</Badge>
           <h1 className="mt-6 font-heading text-4xl font-extrabold text-white sm:text-5xl">
@@ -33,7 +33,7 @@ export default function EventsPage() {
       <section className="bg-cloud py-20">
         <div className="mx-auto max-w-5xl px-6">
           <SectionLabel>Up Next</SectionLabel>
-          <h2 className="font-heading text-3xl font-extrabold text-brand-navy">{nextEvent.title}</h2>
+          <h2 className="font-heading text-3xl font-extrabold text-brand-black">{nextEvent.title}</h2>
           <div className="mt-6 grid gap-8 rounded-3xl border border-slate-200 bg-white p-8 shadow-sm md:grid-cols-2">
             <div>
               <p className="text-sm text-slate">{nextEvent.dateLabel}</p>
@@ -44,7 +44,7 @@ export default function EventsPage() {
             <ul className="space-y-3">
               {nextEvent.learn.map((item) => (
                 <li key={item} className="flex gap-3 text-sm text-slate">
-                  <span className="mt-0.5 text-brand-gold-dark">✦</span>
+                  <span className="mt-0.5 text-brand-blue-dark">✦</span>
                   {item}
                 </li>
               ))}
@@ -56,7 +56,7 @@ export default function EventsPage() {
       <section className="bg-white py-20">
         <div className="mx-auto max-w-6xl px-6">
           <SectionLabel>Event Formats</SectionLabel>
-          <h2 className="font-heading text-3xl font-extrabold text-brand-navy">How We Meet</h2>
+          <h2 className="font-heading text-3xl font-extrabold text-brand-black">How We Meet</h2>
           <div className="mt-8 grid gap-6 sm:grid-cols-3">
             {[
               {
@@ -73,7 +73,7 @@ export default function EventsPage() {
               },
             ].map((f) => (
               <div key={f.title} className="rounded-2xl border border-slate-200 bg-cloud p-6">
-                <p className="font-heading text-lg font-bold text-brand-navy">{f.title}</p>
+                <p className="font-heading text-lg font-bold text-brand-black">{f.title}</p>
                 <p className="mt-2 text-sm text-slate">{f.blurb}</p>
               </div>
             ))}
@@ -84,7 +84,7 @@ export default function EventsPage() {
       <section className="bg-cloud py-20">
         <div className="mx-auto max-w-6xl px-6">
           <SectionLabel>Track Record</SectionLabel>
-          <h2 className="font-heading text-3xl font-extrabold text-brand-navy">Recent Events</h2>
+          <h2 className="font-heading text-3xl font-extrabold text-brand-black">Recent Events</h2>
           <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {pastEvents.map((e) => (
               <EventCard key={e.title} date={e.date} title={e.title} blurb={e.blurb} />

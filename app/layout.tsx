@@ -1,20 +1,18 @@
 import type { Metadata } from "next";
-import { Manrope, Open_Sans } from "next/font/google";
+import { Manrope } from "next/font/google";
 import "./globals.css";
 import Ticker from "./components/Ticker";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 
+// Brand standards leave headline/body typography unspecified ("default
+// fonts") — Manrope is used throughout for a clean, modern, single-family
+// system. The wordmark itself uses this same family at extrabold weight
+// as a close substitute for the brand doc's "Cloud Bold" (font file TBD).
 const manrope = Manrope({
   weight: ["400", "500", "600", "700", "800"],
   subsets: ["latin"],
   variable: "--font-manrope",
-});
-
-const openSans = Open_Sans({
-  weight: ["600", "700", "800"],
-  subsets: ["latin"],
-  variable: "--font-open-sans",
 });
 
 export const metadata: Metadata = {
@@ -29,7 +27,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${manrope.variable} ${openSans.variable}`}>
+    <html lang="en" className={manrope.variable}>
       <body className="flex min-h-screen flex-col bg-white text-ink antialiased">
         <Ticker />
         <Nav />
