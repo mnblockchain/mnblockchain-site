@@ -35,9 +35,11 @@ export default function Home() {
           fill
           priority
           sizes="100vw"
-          className="object-cover"
+          className="object-cover brightness-125 contrast-105 saturate-110"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-brand-black-soft/95 via-brand-black/90 to-brand-black-soft/95" />
+        {/* Flat, uniform overlay — a diagonal gradient here would leave its
+            lightest point right behind the centered headline text. */}
+        <div className="absolute inset-0 bg-brand-black-soft/45" />
         <div className="relative mx-auto max-w-4xl px-6 text-center">
           <div className="mb-6 flex justify-center">
             <Badge>Free monthly meetups · No membership required to attend</Badge>
