@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ReactNode } from "react";
 
@@ -111,21 +112,33 @@ export function TeamCard({
   name,
   role,
   linkedin,
+  photo,
 }: {
   name: string;
   role: string;
   linkedin: string;
+  photo?: string;
 }) {
   return (
     <div className="rounded-2xl border border-slate-200 bg-white p-6 text-center shadow-sm transition-shadow hover:shadow-md">
-      <div className="mx-auto mb-4 flex h-24 w-24 items-center justify-center rounded-2xl bg-brand-black text-2xl font-bold text-white">
-        {name
-          .split(" ")
-          .map((p) => p[0])
-          .filter((c) => /[A-Za-z]/.test(c))
-          .slice(0, 2)
-          .join("")}
-      </div>
+      {photo ? (
+        <Image
+          src={photo}
+          alt={name}
+          width={96}
+          height={96}
+          className="mx-auto mb-4 h-24 w-24 rounded-2xl object-cover"
+        />
+      ) : (
+        <div className="mx-auto mb-4 flex h-24 w-24 items-center justify-center rounded-2xl bg-brand-black text-2xl font-bold text-white">
+          {name
+            .split(" ")
+            .map((p) => p[0])
+            .filter((c) => /[A-Za-z]/.test(c))
+            .slice(0, 2)
+            .join("")}
+        </div>
+      )}
       <p className="font-heading font-bold text-brand-black">{name}</p>
       <p className="mt-1 text-xs font-bold uppercase tracking-widest text-brand-blue-dark">
         {role}

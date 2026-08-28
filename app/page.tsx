@@ -184,7 +184,7 @@ export default function Home() {
           </div>
           <div className="mt-8 grid grid-cols-2 gap-6 sm:grid-cols-4">
             {[...boardOfficers, ...boardMembers].slice(0, 4).map((p) => (
-              <TeamCard key={p.name} name={p.name} role={p.role} linkedin={p.linkedin} />
+              <TeamCard key={p.name} name={p.name} role={p.role} linkedin={p.linkedin} photo={p.photo} />
             ))}
           </div>
         </div>

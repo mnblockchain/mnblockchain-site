@@ -51,7 +51,7 @@ export default function AboutPage() {
           </h2>
           <div className="mt-8 grid gap-6 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4">
             {[...boardOfficers, ...boardMembers].map((p) => (
-              <TeamCard key={p.name} name={p.name} role={p.role} linkedin={p.linkedin} />
+              <TeamCard key={p.name} name={p.name} role={p.role} linkedin={p.linkedin} photo={p.photo} />
             ))}
           </div>
         </div>
@@ -65,7 +65,7 @@ export default function AboutPage() {
           </h2>
           <div className="mt-8 grid gap-6 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4">
             {staffAdvisors.map((p) => (
-              <TeamCard key={p.name} name={p.name} role={p.role} linkedin={p.linkedin} />
+              <TeamCard key={p.name} name={p.name} role={p.role} linkedin={p.linkedin} photo={p.photo} />
             ))}
           </div>
         </div>

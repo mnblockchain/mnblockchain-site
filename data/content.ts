@@ -127,24 +127,25 @@ export const membershipTiers = [
 ];
 
 // Real board & staff roster (mirrors mnblockchain.org/our-team/ as of 2026-08-21).
-// LinkedIn links are placeholders ("#") until real profile URLs are supplied.
+// Photos pulled from the live site into /public/team/. LinkedIn links are
+// placeholders ("#") until real profile URLs are supplied.
 export const boardOfficers = [
-  { name: "Brandon Ferdig", role: "President", linkedin: "#" },
+  { name: "Brandon Ferdig", role: "President", linkedin: "#", photo: "/team/brandon-ferdig.png" },
 ];
 
 export const boardMembers = [
-  { name: "Alex Schoephoerster", role: "Board Member", linkedin: "#" },
-  { name: "Colin Hirdman", role: "Board Member", linkedin: "#" },
-  { name: "Rafael Mojden", role: "Board Member", linkedin: "#" },
-  { name: "Matt Rogers", role: "Board Member", linkedin: "#" },
-  { name: "Ben-Collins Asongwe", role: "Board Member", linkedin: "#" },
-  { name: "Andy Adams", role: "Board Member", linkedin: "#" },
+  { name: "Alex Schoephoerster", role: "Board Member", linkedin: "#", photo: "/team/alex-schoephoerster.png" },
+  { name: "Colin Hirdman", role: "Board Member", linkedin: "#", photo: "/team/colin-hirdman.jpg" },
+  { name: "Rafael Mojden", role: "Board Member", linkedin: "#", photo: "/team/rafael-mojden.jpg" },
+  { name: "Matt Rogers", role: "Board Member", linkedin: "#", photo: "/team/matt-rogers.png" },
+  { name: "Ben-Collins Asongwe", role: "Board Member", linkedin: "#", photo: "/team/ben-collins-asongwe.jpg" },
+  { name: "Andy Adams", role: "Board Member", linkedin: "#", photo: "/team/andy-adams.png" },
 ];
 
 export const staffAdvisors = [
-  { name: "Caulden Baumann", role: "Operations", linkedin: "#" },
-  { name: "Mickey Mikeworth", role: "Advisor", linkedin: "#" },
-  { name: "Graham Christopherson", role: "Accounting", linkedin: "#" },
+  { name: "Caulden Baumann", role: "Operations", linkedin: "#", photo: "/team/caulden-baumann.png" },
+  { name: "Mickey Mikeworth", role: "Advisor", linkedin: "#", photo: "/team/mickey-mikeworth.jpg" },
+  { name: "Graham Christopherson", role: "Accounting", linkedin: "#", photo: "/team/graham-christopherson.png" },
 ];
 
 // Committee structure — leads not yet assigned to individuals (as of 2026-08-21).
