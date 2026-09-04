@@ -28,7 +28,7 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-brand-black-soft pb-[22rem] pt-5 sm:pb-[28rem] sm:pt-7">
+      <section className="relative overflow-hidden bg-brand-black-soft pb-[380px] pt-5 sm:pb-[484px] sm:pt-7">
         <Image
           src="/hero/twins-nft-night.jpg"
           alt="MNblockchain community at a Twins NFT Night event"
