@@ -46,21 +46,27 @@ export default function Home() {
             flush against the top, no gap) so the photo's crowd — heads
             included — only becomes visible below it, instead of a floating
             card sitting on top of people's faces. */}
-        <div className="relative w-full bg-brand-black px-6 py-6 text-center shadow-2xl sm:py-8">
+        <div className="relative w-full bg-brand-black px-6 py-4 text-center shadow-2xl sm:py-6">
           <div className="mx-auto max-w-4xl">
-            <div className="mb-3 flex justify-center">
+            <div className="mb-2 flex justify-center">
               <Badge>Free monthly meetups · No membership required to attend</Badge>
             </div>
-            <h1 className="font-heading text-3xl font-extrabold leading-tight text-white sm:text-5xl">
+            <h1 className="font-heading text-2xl font-extrabold leading-tight text-white sm:text-4xl">
               Minnesota&rsquo;s Home for{" "}
               <span className="text-brand-blue">Blockchain &amp; Web3</span>
             </h1>
-            <p className="mx-auto mt-3 max-w-2xl text-base text-white/70 sm:text-lg">
+            <p className="mx-auto mt-2 max-w-2xl text-sm text-white/70 sm:text-base">
               Community, education, and policy advocacy for builders, investors, and the curious —
               all across Minnesota.
             </p>
           </div>
         </div>
+        {/* Tall gradient vignette instead of a hard edge below Box 1 — the
+            crowd's heads start high enough in the photo that no reasonably
+            sized header box avoids them entirely, so this fades solid black
+            into the photo gradually, reading as an intentional dark
+            vignette rather than a box chopping off faces. */}
+        <div className="relative h-40 w-full bg-gradient-to-b from-brand-black to-transparent sm:h-56" />
       </section>
 
       {/* Box 2: next event + org stats — pulled up to start over the bottom
