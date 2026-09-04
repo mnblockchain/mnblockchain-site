@@ -18,6 +18,7 @@
      using a single family (Manrope) throughout for a clean, modern feel. */
   --font-heading: var(--font-manrope);
   --font-sans: var(--font-manrope);
+  --font-wordmark: var(--font-logo);
 }
 
 body {
@@ -36,6 +37,6 @@ h1, h2, h3, h4, .font-heading {
 }
 
 .animate-ticker {
-  animation: ticker 28s linear infinite;
+  animation: ticker 55s linear infinite;
   will-change: transform;
 }
