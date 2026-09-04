@@ -11,6 +11,7 @@ const links = [
   { label: "Sponsors", href: "/sponsors" },
   { label: "Membership", href: "/membership" },
   { label: "Policy", href: "/policy" },
+  { label: "News", href: "/news" },
 ];
 
 export default function Nav() {

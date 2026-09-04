@@ -202,3 +202,43 @@ export function EventCard({
     </div>
   );
 }
+
+export function NewsCard({
+  slug,
+  title,
+  dateLabel,
+  category,
+  image,
+  excerpt,
+}: {
+  slug: string;
+  title: string;
+  dateLabel: string;
+  category: string;
+  image: string;
+  excerpt: string;
+}) {
+  return (
+    <Link
+      href={`/news/${slug}`}
+      className="group block overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-shadow hover:shadow-md"
+    >
+      <div className="relative aspect-[16/10] overflow-hidden">
+        <Image
+          src={image}
+          alt={title}
+          fill
+          sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
+          className="object-cover transition-transform duration-300 group-hover:scale-105"
+        />
+      </div>
+      <div className="p-5">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand-blue-dark">
+          {dateLabel} · {category}
+        </p>
+        <p className="mt-2 font-heading font-bold leading-snug text-brand-black">{title}</p>
+        <p className="mt-2 text-sm text-slate">{excerpt}</p>
+      </div>
+    </Link>
+  );
+}
