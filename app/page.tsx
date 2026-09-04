@@ -37,37 +37,43 @@ export default function Home() {
           sizes="100vw"
           className="object-cover brightness-125 contrast-105 saturate-110"
         />
-        {/* Flat, uniform overlay — a diagonal gradient here would leave its
-            lightest point right behind the centered headline text. */}
-        <div className="absolute inset-0 bg-brand-black-soft/45" />
-        <div className="relative mx-auto max-w-4xl px-6 text-center">
-          <div className="mb-6 flex justify-center">
-            <Badge>Free monthly meetups · No membership required to attend</Badge>
-          </div>
-          <h1 className="font-heading text-4xl font-extrabold leading-tight text-white sm:text-6xl">
-            Minnesota&rsquo;s Home for
-            <br />
-            <span className="text-brand-blue">Blockchain &amp; Web3</span>
-          </h1>
-          <p className="mx-auto mt-6 max-w-xl text-lg text-white/70">
-            Community, education, and policy advocacy for builders, investors, and the curious —
-            all across Minnesota.
-          </p>
+        {/* Light, uniform scrim so the photo reads clearly outside the card
+            below — the card itself is what guarantees text legibility, not
+            this overlay. */}
+        <div className="absolute inset-0 bg-brand-black-soft/25" />
 
-          <div className="mt-8 flex justify-center">
-            <Countdown target={nextEvent.date} />
-          </div>
+        {/* Solid card so the headline/countdown/CTAs never fight the photo
+            behind them, regardless of what's in that part of the image. */}
+        <div className="relative mx-auto max-w-4xl px-6">
+          <div className="rounded-3xl border border-white/10 bg-brand-black-soft/85 px-6 py-12 text-center shadow-2xl backdrop-blur-sm sm:px-12 sm:py-16">
+            <div className="mb-6 flex justify-center">
+              <Badge>Free monthly meetups · No membership required to attend</Badge>
+            </div>
+            <h1 className="font-heading text-4xl font-extrabold leading-tight text-white sm:text-6xl">
+              Minnesota&rsquo;s Home for
+              <br />
+              <span className="text-brand-blue">Blockchain &amp; Web3</span>
+            </h1>
+            <p className="mx-auto mt-6 max-w-xl text-lg text-white/70">
+              Community, education, and policy advocacy for builders, investors, and the curious —
+              all across Minnesota.
+            </p>
 
-          <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
-            <PrimaryButton href="/events">Register for the Next Event</PrimaryButton>
-            <OutlineButton href="/events">View Past Events</OutlineButton>
-          </div>
-        </div>
+            <div className="mt-8 flex justify-center">
+              <Countdown target={nextEvent.date} />
+            </div>
 
-        <div className="relative mx-auto mt-16 grid max-w-4xl grid-cols-2 gap-8 border-t border-white/10 px-6 pt-10 sm:grid-cols-4">
-          {stats.map((s) => (
-            <StatBlock key={s.label} value={s.value} label={s.label} />
-          ))}
+            <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
+              <PrimaryButton href="/events">Register for the Next Event</PrimaryButton>
+              <OutlineButton href="/events">View Past Events</OutlineButton>
+            </div>
+
+            <div className="mt-12 grid grid-cols-2 gap-8 border-t border-white/10 pt-10 sm:grid-cols-4">
+              {stats.map((s) => (
+                <StatBlock key={s.label} value={s.value} label={s.label} />
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
