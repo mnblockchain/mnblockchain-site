@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MNblockchain.org
 
-## Getting Started
+The public website for [MNblockchain](https://mnblockchain.org), a Minnesota nonprofit building community, education, and policy work around blockchain & web3.
 
-First, run the development server:
+**Live preview:** [mnblockchain-site.vercel.app](https://mnblockchain-site.vercel.app) — the real `mnblockchain.org` domain still points at the old WordPress site; it hasn't been switched over yet.
+
+## Running it locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Pages
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Route | What's there |
+|---|---|
+| `/` | Hero, countdown to next event, community photos, next-event spotlight, past events, speaker/sponsor previews, team preview, testimonials |
+| `/about` | Mission, full board of directors + staff/advisors, committee structure |
+| `/events` | Full event calendar — next event + past events |
+| `/speakers` | Speaker directory |
+| `/sponsors` | Sponsorship tiers, current sponsors, sponsor inquiry form |
+| `/membership` | Membership program and pricing |
+| `/policy` | Government & Law committee's public focus areas |
+| `/contact` | Contact form |
 
-## Learn More
+## Editing content
 
-To learn more about Next.js, take a look at the following resources:
+Almost everything on the site — event details, speakers, sponsors, membership pricing, the team roster, testimonials — lives in one file: **`data/content.ts`**. To update any of that, edit the data there; you generally don't need to touch page code.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Some of it is still placeholder and needs real input:
+- **Sponsorship tier pricing** (`sponsorTiers`) — no real pricing has ever been published, needs a board decision
+- **Testimonials** — currently illustrative, not real quotes
+- **Team LinkedIn links** — all placeholder (`"#"`) right now
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Images live in `public/`: `public/team/` (board & staff photos), `public/hero/` (homepage photos), `public/sponsors/` (sponsor logos).
 
-## Deploy on Vercel
+## Brand
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Per `mnblockchain brand standards.pdf` (not the old WordPress site's navy/gold):
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+| Token | Hex | Use |
+|---|---|---|
+| `brand-black` | `#000000` | Primary dark background/text |
+| `brand-black-soft` | `#0a0a0a` | Near-black, for gradient variation |
+| `brand-blue` | `#6495ed` | Accent — buttons, links, "rollovers" |
+| `brand-blue-dark` | `#4a7bd4` | Darker accent, hover states |
+| `brand-orange` | `#ff7f50` | Reserved for policy/legislative content only |
+| `brand-plum` | `#342e37` | Defined, not currently used (marked "work in progress" in the brand doc) |
+
+Font: **Manrope** throughout (body and headings) — the brand doc doesn't mandate a specific typeface beyond the wordmark's "Cloud Bold," which we don't have a file for yet; Manrope extrabold is used as a close substitute on the logo.
+
+Favicon/social icon: `app/icon.svg`, the brand's square "MN / blockchain" mark on white.
+
+## Stack
+
+Next.js (App Router) + TypeScript + Tailwind v4. Contact/sponsor/newsletter forms are server actions (`actions/contact.action.ts`) that send via [Resend](https://resend.com) — they currently log to the console instead of sending, since no `RESEND_API_KEY` is set yet.
+
+## Deployment
+
+GitHub (`mnblockchain/mnblockchain-site`) → Vercel, auto-deploying on every push to `main`.
