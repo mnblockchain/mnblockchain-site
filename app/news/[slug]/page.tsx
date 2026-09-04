@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { renderRichText } from "../../components/ui";
 import { newsArticles } from "@/data/news";
 
 export function generateStaticParams() {
@@ -62,7 +63,7 @@ export default async function NewsArticlePage({
         <div className="mt-8 space-y-5">
           {article.body.map((paragraph, i) => (
             <p key={i} className="text-base leading-relaxed text-ink">
-              {paragraph}
+              {renderRichText(paragraph)}
             </p>
           ))}
         </div>

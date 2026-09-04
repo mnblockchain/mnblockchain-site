@@ -1,6 +1,33 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ReactNode } from "react";
+import { Fragment, ReactNode } from "react";
+
+/**
+ * Renders a string containing markdown-style [text](url) links as React
+ * nodes, with plain surrounding text preserved. Used for news article body
+ * copy, where inline links (sources, videos, sponsor sites) are part of the
+ * original published content. All links are external, so they open in a
+ * new tab.
+ */
+export function renderRichText(text: string): ReactNode {
+  const parts = text.split(/(\[[^\]]+\]\([^)]+\))/g);
+  return parts.map((part, i) => {
+    const match = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+    if (!match) return <Fragment key={i}>{part}</Fragment>;
+    const [, linkText, href] = match;
+    return (
+      <a
+        key={i}
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="font-semibold text-brand-blue-dark underline decoration-brand-blue decoration-2 underline-offset-2 hover:text-brand-blue"
+      >
+        {linkText}
+      </a>
+    );
+  });
+}
 
 export function Badge({
   children,
