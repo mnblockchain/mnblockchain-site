@@ -28,7 +28,7 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-brand-black-soft pb-20 pt-10 sm:pb-24 sm:pt-12">
+      <section className="relative overflow-hidden bg-brand-black-soft pb-40 pt-12 sm:pb-52 sm:pt-16">
         <Image
           src="/hero/twins-nft-night.jpg"
           alt="MNblockchain community at a Twins NFT Night event"
@@ -43,18 +43,18 @@ export default function Home() {
         <div className="absolute inset-0 bg-brand-black-soft/25" />
 
         {/* Box 1: headline, kept high on the photo so it doesn't sit over
-            people's faces (typically centered lower in a crowd shot). */}
-        <div className="relative mx-auto max-w-3xl px-6">
-          <div className="rounded-3xl border border-white/10 bg-brand-black-soft/85 px-6 py-8 text-center shadow-2xl backdrop-blur-sm sm:px-10 sm:py-10">
-            <div className="mb-6 flex justify-center">
+            people's faces (typically centered lower in a crowd shot). Wide
+            and short on purpose — a thin banner, not a tall block. */}
+        <div className="relative mx-auto max-w-6xl px-6">
+          <div className="rounded-3xl border border-white/10 bg-brand-black-soft/85 px-6 py-5 text-center shadow-2xl backdrop-blur-sm sm:px-12 sm:py-6">
+            <div className="mb-3 flex justify-center">
               <Badge>Free monthly meetups · No membership required to attend</Badge>
             </div>
-            <h1 className="font-heading text-4xl font-extrabold leading-tight text-white sm:text-6xl">
-              Minnesota&rsquo;s Home for
-              <br />
+            <h1 className="font-heading text-3xl font-extrabold leading-tight text-white sm:text-5xl">
+              Minnesota&rsquo;s Home for{" "}
               <span className="text-brand-blue">Blockchain &amp; Web3</span>
             </h1>
-            <p className="mx-auto mt-6 max-w-xl text-lg text-white/70">
+            <p className="mx-auto mt-3 max-w-2xl text-base text-white/70 sm:text-lg">
               Community, education, and policy advocacy for builders, investors, and the curious —
               all across Minnesota.
             </p>
@@ -64,7 +64,7 @@ export default function Home() {
 
       {/* Box 2: next event + org stats — pulled up to start over the bottom
           of the hero photo, then bleeds down into the section below. */}
-      <div className="relative z-10 -mt-14 px-6 sm:-mt-16">
+      <div className="relative z-10 -mt-28 px-6 sm:-mt-32">
         <div className="mx-auto max-w-4xl">
           <div className="rounded-3xl border border-white/10 bg-brand-black-soft px-6 py-10 text-center shadow-2xl sm:px-12 sm:py-12">
             <div className="flex justify-center">
