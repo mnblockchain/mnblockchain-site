@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { Manrope, Montserrat } from "next/font/google";
+import { Manrope } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import Ticker from "./components/Ticker";
 import Nav from "./components/Nav";
@@ -14,14 +15,13 @@ const manrope = Manrope({
   variable: "--font-manrope",
 });
 
-// Wordmark only: Montserrat Black, chosen by visually comparing several
-// Google Fonts against the actual original logo mark (flat terminals, low
-// M-vertex, tight spacing) — the closest free match found for the brand
-// doc's "Cloud Bold," which we don't have the real font file for.
-const montserrat = Montserrat({
-  weight: "900",
-  subsets: ["latin"],
+// Wordmark only: the actual "Cloud Bold" font from the brand standards doc,
+// self-hosted (weight 700 — it's a single-weight font, not a variable one).
+const cloudBold = localFont({
+  src: "./fonts/Cloud-Bold.otf",
+  weight: "700",
   variable: "--font-logo",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -36,7 +36,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${manrope.variable} ${montserrat.variable}`}>
+    <html lang="en" className={`${manrope.variable} ${cloudBold.variable}`}>
       <body className="flex min-h-screen flex-col bg-white text-ink antialiased">
         <Ticker />
         <Nav />
