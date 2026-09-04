@@ -49,7 +49,7 @@ export default function AboutPage() {
           <h2 className="font-heading text-3xl font-extrabold text-brand-black">
             MNblockchain Board of Directors
           </h2>
-          <div className="mt-8 grid gap-6 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4">
+          <div className="mt-8 grid gap-6 grid-cols-2 sm:grid-cols-3">
             {[...boardOfficers, ...boardMembers].map((p) => (
               <TeamCard key={p.name} name={p.name} role={p.role} linkedin={p.linkedin} photo={p.photo} />
             ))}
@@ -63,7 +63,7 @@ export default function AboutPage() {
           <h2 className="font-heading text-3xl font-extrabold text-brand-black">
             Keeping the Engine Running
           </h2>
-          <div className="mt-8 grid gap-6 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4">
+          <div className="mt-8 grid gap-6 grid-cols-2 sm:grid-cols-3">
             {staffAdvisors.map((p) => (
               <TeamCard key={p.name} name={p.name} role={p.role} linkedin={p.linkedin} photo={p.photo} />
             ))}

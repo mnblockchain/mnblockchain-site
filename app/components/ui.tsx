@@ -125,12 +125,12 @@ export function TeamCard({
         <Image
           src={photo}
           alt={name}
-          width={96}
-          height={96}
-          className="mx-auto mb-4 h-24 w-24 rounded-2xl object-cover"
+          width={200}
+          height={200}
+          className="mx-auto mb-4 h-40 w-40 rounded-2xl object-cover"
         />
       ) : (
-        <div className="mx-auto mb-4 flex h-24 w-24 items-center justify-center rounded-2xl bg-brand-black text-2xl font-bold text-white">
+        <div className="mx-auto mb-4 flex h-40 w-40 items-center justify-center rounded-2xl bg-brand-black text-4xl font-bold text-white">
           {name
             .split(" ")
             .map((p) => p[0])
