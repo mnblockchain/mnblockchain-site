@@ -3,20 +3,22 @@
 // Keeping it in one file makes a content swap a data edit, not a design edit.
 
 export const nextEvent = {
-  title: "Spotlight Meetup — How to Spot Red Flags in the Industry",
-  date: "2026-08-31T17:00:00-05:00",
-  dateLabel: "Monday, August 31, 2026",
+  // Date/time confirmed by Colin (2026-09-04): Sept 28, 5pm CT. Title,
+  // description, venue, and speaker are still placeholder pending real
+  // details — update as soon as they're set.
+  title: "Spotlight Meetup — September",
+  date: "2026-09-28T17:00:00-05:00",
+  dateLabel: "Monday, September 28, 2026",
   time: "5:00 – 8:00 PM",
   location: "3556 Winnetka Ave N, New Hope, MN 55427",
   description:
-    "Crypto consultant Josiah Wilson (LIBREX Crypto Consulting) leads a discussion on how to spot danger in the industry — beyond the obvious scams, what red flags should actually put you on guard.",
+    "Our monthly Spotlight Meetup — open discussion on where Minnesota blockchain policy and industry stand right now, plus open networking. Details TBD.",
   learn: [
-    "How to spot scams and red flags before they cost you",
-    "What separates a legitimate project from a dangerous one",
-    "Practical due-diligence habits for evaluating anything in the space",
+    "What's moving in Minnesota blockchain policy this quarter",
+    "How local builders and investors are using the technology today",
     "Open Q&A and networking with the community",
   ],
-  speakers: [{ name: "Josiah Wilson", title: "Owner, LIBREX Crypto Consulting" }],
+  speakers: [{ name: "Featured Speaker TBA", title: "Confirming for this slot" }],
 };
 
 export const stats = [
@@ -27,6 +29,11 @@ export const stats = [
 ];
 
 export const pastEvents = [
+  {
+    date: "August 31, 2026",
+    title: "How to Spot Red Flags in the Industry",
+    blurb: "Crypto consultant Josiah Wilson (LIBREX Crypto Consulting) on spotting danger in the industry — beyond the obvious scams.",
+  },
   {
     date: "June 22, 2026",
     title: "A Team of One",
