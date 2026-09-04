@@ -28,7 +28,7 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-brand-black-soft py-20 sm:py-28">
+      <section className="relative overflow-hidden bg-brand-black-soft pb-40 pt-12 sm:pb-52 sm:pt-16">
         <Image
           src="/hero/twins-nft-night.jpg"
           alt="MNblockchain community at a Twins NFT Night event"
@@ -37,15 +37,15 @@ export default function Home() {
           sizes="100vw"
           className="object-cover brightness-125 contrast-105 saturate-110"
         />
-        {/* Light, uniform scrim so the photo reads clearly outside the card
-            below — the card itself is what guarantees text legibility, not
-            this overlay. */}
+        {/* Light, uniform scrim so the photo reads clearly outside the cards
+            below — the cards themselves are what guarantee text legibility,
+            not this overlay. */}
         <div className="absolute inset-0 bg-brand-black-soft/25" />
 
-        {/* Solid card so the headline/countdown/CTAs never fight the photo
-            behind them, regardless of what's in that part of the image. */}
-        <div className="relative mx-auto max-w-4xl px-6">
-          <div className="rounded-3xl border border-white/10 bg-brand-black-soft/85 px-6 py-12 text-center shadow-2xl backdrop-blur-sm sm:px-12 sm:py-16">
+        {/* Box 1: headline, kept high on the photo so it doesn't sit over
+            people's faces (typically centered lower in a crowd shot). */}
+        <div className="relative mx-auto max-w-3xl px-6">
+          <div className="rounded-3xl border border-white/10 bg-brand-black-soft/85 px-6 py-8 text-center shadow-2xl backdrop-blur-sm sm:px-10 sm:py-10">
             <div className="mb-6 flex justify-center">
               <Badge>Free monthly meetups · No membership required to attend</Badge>
             </div>
@@ -58,8 +58,16 @@ export default function Home() {
               Community, education, and policy advocacy for builders, investors, and the curious —
               all across Minnesota.
             </p>
+          </div>
+        </div>
+      </section>
 
-            <div className="mt-8 flex justify-center">
+      {/* Box 2: next event + org stats — pulled up to start over the bottom
+          of the hero photo, then bleeds down into the section below. */}
+      <div className="relative z-10 -mt-28 px-6 sm:-mt-32">
+        <div className="mx-auto max-w-4xl">
+          <div className="rounded-3xl border border-white/10 bg-brand-black-soft px-6 py-10 text-center shadow-2xl sm:px-12 sm:py-12">
+            <div className="flex justify-center">
               <Countdown target={nextEvent.date} />
             </div>
 
@@ -75,10 +83,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
       {/* Community moments */}
-      <section className="bg-white py-16">
+      <section className="bg-white pb-16 pt-8">
         <div className="mx-auto max-w-6xl px-6">
           <SectionLabel>From Our Community</SectionLabel>
           <h2 className="font-heading text-2xl font-extrabold text-brand-black sm:text-3xl">
