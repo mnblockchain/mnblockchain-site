@@ -28,7 +28,7 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-brand-black-soft pb-[380px] pt-5 sm:pb-[484px] sm:pt-7">
+      <section className="relative overflow-hidden bg-brand-black-soft pb-[380px] pt-0 sm:pb-[484px] sm:pt-0">
         <Image
           src="/hero/twins-nft-night.jpg"
           alt="MNblockchain community at a Twins NFT Night event"
@@ -42,11 +42,12 @@ export default function Home() {
             not this overlay. */}
         <div className="absolute inset-0 bg-brand-black-soft/25" />
 
-        {/* Box 1: headline, kept high on the photo so it doesn't sit over
-            people's faces (typically centered lower in a crowd shot). Wide
-            and short on purpose — a thin banner, not a tall block. */}
-        <div className="relative mx-auto max-w-6xl px-6">
-          <div className="rounded-3xl border border-white/10 bg-brand-black-soft/85 px-6 py-5 text-center shadow-2xl backdrop-blur-sm sm:px-12 sm:py-6">
+        {/* Box 1: headline, blended directly into the nav bar (full width,
+            flush against the top, no gap) so the photo's crowd — heads
+            included — only becomes visible below it, instead of a floating
+            card sitting on top of people's faces. */}
+        <div className="relative w-full bg-brand-black px-6 py-6 text-center shadow-2xl sm:py-8">
+          <div className="mx-auto max-w-4xl">
             <div className="mb-3 flex justify-center">
               <Badge>Free monthly meetups · No membership required to attend</Badge>
             </div>
