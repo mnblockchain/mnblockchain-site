@@ -131,11 +131,11 @@ export const membershipTiers = [
 // placeholders ("#") until real profile URLs are supplied.
 export const boardOfficers = [
   { name: "Brandon Ferdig", role: "President", linkedin: "#", photo: "/team/brandon-ferdig.png" },
+  { name: "Colin Hirdman", role: "Vice President", linkedin: "#", photo: "/team/colin-hirdman.jpg" },
 ];
 
 export const boardMembers = [
   { name: "Alex Schoephoerster", role: "Board Member", linkedin: "#", photo: "/team/alex-schoephoerster.png" },
-  { name: "Colin Hirdman", role: "Board Member", linkedin: "#", photo: "/team/colin-hirdman.jpg" },
   { name: "Rafael Mojden", role: "Board Member", linkedin: "#", photo: "/team/rafael-mojden.jpg" },
   { name: "Matt Rogers", role: "Board Member", linkedin: "#", photo: "/team/matt-rogers.png" },
   { name: "Ben-Collins Asongwe", role: "Board Member", linkedin: "#", photo: "/team/ben-collins-asongwe.jpg" },
