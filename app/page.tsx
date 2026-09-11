@@ -45,12 +45,12 @@ export default function Home() {
             flush against the top, no gap) so the photo's crowd — heads
             included — only becomes visible below it, instead of a floating
             card sitting on top of people's faces. */}
-        <div className="relative w-full bg-brand-black px-6 py-3 text-center shadow-2xl sm:py-4">
+        <div className="relative w-full bg-brand-black px-6 py-2 text-center shadow-2xl sm:py-4">
           <div className="mx-auto max-w-4xl">
             <div className="mb-2 flex justify-center">
               <Badge>Monthly meetups · Seasonal events · Advocacy opportunities</Badge>
             </div>
-            <h1 className="font-heading text-2xl font-extrabold leading-tight text-white sm:text-4xl">
+            <h1 className="font-heading text-3xl font-extrabold leading-tight text-white sm:text-5xl">
               Minnesota&rsquo;s Home for{" "}
               <span className="text-brand-blue">Blockchain &amp; Web3</span>
             </h1>

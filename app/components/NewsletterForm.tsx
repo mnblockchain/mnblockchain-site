@@ -22,7 +22,7 @@ export default function NewsletterForm() {
       <button
         type="submit"
         disabled={pending}
-        className="rounded-full bg-brand-blue px-6 py-3 text-sm font-bold uppercase tracking-wide text-brand-black-soft transition-colors hover:bg-white disabled:opacity-50"
+        className="rounded-full bg-brand-blue px-6 py-3 text-sm font-bold uppercase tracking-wide text-brand-black-soft transition-colors hover:bg-brand-blue/80 disabled:opacity-50"
       >
         {pending ? "Sending…" : "Notify Me"}
       </button>

@@ -83,7 +83,7 @@ export default function SponsorForm() {
       <button
         type="submit"
         disabled={pending}
-        className="rounded-full bg-brand-black px-7 py-3.5 text-sm font-bold uppercase tracking-wide text-white transition-colors hover:bg-brand-blue disabled:opacity-50"
+        className="rounded-full bg-brand-black px-7 py-3.5 text-sm font-bold uppercase tracking-wide text-white transition-colors hover:bg-brand-black/80 disabled:opacity-50"
       >
         {pending ? "Sending…" : "Send Inquiry"}
       </button>
