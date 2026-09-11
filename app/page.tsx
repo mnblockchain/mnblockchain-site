@@ -70,6 +70,7 @@ export default function Home() {
       <div className="relative z-10 -mt-28 px-6 sm:-mt-32">
         <div className="mx-auto max-w-4xl">
           <div className="rounded-3xl border border-white/10 bg-brand-black-soft px-6 py-10 text-center shadow-2xl sm:px-12 sm:py-12">
+            <SectionLabel accent="orange">Countdown to Next Event</SectionLabel>
             <div className="flex justify-center">
               <Countdown target={nextEvent.date} />
             </div>
