@@ -46,7 +46,7 @@ export default function Home() {
             flush against the top, no gap) so the photo's crowd — heads
             included — only becomes visible below it, instead of a floating
             card sitting on top of people's faces. */}
-        <div className="relative w-full bg-brand-black px-6 py-4 text-center shadow-2xl sm:py-6">
+        <div className="relative w-full bg-brand-black px-6 py-3 text-center shadow-2xl sm:py-4">
           <div className="mx-auto max-w-4xl">
             <div className="mb-2 flex justify-center">
               <Badge>Free monthly meetups · No membership required to attend</Badge>
@@ -55,10 +55,6 @@ export default function Home() {
               Minnesota&rsquo;s Home for{" "}
               <span className="text-brand-blue">Blockchain &amp; Web3</span>
             </h1>
-            <p className="mx-auto mt-2 max-w-2xl text-sm text-white/70 sm:text-base">
-              Community, education, and policy advocacy for builders, investors, and the curious —
-              all across Minnesota.
-            </p>
           </div>
         </div>
         {/* Tall gradient vignette instead of a hard edge below Box 1 — the
