@@ -35,7 +35,7 @@ export default function Home() {
           fill
           priority
           sizes="100vw"
-          className="object-cover brightness-125 contrast-105 saturate-110"
+          className="object-cover object-top brightness-125 contrast-105 saturate-110"
         />
         {/* Light, uniform scrim so the photo reads clearly outside the cards
             below — the cards themselves are what guarantee text legibility,
