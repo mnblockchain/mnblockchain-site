@@ -37,7 +37,7 @@ export default function Nav() {
         <div className="hidden lg:block">
           <Link
             href="/contact"
-            className="rounded-full bg-brand-blue px-5 py-2.5 text-sm font-bold uppercase tracking-wide text-brand-black-soft transition-colors hover:bg-white"
+            className="rounded-full bg-bitcoin-orange px-5 py-2.5 text-sm font-bold uppercase tracking-wide text-brand-black-soft transition-colors hover:bg-white"
           >
             Get Involved
           </Link>
@@ -69,7 +69,7 @@ export default function Nav() {
           <Link
             href="/contact"
             onClick={() => setOpen(false)}
-            className="mt-2 inline-block w-fit rounded-full bg-brand-blue px-5 py-2.5 text-sm font-bold uppercase tracking-wide text-brand-black-soft"
+            className="mt-2 inline-block w-fit rounded-full bg-bitcoin-orange px-5 py-2.5 text-sm font-bold uppercase tracking-wide text-brand-black-soft"
           >
             Get Involved
           </Link>
