@@ -18,7 +18,6 @@ import {
   stats,
   boardOfficers,
   boardMembers,
-  testimonials,
 } from "@/data/content";
 
 export default function Home() {
@@ -172,25 +171,6 @@ export default function Home() {
           <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {sponsors.map((s) => (
               <SponsorCard key={s.name} name={s.name} blurb={s.blurb} logo={s.logo} />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials */}
-      <section className="bg-white py-20">
-        <div className="mx-auto max-w-6xl px-6">
-          <SectionLabel>What People Say</SectionLabel>
-          <h2 className="font-heading text-3xl font-extrabold text-brand-black sm:text-4xl">
-            What Members Say After Just One Event
-          </h2>
-          <div className="mt-8 grid gap-6 md:grid-cols-3">
-            {testimonials.map((t) => (
-              <div key={t.name} className="rounded-2xl border border-slate-200 bg-cloud p-6">
-                <p className="text-sm leading-relaxed text-ink">&ldquo;{t.quote}&rdquo;</p>
-                <p className="mt-4 text-sm font-bold text-brand-black">{t.name}</p>
-                <p className="text-xs text-slate">{t.detail}</p>
-              </div>
             ))}
           </div>
         </div>
