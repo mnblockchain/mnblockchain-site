@@ -34,6 +34,8 @@ export default function Footer() {
                 <a
                   key={s.label}
                   href={s.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-xs font-bold uppercase tracking-widest text-white/50 hover:text-white"
                 >
                   {s.label}

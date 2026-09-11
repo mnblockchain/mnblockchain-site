@@ -172,6 +172,8 @@ export function TeamCard({
       </p>
       <a
         href={linkedin}
+        target="_blank"
+        rel="noopener noreferrer"
         aria-label={`${name} on LinkedIn`}
         className="mt-3 inline-flex h-8 w-8 items-center justify-center rounded-md bg-brand-blue text-brand-black-soft transition-colors hover:bg-brand-blue/80"
       >
