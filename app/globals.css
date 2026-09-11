@@ -2,7 +2,10 @@
 
 /* Brand tokens — per mnblockchain brand-standards.pdf (2026-08-21):
    Primary: black / white, blue for rollovers/accents.
-   Secondary (marked "work in progress" in the doc): orange, dark purple. */
+   Secondary (marked "work in progress" in the doc): orange, dark purple.
+   Action buttons site-wide use Bitcoin orange (#F7931A, distinct from
+   brand-orange below, which stays reserved for policy/legislative content)
+   — set as a standing brand standard 2026-09-11. */
 @theme {
   --color-brand-black: #000000;
   --color-brand-black-soft: #0a0a0a;
@@ -10,6 +13,8 @@
   --color-brand-blue-dark: #4a7bd4;
   --color-brand-orange: #ff7f50;
   --color-brand-plum: #342e37;
+  --color-bitcoin-orange: #f7931a;
+  --color-bitcoin-orange-dark: #d97e0f;
   --color-ink: #000000;
   --color-slate: #4b5563;
   --color-cloud: #f5f7fa;

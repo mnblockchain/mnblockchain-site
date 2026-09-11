@@ -5,7 +5,6 @@ import NewsletterForm from "./components/NewsletterForm";
 import {
   Badge,
   EventCard,
-  OutlineButton,
   PrimaryButton,
   SectionLabel,
   SpeakerCard,
@@ -75,9 +74,8 @@ export default function Home() {
               <Countdown target={nextEvent.date} />
             </div>
 
-            <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
+            <div className="mt-10 flex justify-center">
               <PrimaryButton href="/events">Register for the Next Event</PrimaryButton>
-              <OutlineButton href="/events">View Past Events</OutlineButton>
             </div>
 
             <div className="mt-12 grid grid-cols-2 gap-8 border-t border-white/10 pt-10 sm:grid-cols-4">

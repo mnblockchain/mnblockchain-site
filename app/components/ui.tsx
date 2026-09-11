@@ -78,7 +78,7 @@ export function PrimaryButton({
   return (
     <Link
       href={href}
-      className="inline-flex items-center justify-center gap-2 rounded-full bg-brand-blue px-7 py-3.5 text-sm font-bold uppercase tracking-wide text-brand-black-soft transition-colors hover:bg-white"
+      className="inline-flex items-center justify-center gap-2 rounded-full bg-bitcoin-orange px-7 py-3.5 text-sm font-bold uppercase tracking-wide text-brand-black-soft transition-colors hover:bg-white"
     >
       {children}
     </Link>
