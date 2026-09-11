@@ -129,8 +129,33 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Speakers preview */}
+      {/* Team preview — moved up two sections, ahead of Speakers/Sponsors */}
       <section className="bg-cloud py-20">
+        <div className="mx-auto max-w-6xl px-6">
+          <div className="flex flex-wrap items-end justify-between gap-4">
+            <div>
+              <SectionLabel>Meet the Team</SectionLabel>
+              <h2 className="font-heading text-3xl font-extrabold text-brand-black sm:text-4xl">
+                The People Behind MNblockchain
+              </h2>
+            </div>
+            <Link
+              href="/about"
+              className="text-sm font-bold text-brand-black underline decoration-brand-blue decoration-2 underline-offset-4"
+            >
+              Meet the Full Board →
+            </Link>
+          </div>
+          <div className="mt-8 grid grid-cols-2 gap-6 sm:grid-cols-4">
+            {[...boardOfficers, ...boardMembers].slice(0, 4).map((p) => (
+              <TeamCard key={p.name} name={p.name} role={p.role} linkedin={p.linkedin} photo={p.photo} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Speakers preview */}
+      <section className="bg-white py-20">
         <div className="mx-auto max-w-6xl px-6">
           <div className="flex flex-wrap items-end justify-between gap-4">
             <div>
@@ -155,7 +180,7 @@ export default function Home() {
       </section>
 
       {/* Sponsors preview */}
-      <section className="bg-white py-20">
+      <section className="bg-cloud py-20">
         <div className="mx-auto max-w-6xl px-6">
           <div className="flex flex-wrap items-end justify-between gap-4">
             <div>
@@ -174,31 +199,6 @@ export default function Home() {
           <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {sponsors.map((s) => (
               <SponsorCard key={s.name} name={s.name} blurb={s.blurb} logo={s.logo} />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Team preview */}
-      <section className="bg-cloud py-20">
-        <div className="mx-auto max-w-6xl px-6">
-          <div className="flex flex-wrap items-end justify-between gap-4">
-            <div>
-              <SectionLabel>Meet the Team</SectionLabel>
-              <h2 className="font-heading text-3xl font-extrabold text-brand-black sm:text-4xl">
-                The People Behind MNblockchain
-              </h2>
-            </div>
-            <Link
-              href="/about"
-              className="text-sm font-bold text-brand-black underline decoration-brand-blue decoration-2 underline-offset-4"
-            >
-              Meet the Full Board →
-            </Link>
-          </div>
-          <div className="mt-8 grid grid-cols-2 gap-6 sm:grid-cols-4">
-            {[...boardOfficers, ...boardMembers].slice(0, 4).map((p) => (
-              <TeamCard key={p.name} name={p.name} role={p.role} linkedin={p.linkedin} photo={p.photo} />
             ))}
           </div>
         </div>
