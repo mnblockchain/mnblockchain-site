@@ -36,6 +36,13 @@ h1, h2, h3, h4, .font-heading {
   font-family: var(--font-manrope), Arial, sans-serif;
 }
 
+/* Native <button> elements default to the arrow cursor in most browsers
+   (unlike <a href>, which already gets the hand/pointer by default) — this
+   makes every clickable button site-wide show the hand on hover. */
+button:not(:disabled) {
+  cursor: pointer;
+}
+
 @keyframes ticker {
   0% { transform: translate3d(0, 0, 0); }
   100% { transform: translate3d(-50%, 0, 0); }

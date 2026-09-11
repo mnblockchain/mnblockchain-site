@@ -51,8 +51,9 @@ export default function Home() {
               <Badge>Monthly meetups · Seasonal events · Advocacy opportunities</Badge>
             </div>
             <h1 className="font-heading text-3xl font-extrabold leading-tight text-white sm:text-5xl">
-              Minnesota&rsquo;s Home for{" "}
-              <span className="text-brand-blue">Blockchain &amp; Web3</span>
+              Minnesota&rsquo;s Home
+              <br />
+              for <span className="text-brand-blue">Blockchain &amp; Web3</span>
             </h1>
           </div>
         </div>
