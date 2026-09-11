@@ -4,7 +4,7 @@ import Countdown from "./components/Countdown";
 import NewsletterForm from "./components/NewsletterForm";
 import {
   Badge,
-  EventCard,
+  NewsCard,
   PrimaryButton,
   SectionLabel,
   SponsorCard,
@@ -13,12 +13,12 @@ import {
 } from "./components/ui";
 import {
   nextEvent,
-  pastEvents,
   sponsors,
   stats,
   boardOfficers,
   boardMembers,
 } from "@/data/content";
+import { newsArticles } from "@/data/news";
 
 export default function Home() {
   return (
@@ -112,16 +112,37 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Past events */}
+      {/* News & Articles — pulls the latest real posts from /news instead of
+          a separate hardcoded list, so this section stays current for free
+          whenever /news is updated. */}
       <section className="bg-white py-20">
         <div className="mx-auto max-w-6xl px-6">
-          <h2 className="font-heading text-3xl font-extrabold text-brand-black sm:text-4xl">
-            News &amp; Articles
-          </h2>
-          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {pastEvents.map((e) => (
-              <EventCard key={e.title} date={e.date} title={e.title} blurb={e.blurb} />
-            ))}
+          <div className="flex flex-wrap items-end justify-between gap-4">
+            <h2 className="font-heading text-3xl font-extrabold text-brand-black sm:text-4xl">
+              News &amp; Articles
+            </h2>
+            <Link
+              href="/news"
+              className="text-sm font-bold text-brand-black underline decoration-brand-blue decoration-2 underline-offset-4"
+            >
+              See All News →
+            </Link>
+          </div>
+          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {[...newsArticles]
+              .sort((a, b) => (a.date < b.date ? 1 : -1))
+              .slice(0, 3)
+              .map((a) => (
+                <NewsCard
+                  key={a.slug}
+                  slug={a.slug}
+                  title={a.title}
+                  dateLabel={a.dateLabel}
+                  category={a.category}
+                  image={a.image}
+                  excerpt={a.excerpt}
+                />
+              ))}
           </div>
         </div>
       </section>
