@@ -5,7 +5,6 @@ import NewsletterForm from "./NewsletterForm";
 const quickLinks = [
   { label: "About", href: "/about" },
   { label: "Events", href: "/events" },
-  { label: "Speakers", href: "/speakers" },
   { label: "Sponsors", href: "/sponsors" },
   { label: "Membership", href: "/membership" },
   { label: "Policy", href: "/policy" },

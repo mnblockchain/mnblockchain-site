@@ -5,6 +5,9 @@ import { speakers } from "@/data/content";
 export const metadata: Metadata = {
   title: "Speakers — MNblockchain",
   description: "Meet the speakers who've shaped MNblockchain events — local builders, national voices, and everything in between.",
+  // Page is unlinked from nav/footer for now while this section is
+  // reworked — keep it out of search results until it's ready to relink.
+  robots: { index: false, follow: false },
 };
 
 export default function SpeakersPage() {
