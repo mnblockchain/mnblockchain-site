@@ -127,25 +127,25 @@ export const membershipTiers = [
 ];
 
 // Real board & staff roster (mirrors mnblockchain.org/our-team/ as of 2026-08-21).
-// Photos pulled from the live site into /public/team/. LinkedIn links are
-// placeholders ("#") until real profile URLs are supplied.
+// Photos pulled from the live site into /public/team/. LinkedIn links pulled
+// from mnblockchain.org/our-team/ on 2026-09-11.
 export const boardOfficers = [
-  { name: "Brandon Ferdig", role: "President", linkedin: "#", photo: "/team/brandon-ferdig.png" },
-  { name: "Colin Hirdman", role: "Vice President", linkedin: "#", photo: "/team/colin-hirdman.jpg" },
+  { name: "Brandon Ferdig", role: "President", linkedin: "https://www.linkedin.com/in/brandonferdig", photo: "/team/brandon-ferdig.png" },
+  { name: "Colin Hirdman", role: "Vice President", linkedin: "https://www.linkedin.com/in/colinhirdman/", photo: "/team/colin-hirdman.jpg" },
 ];
 
 export const boardMembers = [
-  { name: "Alex Schoephoerster", role: "Board Member", linkedin: "#", photo: "/team/alex-schoephoerster.png" },
-  { name: "Rafael Mojden", role: "Board Member", linkedin: "#", photo: "/team/rafael-mojden.jpg" },
-  { name: "Matt Rogers", role: "Board Member", linkedin: "#", photo: "/team/matt-rogers.png" },
-  { name: "Ben-Collins Asongwe", role: "Board Member", linkedin: "#", photo: "/team/ben-collins-asongwe.jpg" },
-  { name: "Andy Adams", role: "Board Member", linkedin: "#", photo: "/team/andy-adams.png" },
+  { name: "Alex Schoephoerster", role: "Board Member", linkedin: "https://www.linkedin.com/in/alex-schoephoerster/", photo: "/team/alex-schoephoerster.png" },
+  { name: "Rafael Mojden", role: "Board Member", linkedin: "https://www.linkedin.com/in/rafael-mojden-4a28211/", photo: "/team/rafael-mojden.jpg" },
+  { name: "Matt Rogers", role: "Board Member", linkedin: "https://www.linkedin.com/in/matthew-abraham-rogers/", photo: "/team/matt-rogers.png" },
+  { name: "Ben-Collins Asongwe", role: "Board Member", linkedin: "https://www.linkedin.com/in/ben-collins-asongwe-1962358b/", photo: "/team/ben-collins-asongwe.jpg" },
+  { name: "Andy Adams", role: "Board Member", linkedin: "https://www.linkedin.com/in/andrewdcadams/", photo: "/team/andy-adams.png" },
 ];
 
 export const staffAdvisors = [
-  { name: "Caulden Baumann", role: "Operations", linkedin: "#", photo: "/team/caulden-baumann.png" },
-  { name: "Mickey Mikeworth", role: "Advisor", linkedin: "#", photo: "/team/mickey-mikeworth.jpg" },
-  { name: "Graham Christopherson", role: "Accounting", linkedin: "#", photo: "/team/graham-christopherson.png" },
+  { name: "Caulden Baumann", role: "Operations", linkedin: "https://www.linkedin.com/in/caulden-baumann-3b7bb8217/", photo: "/team/caulden-baumann.png" },
+  { name: "Mickey Mikeworth", role: "Advisor", linkedin: "https://www.linkedin.com/in/mickeymikeworth/", photo: "/team/mickey-mikeworth.jpg" },
+  { name: "Graham Christopherson", role: "Accounting", linkedin: "https://www.linkedin.com/in/graham-christopherson-37041b107/", photo: "/team/graham-christopherson.png" },
 ];
 
 // Committee structure — leads not yet assigned to individuals (as of 2026-08-21).
