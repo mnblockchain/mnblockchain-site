@@ -22,10 +22,9 @@ export const nextEvent = {
 };
 
 export const stats = [
-  { value: "4+", label: "Years Running" },
+  { value: "2018", label: "Founded" },
   { value: "12", label: "Events / Year" },
   { value: "3", label: "Flagship Events" },
-  { value: "100%", label: "Volunteer-Run" },
 ];
 
 export const pastEvents = [

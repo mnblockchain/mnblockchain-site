@@ -86,7 +86,7 @@ export default function Home() {
               <PrimaryButton href="/events">Register for the Next Event</PrimaryButton>
             </div>
 
-            <div className="mt-12 grid grid-cols-2 gap-8 border-t border-white/10 pt-10 sm:grid-cols-4">
+            <div className="mt-12 grid grid-cols-3 gap-8 border-t border-white/10 pt-10">
               {stats.map((s) => (
                 <StatBlock key={s.label} value={s.value} label={s.label} />
               ))}
