@@ -68,7 +68,7 @@ export default function Home() {
           of the hero photo, then bleeds down into the section below. */}
       <div className="relative z-10 -mt-28 px-6 sm:-mt-32">
         <div className="mx-auto max-w-4xl">
-          <div className="rounded-3xl border border-white/10 bg-brand-black-soft px-6 py-10 text-center shadow-2xl sm:px-12 sm:py-12">
+          <div className="rounded-3xl border border-white/10 bg-brand-black-soft/90 px-6 py-10 text-center shadow-2xl sm:px-12 sm:py-12">
             <div className="mb-5 flex items-center justify-center gap-3">
               <span className="relative flex h-3 w-3">
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-bitcoin-orange opacity-75" />
@@ -83,94 +83,36 @@ export default function Home() {
             </div>
 
             <div className="mt-10 flex justify-center">
-              <PrimaryButton href="/events">Register for the Next Event</PrimaryButton>
+              <PrimaryButton href="/events">Register here</PrimaryButton>
             </div>
 
-            <div className="mt-12 grid grid-cols-3 gap-8 border-t border-white/10 pt-10">
+            <div className="mt-6 grid grid-cols-2 gap-8 border-t border-white/10 pt-6">
               {stats.map((s) => (
                 <StatBlock key={s.label} value={s.value} label={s.label} />
               ))}
             </div>
           </div>
+
+          {/* Next event details — moved up directly below the countdown box
+              (the old "Next Event" section wrapper and "You'll Learn" list
+              were removed; this card is what's left of it). */}
+          <div className="mt-8 rounded-3xl border border-slate-200 bg-cloud p-8 text-left shadow-sm sm:p-10">
+            <p className="text-xs font-bold uppercase tracking-widest text-brand-blue-dark">
+              Free · Open to Everyone
+            </p>
+            <h3 className="mt-2 font-heading text-2xl font-bold text-brand-black">
+              {nextEvent.title}
+            </h3>
+            <p className="mt-3 text-sm text-slate">{nextEvent.dateLabel}</p>
+            <p className="text-sm text-slate">{nextEvent.time}</p>
+            <p className="text-sm text-slate">{nextEvent.location}</p>
+            <p className="mt-4 text-sm leading-relaxed text-slate">{nextEvent.description}</p>
+            <div className="mt-6">
+              <PrimaryButton href="/contact">Register Free →</PrimaryButton>
+            </div>
+          </div>
         </div>
       </div>
-
-      {/* Community moments */}
-      <section className="bg-white pb-16 pt-8">
-        <div className="mx-auto max-w-6xl px-6">
-          <SectionLabel>From Our Community</SectionLabel>
-          <h2 className="font-heading text-2xl font-extrabold text-brand-black sm:text-3xl">
-            Real People, Real Events
-          </h2>
-          <div className="mt-8 grid gap-6 sm:grid-cols-2">
-            <div className="group relative aspect-[16/10] overflow-hidden rounded-2xl">
-              <Image
-                src="/hero/web3-law-conference.jpeg"
-                alt="Web3, AI and Law Conference"
-                fill
-                sizes="(min-width: 640px) 50vw, 100vw"
-                className="object-cover transition-transform duration-300 group-hover:scale-105"
-              />
-              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-5">
-                <p className="text-sm font-bold text-white">Web3, AI &amp; Law Conference</p>
-              </div>
-            </div>
-            <div className="group relative aspect-[16/10] overflow-hidden rounded-2xl">
-              <Image
-                src="/hero/course-for-2025.jpg"
-                alt="Charting the Course for 2025 event"
-                fill
-                sizes="(min-width: 640px) 50vw, 100vw"
-                className="object-cover transition-transform duration-300 group-hover:scale-105"
-              />
-              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-5">
-                <p className="text-sm font-bold text-white">Charting the Course for 2025</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Next event spotlight */}
-      <section className="bg-cloud py-20">
-        <div className="mx-auto max-w-5xl px-6">
-          <SectionLabel>Next Event</SectionLabel>
-          <h2 className="font-heading text-3xl font-extrabold text-brand-black sm:text-4xl">
-            Don&rsquo;t Miss What&rsquo;s Coming Up
-          </h2>
-
-          <div className="mt-8 grid gap-8 rounded-3xl border border-slate-200 bg-white p-8 shadow-sm md:grid-cols-2 md:p-10">
-            <div>
-              <p className="text-xs font-bold uppercase tracking-widest text-brand-blue-dark">
-                Free · Open to Everyone
-              </p>
-              <h3 className="mt-2 font-heading text-2xl font-bold text-brand-black">
-                {nextEvent.title}
-              </h3>
-              <p className="mt-3 text-sm text-slate">{nextEvent.dateLabel}</p>
-              <p className="text-sm text-slate">{nextEvent.time}</p>
-              <p className="text-sm text-slate">{nextEvent.location}</p>
-              <p className="mt-4 text-sm leading-relaxed text-slate">{nextEvent.description}</p>
-              <div className="mt-6">
-                <PrimaryButton href="/contact">Register Free →</PrimaryButton>
-              </div>
-            </div>
-            <div>
-              <p className="mb-3 text-sm font-bold uppercase tracking-widest text-brand-black">
-                You&rsquo;ll Learn
-              </p>
-              <ul className="space-y-3">
-                {nextEvent.learn.map((item) => (
-                  <li key={item} className="flex gap-3 text-sm text-slate">
-                    <span className="mt-0.5 text-brand-blue-dark">✦</span>
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Past events */}
       <section className="bg-white py-20">

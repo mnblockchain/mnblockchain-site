@@ -23,8 +23,7 @@ export const nextEvent = {
 
 export const stats = [
   { value: "2018", label: "Founded" },
-  { value: "12", label: "Events / Year" },
-  { value: "3", label: "Flagship Events" },
+  { value: "12+", label: "Events / Year" },
 ];
 
 export const pastEvents = [
