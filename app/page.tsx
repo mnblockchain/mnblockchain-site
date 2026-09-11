@@ -7,7 +7,6 @@ import {
   EventCard,
   PrimaryButton,
   SectionLabel,
-  SpeakerCard,
   SponsorCard,
   StatBlock,
   TeamCard,
@@ -17,7 +16,6 @@ import {
   pastEvents,
   sponsors,
   stats,
-  speakers,
   boardOfficers,
   boardMembers,
   testimonials,
@@ -154,39 +152,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Speakers preview */}
-      <section className="bg-white py-20">
-        <div className="mx-auto max-w-6xl px-6">
-          <div className="flex flex-wrap items-end justify-between gap-4">
-            <div>
-              <SectionLabel>Event Speakers</SectionLabel>
-              <h2 className="font-heading text-3xl font-extrabold text-brand-black sm:text-4xl">
-                Learn From Real Builders
-              </h2>
-            </div>
-            <Link
-              href="/speakers"
-              className="text-sm font-bold text-brand-black underline decoration-brand-blue decoration-2 underline-offset-4"
-            >
-              See All Speakers →
-            </Link>
-          </div>
-          <div className="mt-8 grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-4">
-            {speakers.slice(0, 4).map((s, i) => (
-              <SpeakerCard key={i} name={s.name} title={s.title} />
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Sponsors preview */}
-      <section className="bg-cloud py-20">
+      <section className="bg-white py-20">
         <div className="mx-auto max-w-6xl px-6">
           <div className="flex flex-wrap items-end justify-between gap-4">
             <div>
               <SectionLabel>Proud Sponsors</SectionLabel>
               <h2 className="font-heading text-3xl font-extrabold text-brand-black sm:text-4xl">
-                Free Events, Powered by Great Partners
+                Thank You to Our Partner Organizations
               </h2>
             </div>
             <Link
