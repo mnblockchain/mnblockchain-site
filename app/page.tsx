@@ -118,9 +118,8 @@ export default function Home() {
       {/* Past events */}
       <section className="bg-white py-20">
         <div className="mx-auto max-w-6xl px-6">
-          <SectionLabel>Track Record</SectionLabel>
           <h2 className="font-heading text-3xl font-extrabold text-brand-black sm:text-4xl">
-            See What You&rsquo;ve Been Missing
+            News &amp; Articles
           </h2>
           <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {pastEvents.map((e) => (
