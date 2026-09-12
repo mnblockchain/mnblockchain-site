@@ -213,7 +213,7 @@ export function SponsorCard({
           rel="noopener noreferrer"
           className="mt-4 inline-block text-sm font-bold text-brand-black underline decoration-brand-blue decoration-2 underline-offset-4"
         >
-          Visit Website →
+          Learn More →
         </a>
       ) : (
         <Link
