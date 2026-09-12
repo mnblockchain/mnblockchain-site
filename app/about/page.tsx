@@ -60,15 +60,15 @@ export default function AboutPage() {
             A Hub for Blockchain in Minnesota
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-slate">
+            MNblockchain exists to build community and industry around blockchain and web3
+            technologies in Minnesota — through free monthly events, flagship gatherings,
+            education, and policy advocacy with state and federal lawmakers.
+          </p>
+          <p className="mt-4 text-lg leading-relaxed text-slate">
             Minnesota is unlike any other state — a high per-capita number of Fortune 500
             companies, globally respected institutions in education, finance, and medicine, and a
             vibrant arts and culture community make it a prime location for nurturing the
             blockchain industry.
-          </p>
-          <p className="mt-4 text-lg leading-relaxed text-slate">
-            MNblockchain exists to build community and industry around blockchain and web3
-            technologies in Minnesota — through free monthly events, flagship gatherings,
-            education, and policy advocacy with state and federal lawmakers.
           </p>
         </div>
       </section>
