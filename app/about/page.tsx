@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Badge, SectionLabel, TeamCard } from "../components/ui";
 import { boardMembers, boardOfficers, committees, staffAdvisors } from "@/data/content";
 
@@ -10,8 +11,20 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <>
-      <section className="bg-gradient-to-br from-navy-black via-navy-black to-navy-black py-20 text-center">
-        <div className="mx-auto max-w-3xl px-6">
+      <section className="relative overflow-hidden py-24 text-center">
+        <Image
+          src="/about/community-photo.jpg"
+          alt="MNblockchain community members at an event"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
+        />
+        {/* Solid scrim so headline text stays legible over a busy indoor
+            photo — no separate card behind the text on this page, unlike
+            the homepage hero. */}
+        <div className="absolute inset-0 bg-navy-black/70" />
+        <div className="relative mx-auto max-w-3xl px-6">
           <Badge>A Minnesota nonprofit, volunteer-run</Badge>
           <h1 className="mt-6 font-heading text-4xl font-extrabold text-white sm:text-5xl">
             About MNblockchain
