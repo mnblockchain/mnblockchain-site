@@ -73,17 +73,39 @@ export default function EventsPage() {
               {
                 title: "Monthly Meetups",
                 blurb: "In-person, every month — open discussion, local speakers, and networking.",
+                icon: (
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6">
+                    <rect x="3" y="5" width="18" height="16" rx="2" />
+                    <line x1="3" y1="9.5" x2="21" y2="9.5" />
+                    <line x1="8" y1="3" x2="8" y2="7" />
+                    <line x1="16" y1="3" x2="16" y2="7" />
+                  </svg>
+                ),
               },
               {
                 title: "Remote Spotlights",
                 blurb: "A handful of monthly slots feature a 20–30 min remote Q&A with a national guest.",
+                icon: (
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6">
+                    <rect x="3" y="6" width="13" height="12" rx="2" />
+                    <path d="M16 10.5l5-3v9l-5-3z" />
+                  </svg>
+                ),
               },
               {
                 title: "Flagship Events",
                 blurb: "2–3 marquee events a year with our biggest speakers and widest audience.",
+                icon: (
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6">
+                    <path d="M12 3.5l2.6 5.3 5.9.8-4.3 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8-4.3-4.1 5.9-.8z" />
+                  </svg>
+                ),
               },
             ].map((f) => (
               <div key={f.title} className="rounded-2xl border border-slate-200 bg-cloud p-6">
+                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-brand-blue/10 text-brand-blue">
+                  {f.icon}
+                </div>
                 <p className="font-heading text-lg font-bold text-navy-black">{f.title}</p>
                 <p className="mt-2 text-sm text-slate">{f.blurb}</p>
               </div>
