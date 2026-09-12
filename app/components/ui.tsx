@@ -29,6 +29,45 @@ export function renderRichText(text: string): ReactNode {
   });
 }
 
+export function EventSpeaker({
+  name,
+  title,
+  bio,
+  photo,
+  companyLogo,
+}: {
+  name: string;
+  title: string;
+  bio?: string;
+  photo?: string;
+  companyLogo?: string;
+}) {
+  return (
+    <div className="mt-6 flex items-start gap-4 rounded-2xl border border-slate-200 bg-white p-4">
+      {photo && (
+        <Image
+          src={photo}
+          alt={name}
+          width={64}
+          height={64}
+          className="h-16 w-16 flex-shrink-0 rounded-full object-cover"
+        />
+      )}
+      <div>
+        <p className="text-xs font-bold uppercase tracking-widest text-brand-blue">Featured Speaker</p>
+        <p className="font-heading font-bold text-navy-black">{name}</p>
+        <p className="text-xs text-slate">{title}</p>
+        {bio && <p className="mt-1 text-sm leading-relaxed text-slate">{bio}</p>}
+        {companyLogo && (
+          <div className="relative mt-2 h-5 w-20">
+            <Image src={companyLogo} alt="" fill sizes="80px" className="object-contain object-left" />
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
 export function Badge({ children }: { children: ReactNode }) {
   return (
     <span className="inline-flex items-center gap-2 rounded-full border border-brand-blue/40 bg-brand-blue/10 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-brand-blue">

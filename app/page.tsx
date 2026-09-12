@@ -4,6 +4,7 @@ import Countdown from "./components/Countdown";
 import NewsletterForm from "./components/NewsletterForm";
 import {
   Badge,
+  EventSpeaker,
   NewsCard,
   PrimaryButton,
   SectionLabel,
@@ -105,6 +106,15 @@ export default function Home() {
             <p className="text-sm text-slate">{nextEvent.time}</p>
             <p className="text-sm text-slate">{nextEvent.location}</p>
             <p className="mt-4 text-sm leading-relaxed text-slate">{nextEvent.description}</p>
+            {nextEvent.speakers[0] && (
+              <EventSpeaker
+                name={nextEvent.speakers[0].name}
+                title={nextEvent.speakers[0].title}
+                bio={nextEvent.speakers[0].bio}
+                photo={nextEvent.speakers[0].photo}
+                companyLogo={nextEvent.speakers[0].companyLogo}
+              />
+            )}
             <div className="mt-6">
               <PrimaryButton href="/contact">Register Free →</PrimaryButton>
             </div>

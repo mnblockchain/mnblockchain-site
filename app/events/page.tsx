@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Countdown from "../components/Countdown";
-import { Badge, EventCard, PrimaryButton, SectionLabel } from "../components/ui";
+import { Badge, EventCard, EventSpeaker, PrimaryButton, SectionLabel } from "../components/ui";
 import { nextEvent, pastEvents } from "@/data/content";
 
 export const metadata: Metadata = {
@@ -51,6 +51,15 @@ export default function EventsPage() {
               <p className="text-sm text-slate">{nextEvent.time}</p>
               <p className="text-sm text-slate">{nextEvent.location}</p>
               <p className="mt-4 text-sm leading-relaxed text-slate">{nextEvent.description}</p>
+              {nextEvent.speakers[0] && (
+                <EventSpeaker
+                  name={nextEvent.speakers[0].name}
+                  title={nextEvent.speakers[0].title}
+                  bio={nextEvent.speakers[0].bio}
+                  photo={nextEvent.speakers[0].photo}
+                  companyLogo={nextEvent.speakers[0].companyLogo}
+                />
+              )}
             </div>
             <ul className="space-y-3">
               {nextEvent.learn.map((item) => (

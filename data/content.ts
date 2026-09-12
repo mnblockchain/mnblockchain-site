@@ -3,22 +3,29 @@
 // Keeping it in one file makes a content swap a data edit, not a design edit.
 
 export const nextEvent = {
-  // Date/time confirmed by Colin (2026-09-04): Sept 28, 5pm CT. Title,
-  // description, venue, and speaker are still placeholder pending real
-  // details — update as soon as they're set.
-  title: "Spotlight Meetup — September",
+  // Real details confirmed from the event flyer (2026-09-12): speaker,
+  // topic, venue (Frankie's), and timing.
+  title: "Building Stablecoins Under the GENIUS Act",
   date: "2026-09-28T17:00:00-05:00",
   dateLabel: "Monday, September 28, 2026",
-  time: "5:00 – 8:00 PM",
-  location: "3556 Winnetka Ave N, New Hope, MN 55427",
+  time: "5:00 PM arrival · 6:00 PM presentations",
+  location: "Frankie's, 3556 Winnetka Ave N, New Hope, MN 55427",
   description:
-    "Our monthly Spotlight Meetup — open discussion on where Minnesota blockchain policy and industry stand right now, plus open networking. Details TBD.",
+    "Zach Robins, Head of Legal at Brale, joins us to talk about building stablecoins under the new GENIUS Act — plus free pizza and open networking. Presented with Stand With Crypto.",
   learn: [
-    "What's moving in Minnesota blockchain policy this quarter",
-    "How local builders and investors are using the technology today",
+    "What the GENIUS Act actually requires of stablecoin issuers",
+    "How Brale builds compliant, programmable money",
     "Open Q&A and networking with the community",
   ],
-  speakers: [{ name: "Featured Speaker TBA", title: "Confirming for this slot" }],
+  speakers: [
+    {
+      name: "Zach Robins",
+      title: "Head of Legal, Brale",
+      bio: "Passionate about crypto, programmable money, and building the future of finance.",
+      photo: "/speakers/zach-robins.jpg",
+      companyLogo: "/speakers/brale-logo.png",
+    },
+  ],
 };
 
 export const stats = [
