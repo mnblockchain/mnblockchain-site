@@ -185,6 +185,31 @@ export function TeamCard({
   );
 }
 
+export function InvolvementCard({
+  title,
+  blurb,
+  ctaLabel,
+  ctaHref,
+}: {
+  title: string;
+  blurb: string;
+  ctaLabel: string;
+  ctaHref: string;
+}) {
+  return (
+    <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md">
+      <p className="font-heading text-lg font-bold text-brand-black">{title}</p>
+      <p className="mt-2 text-sm text-slate">{blurb}</p>
+      <Link
+        href={ctaHref}
+        className="mt-4 inline-block text-sm font-bold text-brand-black underline decoration-brand-blue decoration-2 underline-offset-4"
+      >
+        {ctaLabel} →
+      </Link>
+    </div>
+  );
+}
+
 export function SponsorCard({
   name,
   blurb,

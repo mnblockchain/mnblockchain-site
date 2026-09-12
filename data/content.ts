@@ -168,6 +168,29 @@ export const committees = [
   },
 ];
 
+// From mnblockchain.org/get-involved-with-minnesota-blockchain/ — the three
+// standing volunteer roles the org has actually asked for.
+export const volunteerRoles = [
+  {
+    name: "Event Planning & Operations",
+    blurb: "Help run monthly meetups and flagship events — logistics, day-of operations, and venue coordination.",
+  },
+  {
+    name: "Community Management & Memberships",
+    blurb: "Help members feel like members — onboarding, renewals, Slack engagement, and member communication.",
+  },
+  {
+    name: "Podcast & Video Editing",
+    blurb: "Help produce the podcast and event video/photo content — editing, publishing, and promotion.",
+  },
+];
+
+// Real invite link, pulled from a migrated news article (2026-09-04).
+// Slack invite links can expire — verify this still works before relying
+// on it for a launch push.
+export const slackInviteUrl =
+  "https://join.slack.com/t/mnblockchain/shared_invite/zt-1ms7z9uc0-FESZ7iuHr4OaHYStwDD77Q";
+
 export const testimonials = [
   {
     quote:

@@ -9,6 +9,7 @@ const quickLinks = [
   { label: "Membership", href: "/membership" },
   { label: "Policy", href: "/policy" },
   { label: "News", href: "/news" },
+  { label: "Get Involved", href: "/get-involved" },
   { label: "Contact", href: "/contact" },
 ];
 
