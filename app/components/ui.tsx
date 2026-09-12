@@ -43,19 +43,24 @@ export function EventSpeaker({
   companyLogo?: string;
 }) {
   return (
-    <div className="mt-6 flex items-start gap-4 rounded-2xl border border-slate-200 bg-white p-4">
+    <div className="mt-6 flex items-start gap-4 overflow-hidden rounded-2xl border border-bitcoin-orange/30 bg-bitcoin-orange/5 p-4">
       {photo && (
         <Image
           src={photo}
           alt={name}
-          width={64}
-          height={64}
-          className="h-16 w-16 flex-shrink-0 rounded-full object-cover"
+          width={80}
+          height={80}
+          className="h-20 w-20 flex-shrink-0 rounded-full border-2 border-bitcoin-orange object-cover"
         />
       )}
       <div>
-        <p className="text-xs font-bold uppercase tracking-widest text-brand-blue">Featured Speaker</p>
-        <p className="font-heading font-bold text-navy-black">{name}</p>
+        <p className="inline-flex items-center gap-1 text-xs font-bold uppercase tracking-widest text-bitcoin-orange">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="h-3.5 w-3.5">
+            <path d="M12 3.5l2.6 5.3 5.9.8-4.3 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8-4.3-4.1 5.9-.8z" />
+          </svg>
+          Featured Speaker
+        </p>
+        <p className="mt-1 font-heading text-lg font-bold text-navy-black">{name}</p>
         <p className="text-xs text-slate">{title}</p>
         {bio && <p className="mt-1 text-sm leading-relaxed text-slate">{bio}</p>}
         {companyLogo && (

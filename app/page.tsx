@@ -95,13 +95,21 @@ export default function Home() {
           {/* Next event details — moved up directly below the countdown box
               (the old "Next Event" section wrapper and "You'll Learn" list
               were removed; this card is what's left of it). */}
-          <div className="mt-8 rounded-3xl border border-slate-200 bg-cloud p-8 text-left shadow-sm sm:p-10">
-            <p className="text-xs font-bold uppercase tracking-widest text-navy-black">
-              Free · Open to Everyone
-            </p>
-            <h3 className="mt-2 font-heading text-2xl font-bold text-navy-black">
-              {nextEvent.title}
-            </h3>
+          <div className="relative overflow-hidden rounded-3xl border border-slate-200 bg-cloud text-left shadow-sm">
+            <div className="h-1.5 w-full bg-brand-blue" />
+            <div className="p-8 sm:p-10">
+              <div className="inline-flex items-center gap-1.5 rounded-full bg-brand-blue/10 px-3 py-1 text-xs font-bold uppercase tracking-widest text-brand-blue">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="h-3.5 w-3.5">
+                  <rect x="3" y="5" width="18" height="16" rx="2" />
+                  <line x1="3" y1="9.5" x2="21" y2="9.5" />
+                  <line x1="8" y1="3" x2="8" y2="7" />
+                  <line x1="16" y1="3" x2="16" y2="7" />
+                </svg>
+                Free · Open to Everyone
+              </div>
+              <h3 className="mt-3 font-heading text-2xl font-bold text-navy-black">
+                {nextEvent.title}
+              </h3>
             <p className="mt-3 text-sm text-slate">{nextEvent.dateLabel}</p>
             <p className="text-sm text-slate">{nextEvent.time}</p>
             <p className="text-sm text-slate">{nextEvent.location}</p>
@@ -117,6 +125,7 @@ export default function Home() {
             )}
             <div className="mt-6">
               <PrimaryButton href={nextEvent.eventbriteUrl}>Register Free →</PrimaryButton>
+            </div>
             </div>
           </div>
         </div>
