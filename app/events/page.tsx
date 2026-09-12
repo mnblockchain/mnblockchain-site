@@ -85,6 +85,30 @@ export default function EventsPage() {
         </div>
       </section>
 
+      <section className="bg-white py-16">
+        <div className="mx-auto max-w-3xl px-6">
+          <div className="relative overflow-hidden rounded-3xl border border-slate-200 bg-cloud text-center shadow-sm">
+            <div className="h-1.5 w-full bg-bitcoin-orange" />
+            <div className="p-8 sm:p-10">
+              <div className="mx-auto inline-flex items-center gap-1.5 rounded-full bg-bitcoin-orange/10 px-3 py-1 text-xs font-bold uppercase tracking-widest text-bitcoin-orange">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="h-3.5 w-3.5">
+                  <path d="M12 3.5l2.6 5.3 5.9.8-4.3 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8-4.3-4.1 5.9-.8z" />
+                </svg>
+                Coming in October
+              </div>
+              <h2 className="mt-3 font-heading text-3xl font-extrabold text-navy-black">
+                Teaming Up with Culture Convergence
+              </h2>
+              <p className="mx-auto mt-4 max-w-xl text-slate">
+                We&rsquo;re partnering with Culture Convergence for their annual gathering —
+                panel discussions and food provided. Full details, date, and registration
+                coming soon.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="bg-white py-20">
         <div className="mx-auto max-w-6xl px-6">
           <SectionLabel>Event Formats</SectionLabel>
