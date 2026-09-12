@@ -24,7 +24,7 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-brand-black-soft pb-[380px] pt-0 sm:pb-[484px] sm:pt-0">
+      <section className="relative overflow-hidden bg-brand-plum pb-[380px] pt-0 sm:pb-[484px] sm:pt-0">
         <Image
           src="/hero/twins-nft-night.jpg"
           alt="MNblockchain community at a Twins NFT Night event"
@@ -36,13 +36,13 @@ export default function Home() {
         {/* Light, uniform scrim so the photo reads clearly outside the cards
             below — the cards themselves are what guarantee text legibility,
             not this overlay. */}
-        <div className="absolute inset-0 bg-brand-black-soft/25" />
+        <div className="absolute inset-0 bg-brand-plum/25" />
 
         {/* Box 1: headline, blended directly into the nav bar (full width,
             flush against the top, no gap) so the photo's crowd — heads
             included — only becomes visible below it, instead of a floating
             card sitting on top of people's faces. */}
-        <div className="relative w-full bg-brand-black px-6 py-2 text-center shadow-2xl sm:py-4">
+        <div className="relative w-full bg-brand-plum px-6 py-2 text-center shadow-2xl sm:py-4">
           <div className="mx-auto max-w-4xl">
             <div className="mb-2 flex justify-center">
               <Badge>Monthly meetups · Seasonal events · Advocacy opportunities</Badge>
@@ -59,14 +59,14 @@ export default function Home() {
             sized header box avoids them entirely, so this fades solid black
             into the photo gradually, reading as an intentional dark
             vignette rather than a box chopping off faces. */}
-        <div className="relative h-40 w-full bg-gradient-to-b from-brand-black to-transparent sm:h-56" />
+        <div className="relative h-40 w-full bg-gradient-to-b from-brand-plum to-transparent sm:h-56" />
       </section>
 
       {/* Box 2: next event + org stats — pulled up to start over the bottom
           of the hero photo, then bleeds down into the section below. */}
       <div className="relative z-10 -mt-28 px-6 sm:-mt-32">
         <div className="mx-auto max-w-4xl">
-          <div className="rounded-3xl border border-white/10 bg-brand-black-soft/90 px-6 py-10 text-center shadow-2xl sm:px-12 sm:py-12">
+          <div className="rounded-3xl border border-white/10 bg-brand-plum/90 px-6 py-10 text-center shadow-2xl sm:px-12 sm:py-12">
             <div className="mb-5 flex items-center justify-center gap-3">
               <span className="relative flex h-3 w-3">
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-bitcoin-orange opacity-75" />
@@ -95,10 +95,10 @@ export default function Home() {
               (the old "Next Event" section wrapper and "You'll Learn" list
               were removed; this card is what's left of it). */}
           <div className="mt-8 rounded-3xl border border-slate-200 bg-cloud p-8 text-left shadow-sm sm:p-10">
-            <p className="text-xs font-bold uppercase tracking-widest text-brand-black">
+            <p className="text-xs font-bold uppercase tracking-widest text-brand-plum">
               Free · Open to Everyone
             </p>
-            <h3 className="mt-2 font-heading text-2xl font-bold text-brand-black">
+            <h3 className="mt-2 font-heading text-2xl font-bold text-brand-plum">
               {nextEvent.title}
             </h3>
             <p className="mt-3 text-sm text-slate">{nextEvent.dateLabel}</p>
@@ -118,12 +118,12 @@ export default function Home() {
       <section className="bg-white py-20">
         <div className="mx-auto max-w-6xl px-6">
           <div className="flex flex-wrap items-end justify-between gap-4">
-            <h2 className="font-heading text-3xl font-extrabold text-brand-black sm:text-4xl">
+            <h2 className="font-heading text-3xl font-extrabold text-brand-plum sm:text-4xl">
               News &amp; Articles
             </h2>
             <Link
               href="/news"
-              className="text-sm font-bold text-brand-black underline decoration-brand-blue decoration-2 underline-offset-4"
+              className="text-sm font-bold text-brand-plum underline decoration-brand-blue decoration-2 underline-offset-4"
             >
               See All News →
             </Link>
@@ -153,13 +153,13 @@ export default function Home() {
           <div className="flex flex-wrap items-end justify-between gap-4">
             <div>
               <SectionLabel>Meet the Team</SectionLabel>
-              <h2 className="font-heading text-3xl font-extrabold text-brand-black sm:text-4xl">
+              <h2 className="font-heading text-3xl font-extrabold text-brand-plum sm:text-4xl">
                 The People Behind MNblockchain
               </h2>
             </div>
             <Link
               href="/about"
-              className="text-sm font-bold text-brand-black underline decoration-brand-blue decoration-2 underline-offset-4"
+              className="text-sm font-bold text-brand-plum underline decoration-brand-blue decoration-2 underline-offset-4"
             >
               Meet the Full Board →
             </Link>
@@ -178,13 +178,13 @@ export default function Home() {
           <div className="flex flex-wrap items-end justify-between gap-4">
             <div>
               <SectionLabel>Proud Sponsors</SectionLabel>
-              <h2 className="font-heading text-3xl font-extrabold text-brand-black sm:text-4xl">
+              <h2 className="font-heading text-3xl font-extrabold text-brand-plum sm:text-4xl">
                 Thank You to Our Partner Organizations
               </h2>
             </div>
             <Link
               href="/sponsors"
-              className="text-sm font-bold text-brand-black underline decoration-brand-blue decoration-2 underline-offset-4"
+              className="text-sm font-bold text-brand-plum underline decoration-brand-blue decoration-2 underline-offset-4"
             >
               Become a Sponsor →
             </Link>
@@ -198,7 +198,7 @@ export default function Home() {
       </section>
 
       {/* Newsletter CTA */}
-      <section className="bg-brand-black py-16">
+      <section className="bg-brand-plum py-16">
         <div className="mx-auto max-w-3xl px-6 text-center">
           <h2 className="font-heading text-2xl font-extrabold text-white sm:text-3xl">
             Get Notified About Upcoming Events
