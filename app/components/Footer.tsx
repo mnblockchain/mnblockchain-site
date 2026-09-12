@@ -13,9 +13,21 @@ const quickLinks = [
 ];
 
 const social = [
-  { label: "LinkedIn", href: "https://www.linkedin.com/company/mnblockchain/" },
-  { label: "X", href: "https://twitter.com/mnblockchain/" },
-  { label: "YouTube", href: "https://www.youtube.com/@mnblockchain" },
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/company/mnblockchain/",
+    path: "M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.11 20.45H3.56V9h3.55v11.45z",
+  },
+  {
+    label: "X",
+    href: "https://twitter.com/mnblockchain/",
+    path: "M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z",
+  },
+  {
+    label: "YouTube",
+    href: "https://www.youtube.com/@mnblockchain",
+    path: "M23.498 6.186a2.997 2.997 0 0 0-2.113-2.12C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.385.521A2.997 2.997 0 0 0 .502 6.186 31.26 31.26 0 0 0 0 12a31.26 31.26 0 0 0 .502 5.814 2.997 2.997 0 0 0 2.113 2.12c1.88.521 9.385.521 9.385.521s7.505 0 9.385-.521a2.997 2.997 0 0 0 2.113-2.12A31.26 31.26 0 0 0 24 12a31.26 31.26 0 0 0-.502-5.814zM9.545 15.568V8.432L15.818 12z",
+  },
 ];
 
 export default function Footer() {
@@ -29,16 +41,19 @@ export default function Footer() {
               Building community and industry in blockchain &amp; web3 across Minnesota — education,
               events, and policy.
             </p>
-            <div className="mt-6 flex gap-4">
+            <div className="mt-6 flex gap-3">
               {social.map((s) => (
                 <a
                   key={s.label}
                   href={s.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-xs font-bold uppercase tracking-widest text-white/50 hover:text-white"
+                  aria-label={s.label}
+                  className="inline-flex h-8 w-8 items-center justify-center rounded-md bg-bitcoin-orange text-brand-black-soft transition-colors hover:bg-bitcoin-orange/80"
                 >
-                  {s.label}
+                  <svg viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4">
+                    <path d={s.path} />
+                  </svg>
                 </a>
               ))}
             </div>
