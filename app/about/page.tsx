@@ -13,7 +13,7 @@ export default function AboutPage() {
     <>
       <section className="relative overflow-hidden py-24 text-center">
         <Image
-          src="/about/community-photo.jpg"
+          src="/about/community-photo-cropped.jpg"
           alt="MNblockchain community members at an event"
           fill
           priority
