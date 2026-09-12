@@ -189,10 +189,12 @@ export function SponsorCard({
   name,
   blurb,
   logo,
+  url,
 }: {
   name: string;
   blurb: string;
   logo?: string;
+  url?: string;
 }) {
   return (
     <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md">
@@ -204,12 +206,23 @@ export function SponsorCard({
         <p className="font-heading text-lg font-bold text-brand-black">{name}</p>
       )}
       <p className="mt-2 text-sm text-slate">{blurb}</p>
-      <Link
-        href="/sponsors"
-        className="mt-4 inline-block text-sm font-bold text-brand-black underline decoration-brand-blue decoration-2 underline-offset-4"
-      >
-        Learn More →
-      </Link>
+      {url ? (
+        <a
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-4 inline-block text-sm font-bold text-brand-black underline decoration-brand-blue decoration-2 underline-offset-4"
+        >
+          Visit Website →
+        </a>
+      ) : (
+        <Link
+          href="/sponsors"
+          className="mt-4 inline-block text-sm font-bold text-brand-black underline decoration-brand-blue decoration-2 underline-offset-4"
+        >
+          Learn More →
+        </Link>
+      )}
     </div>
   );
 }

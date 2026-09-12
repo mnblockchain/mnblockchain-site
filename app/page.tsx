@@ -191,7 +191,7 @@ export default function Home() {
           </div>
           <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {sponsors.map((s) => (
-              <SponsorCard key={s.name} name={s.name} blurb={s.blurb} logo={s.logo} />
+              <SponsorCard key={s.name} name={s.name} blurb={s.blurb} logo={s.logo} url={s.url} />
             ))}
           </div>
         </div>

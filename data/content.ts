@@ -100,11 +100,11 @@ export const sponsorTiers = [
 // partners (e.g. Stand With Crypto reads more like a partner) — flagged so
 // Brandon/Colin can correct the framing once real tiers are assigned.
 export const sponsors = [
-  { name: "Spencer Fane", blurb: "Law firm partner.", logo: "/sponsors/spencer-fane.png" },
-  { name: "Fredrikson", blurb: "Law firm partner.", logo: "/sponsors/fredrikson.png" },
-  { name: "Quantum Lex", blurb: "Partner.", logo: "/sponsors/quantum-lex.jpg" },
-  { name: "Dropchain", blurb: "Partner.", logo: "/sponsors/dropchain.svg" },
-  { name: "Stand With Crypto", blurb: "Policy partner.", logo: "/sponsors/stand-with-crypto.png" },
+  { name: "Spencer Fane", blurb: "Law firm partner.", logo: "/sponsors/spencer-fane.png", url: "https://www.spencerfane.com/" },
+  { name: "Fredrikson", blurb: "Law firm partner.", logo: "/sponsors/fredrikson.png", url: "https://www.fredlaw.com/" },
+  { name: "Quantum Lex", blurb: "Partner.", logo: "/sponsors/quantum-lex.jpg", url: "https://www.quantumlex.io/" },
+  { name: "Dropchain", blurb: "Partner.", logo: "/sponsors/dropchain.svg", url: "https://www.dropchain.network/" },
+  { name: "Stand With Crypto", blurb: "Policy partner.", logo: "/sponsors/stand-with-crypto.png", url: "https://www.standwithcrypto.org/" },
 ];
 
 // Real membership program, from mnblockchain.org/membership/ — a single paid
