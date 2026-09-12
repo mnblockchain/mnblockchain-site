@@ -59,6 +59,10 @@ export default function AboutPage() {
           <h2 className="font-heading text-3xl font-extrabold text-navy-black">
             A Hub for Blockchain in Minnesota
           </h2>
+          <p className="mt-6 font-heading text-xl font-bold leading-relaxed text-navy-black">
+            To make Minnesota a leading hub for blockchain innovation and adoption through
+            education, community, and collaboration.
+          </p>
           <p className="mt-6 text-lg leading-relaxed text-slate">
             MNblockchain exists to build community and industry around blockchain and web3
             technologies in Minnesota — through free monthly events, flagship gatherings,
