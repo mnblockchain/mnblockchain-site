@@ -17,7 +17,7 @@ export default function Nav() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-brand-black">
+    <header className="sticky top-0 z-50 bg-navy-black">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
         <Logo />
 
