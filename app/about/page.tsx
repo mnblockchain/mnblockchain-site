@@ -37,13 +37,22 @@ export default function AboutPage() {
       </section>
 
       <section className="relative overflow-hidden bg-white py-20">
-        {/* MN state outline as a subtle watermark behind the mission copy. */}
-        <Image
-          src="/about/minnesota-outline.png"
-          alt=""
-          width={2000}
-          height={1125}
-          className="pointer-events-none absolute left-1/2 top-1/2 h-[85%] w-auto max-h-[420px] -translate-x-1/2 -translate-y-1/2 object-contain opacity-15"
+        {/* MN state outline as a subtle watermark behind the mission copy.
+            Rendered as a CSS mask (not an <img>) so the black line art can
+            be recolored to brand blue exactly, instead of approximating
+            the color with image filters. */}
+        <div
+          className="pointer-events-none absolute left-1/2 top-1/2 h-[85%] w-auto max-h-[420px] aspect-[2000/1125] -translate-x-1/2 -translate-y-1/2 bg-brand-blue opacity-20"
+          style={{
+            WebkitMaskImage: "url(/about/minnesota-outline.png)",
+            maskImage: "url(/about/minnesota-outline.png)",
+            WebkitMaskSize: "contain",
+            maskSize: "contain",
+            WebkitMaskRepeat: "no-repeat",
+            maskRepeat: "no-repeat",
+            WebkitMaskPosition: "center",
+            maskPosition: "center",
+          }}
         />
         <div className="relative mx-auto max-w-3xl px-6">
           <SectionLabel>Our Mission</SectionLabel>
