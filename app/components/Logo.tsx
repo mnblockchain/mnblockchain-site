@@ -6,7 +6,7 @@ export default function Logo({ dark = false }: { dark?: boolean }) {
   return (
     <Link href="/" className="font-wordmark text-2xl font-bold tracking-tight">
       <span className="text-brand-blue">MN</span>
-      <span className={dark ? "text-brand-black" : "text-white"}>blockchain</span>
+      <span className={dark ? "text-navy-black" : "text-white"}>blockchain</span>
     </Link>
   );
 }

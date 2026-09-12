@@ -50,7 +50,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={s.label}
-                  className="inline-flex h-8 w-8 items-center justify-center rounded-md bg-bitcoin-orange text-brand-black-soft transition-colors hover:bg-bitcoin-orange/80"
+                  className="inline-flex h-8 w-8 items-center justify-center rounded-md bg-bitcoin-orange text-navy-black transition-colors hover:bg-bitcoin-orange/80"
                 >
                   <svg viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4">
                     <path d={s.path} />

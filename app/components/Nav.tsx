@@ -36,7 +36,7 @@ export default function Nav() {
         <div className="hidden lg:block">
           <Link
             href="/get-involved"
-            className="rounded-full bg-bitcoin-orange px-5 py-2.5 text-sm font-bold uppercase tracking-wide text-brand-black-soft transition-colors hover:bg-bitcoin-orange/80"
+            className="rounded-full bg-bitcoin-orange px-5 py-2.5 text-sm font-bold uppercase tracking-wide text-navy-black transition-colors hover:bg-bitcoin-orange/80"
           >
             Get Involved
           </Link>
@@ -68,7 +68,7 @@ export default function Nav() {
           <Link
             href="/get-involved"
             onClick={() => setOpen(false)}
-            className="mt-2 inline-block w-fit rounded-full bg-bitcoin-orange px-5 py-2.5 text-sm font-bold uppercase tracking-wide text-brand-black-soft"
+            className="mt-2 inline-block w-fit rounded-full bg-bitcoin-orange px-5 py-2.5 text-sm font-bold uppercase tracking-wide text-navy-black"
           >
             Get Involved
           </Link>

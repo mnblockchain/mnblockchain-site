@@ -12,7 +12,7 @@ export default function NewsPage() {
 
   return (
     <>
-      <section className="bg-gradient-to-br from-brand-black-soft via-brand-black to-brand-black-soft py-20 text-center">
+      <section className="bg-gradient-to-br from-navy-black via-navy-black to-navy-black py-20 text-center">
         <div className="mx-auto max-w-3xl px-6">
           <Badge>Recaps, updates, and stories</Badge>
           <h1 className="mt-6 font-heading text-4xl font-extrabold text-white sm:text-5xl">

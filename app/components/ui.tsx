@@ -21,7 +21,7 @@ export function renderRichText(text: string): ReactNode {
         href={href}
         target="_blank"
         rel="noopener noreferrer"
-        className="font-semibold text-brand-black underline decoration-brand-blue decoration-2 underline-offset-2 hover:text-brand-blue"
+        className="font-semibold text-navy-black underline decoration-brand-blue decoration-2 underline-offset-2 hover:text-brand-blue"
       >
         {linkText}
       </a>
@@ -39,7 +39,7 @@ export function Badge({ children }: { children: ReactNode }) {
 
 export function SectionLabel({ children }: { children: ReactNode }) {
   return (
-    <p className="mb-3 text-xs font-bold uppercase tracking-[0.25em] text-brand-black">
+    <p className="mb-3 text-xs font-bold uppercase tracking-[0.25em] text-navy-black">
       {children}
     </p>
   );
@@ -55,7 +55,7 @@ export function PrimaryButton({
   return (
     <Link
       href={href}
-      className="inline-flex items-center justify-center gap-2 rounded-full bg-bitcoin-orange px-7 py-3.5 text-sm font-bold uppercase tracking-wide text-brand-black-soft transition-colors hover:bg-bitcoin-orange/80"
+      className="inline-flex items-center justify-center gap-2 rounded-full bg-bitcoin-orange px-7 py-3.5 text-sm font-bold uppercase tracking-wide text-navy-black transition-colors hover:bg-bitcoin-orange/80"
     >
       {children}
     </Link>
@@ -77,7 +77,7 @@ export function OutlineButton({
       className={`inline-flex items-center justify-center gap-2 rounded-full border-2 px-7 py-3.5 text-sm font-bold uppercase tracking-wide transition-colors ${
         dark
           ? "border-white/30 text-white hover:border-white"
-          : "border-brand-black/30 text-brand-black hover:border-brand-black"
+          : "border-navy-black/30 text-navy-black hover:border-navy-black"
       }`}
     >
       {children}
@@ -99,14 +99,14 @@ export function StatBlock({ value, label }: { value: string; label: string }) {
 export function SpeakerCard({ name, title }: { name: string; title: string }) {
   return (
     <div className="rounded-2xl border border-slate-200 bg-white p-6 text-center shadow-sm transition-shadow hover:shadow-md">
-      <div className="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-full bg-brand-black/10 text-2xl font-bold text-brand-black">
+      <div className="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-full bg-navy-black/10 text-2xl font-bold text-navy-black">
         {name
           .split(" ")
           .map((p) => p[0])
           .join("")
           .slice(0, 2)}
       </div>
-      <p className="font-heading font-bold text-brand-black">{name}</p>
+      <p className="font-heading font-bold text-navy-black">{name}</p>
       <p className="mt-1 text-sm text-slate">{title}</p>
     </div>
   );
@@ -134,7 +134,7 @@ export function TeamCard({
           className="mx-auto mb-4 h-40 w-40 rounded-2xl object-cover"
         />
       ) : (
-        <div className="mx-auto mb-4 flex h-40 w-40 items-center justify-center rounded-2xl bg-brand-black text-4xl font-bold text-white">
+        <div className="mx-auto mb-4 flex h-40 w-40 items-center justify-center rounded-2xl bg-navy-black text-4xl font-bold text-white">
           {name
             .split(" ")
             .map((p) => p[0])
@@ -143,8 +143,8 @@ export function TeamCard({
             .join("")}
         </div>
       )}
-      <p className="font-heading font-bold text-brand-black">{name}</p>
-      <p className="mt-1 text-xs font-bold uppercase tracking-widest text-brand-black">
+      <p className="font-heading font-bold text-navy-black">{name}</p>
+      <p className="mt-1 text-xs font-bold uppercase tracking-widest text-navy-black">
         {role}
       </p>
       <a
@@ -152,7 +152,7 @@ export function TeamCard({
         target="_blank"
         rel="noopener noreferrer"
         aria-label={`${name} on LinkedIn`}
-        className="mt-3 inline-flex h-8 w-8 items-center justify-center rounded-md bg-bitcoin-orange text-brand-black-soft transition-colors hover:bg-bitcoin-orange/80"
+        className="mt-3 inline-flex h-8 w-8 items-center justify-center rounded-md bg-bitcoin-orange text-navy-black transition-colors hover:bg-bitcoin-orange/80"
       >
         <svg viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4">
           <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.11 20.45H3.56V9h3.55v11.45z" />
@@ -175,11 +175,11 @@ export function InvolvementCard({
 }) {
   return (
     <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md">
-      <p className="font-heading text-lg font-bold text-brand-black">{title}</p>
+      <p className="font-heading text-lg font-bold text-navy-black">{title}</p>
       <p className="mt-2 text-sm text-slate">{blurb}</p>
       <Link
         href={ctaHref}
-        className="mt-4 inline-block text-sm font-bold text-brand-black underline decoration-brand-blue decoration-2 underline-offset-4"
+        className="mt-4 inline-block text-sm font-bold text-navy-black underline decoration-brand-blue decoration-2 underline-offset-4"
       >
         {ctaLabel} →
       </Link>
@@ -205,7 +205,7 @@ export function SponsorCard({
           <Image src={logo} alt={name} fill sizes="200px" className="object-contain object-left" />
         </div>
       ) : (
-        <p className="font-heading text-lg font-bold text-brand-black">{name}</p>
+        <p className="font-heading text-lg font-bold text-navy-black">{name}</p>
       )}
       <p className="mt-2 text-sm text-slate">{blurb}</p>
       {url ? (
@@ -213,14 +213,14 @@ export function SponsorCard({
           href={url}
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-4 inline-block text-sm font-bold text-brand-black underline decoration-brand-blue decoration-2 underline-offset-4"
+          className="mt-4 inline-block text-sm font-bold text-navy-black underline decoration-brand-blue decoration-2 underline-offset-4"
         >
           Learn More →
         </a>
       ) : (
         <Link
           href="/sponsors"
-          className="mt-4 inline-block text-sm font-bold text-brand-black underline decoration-brand-blue decoration-2 underline-offset-4"
+          className="mt-4 inline-block text-sm font-bold text-navy-black underline decoration-brand-blue decoration-2 underline-offset-4"
         >
           Learn More →
         </Link>
@@ -240,8 +240,8 @@ export function EventCard({
 }) {
   return (
     <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-      <p className="text-xs font-bold uppercase tracking-widest text-brand-black">{date}</p>
-      <p className="mt-2 font-heading text-lg font-bold text-brand-black">{title}</p>
+      <p className="text-xs font-bold uppercase tracking-widest text-navy-black">{date}</p>
+      <p className="mt-2 font-heading text-lg font-bold text-navy-black">{title}</p>
       <p className="mt-2 text-sm text-slate">{blurb}</p>
     </div>
   );
@@ -277,10 +277,10 @@ export function NewsCard({
         />
       </div>
       <div className="p-5">
-        <p className="text-xs font-bold uppercase tracking-widest text-brand-black">
+        <p className="text-xs font-bold uppercase tracking-widest text-navy-black">
           {dateLabel} · {category}
         </p>
-        <p className="mt-2 font-heading font-bold leading-snug text-brand-black">{title}</p>
+        <p className="mt-2 font-heading font-bold leading-snug text-navy-black">{title}</p>
         <p className="mt-2 text-sm text-slate">{excerpt}</p>
       </div>
     </Link>

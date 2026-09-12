@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function PolicyPage() {
   return (
     <>
-      <section className="bg-gradient-to-br from-brand-black-soft via-brand-black to-brand-black-soft py-20 text-center">
+      <section className="bg-gradient-to-br from-navy-black via-navy-black to-navy-black py-20 text-center">
         <div className="mx-auto max-w-3xl px-6">
           <Badge>Government &amp; Law Committee</Badge>
           <h1 className="mt-6 font-heading text-4xl font-extrabold text-white sm:text-5xl">
@@ -26,11 +26,11 @@ export default function PolicyPage() {
       <section className="bg-white py-20">
         <div className="mx-auto max-w-5xl px-6">
           <SectionLabel>What We Track</SectionLabel>
-          <h2 className="font-heading text-3xl font-extrabold text-brand-black">Our Focus Areas</h2>
+          <h2 className="font-heading text-3xl font-extrabold text-navy-black">Our Focus Areas</h2>
           <div className="mt-8 grid gap-6 md:grid-cols-3">
             {policyFocus.map((p) => (
               <div key={p.title} className="rounded-2xl border border-slate-200 bg-cloud p-6">
-                <p className="font-heading font-bold text-brand-black">{p.title}</p>
+                <p className="font-heading font-bold text-navy-black">{p.title}</p>
                 <p className="mt-2 text-sm leading-relaxed text-slate">{p.blurb}</p>
               </div>
             ))}
@@ -41,7 +41,7 @@ export default function PolicyPage() {
       <section className="bg-cloud py-20">
         <div className="mx-auto max-w-3xl px-6 text-center">
           <SectionLabel>Our Approach</SectionLabel>
-          <h2 className="font-heading text-3xl font-extrabold text-brand-black">
+          <h2 className="font-heading text-3xl font-extrabold text-navy-black">
             Nonpartisan by Design
           </h2>
           <p className="mt-4 text-slate">

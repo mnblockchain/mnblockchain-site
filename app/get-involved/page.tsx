@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function GetInvolvedPage() {
   return (
     <>
-      <section className="bg-gradient-to-br from-brand-black-soft via-brand-black to-brand-black-soft py-20 text-center">
+      <section className="bg-gradient-to-br from-navy-black via-navy-black to-navy-black py-20 text-center">
         <div className="mx-auto max-w-3xl px-6">
           <Badge>No membership required to get involved</Badge>
           <h1 className="mt-6 font-heading text-4xl font-extrabold text-white sm:text-5xl">
@@ -28,7 +28,7 @@ export default function GetInvolvedPage() {
       <section className="bg-white py-20">
         <div className="mx-auto max-w-6xl px-6">
           <SectionLabel>Committees</SectionLabel>
-          <h2 className="font-heading text-3xl font-extrabold text-brand-black sm:text-4xl">
+          <h2 className="font-heading text-3xl font-extrabold text-navy-black sm:text-4xl">
             Find Your Committee
           </h2>
           <p className="mt-3 max-w-2xl text-slate">
@@ -53,7 +53,7 @@ export default function GetInvolvedPage() {
       <section className="bg-cloud py-20">
         <div className="mx-auto max-w-6xl px-6">
           <SectionLabel>Volunteer</SectionLabel>
-          <h2 className="font-heading text-3xl font-extrabold text-brand-black sm:text-4xl">
+          <h2 className="font-heading text-3xl font-extrabold text-navy-black sm:text-4xl">
             Pitch In on Something Specific
           </h2>
           <p className="mt-3 max-w-2xl text-slate">
@@ -78,7 +78,7 @@ export default function GetInvolvedPage() {
       <section className="bg-white py-20">
         <div className="mx-auto max-w-3xl px-6 text-center">
           <SectionLabel>Speak</SectionLabel>
-          <h2 className="font-heading text-3xl font-extrabold text-brand-black">
+          <h2 className="font-heading text-3xl font-extrabold text-navy-black">
             Have Something Worth Sharing?
           </h2>
           <p className="mt-4 text-slate">
@@ -95,7 +95,7 @@ export default function GetInvolvedPage() {
       <section className="bg-cloud py-20">
         <div className="mx-auto max-w-3xl px-6 text-center">
           <SectionLabel>Partner</SectionLabel>
-          <h2 className="font-heading text-3xl font-extrabold text-brand-black">
+          <h2 className="font-heading text-3xl font-extrabold text-navy-black">
             Sponsor or Partner With Us
           </h2>
           <p className="mt-4 text-slate">
@@ -109,7 +109,7 @@ export default function GetInvolvedPage() {
       </section>
 
       {/* Stay connected */}
-      <section className="bg-brand-black py-16">
+      <section className="bg-navy-black py-16">
         <div className="mx-auto max-w-2xl px-6 text-center">
           <h2 className="font-heading text-2xl font-extrabold text-white sm:text-3xl">
             Join the Community on Slack
@@ -122,7 +122,7 @@ export default function GetInvolvedPage() {
               href={slackInviteUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-bitcoin-orange px-7 py-3.5 text-sm font-bold uppercase tracking-wide text-brand-black-soft transition-colors hover:bg-bitcoin-orange/80"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-bitcoin-orange px-7 py-3.5 text-sm font-bold uppercase tracking-wide text-navy-black transition-colors hover:bg-bitcoin-orange/80"
             >
               Join Our Slack →
             </a>
