@@ -37,6 +37,24 @@ export default function SponsorsPage() {
 
       <section className="bg-white py-20">
         <div className="mx-auto max-w-6xl px-6">
+          <SectionLabel>Thank You</SectionLabel>
+          <h2 className="font-heading text-3xl font-extrabold text-navy-black">
+            The Partners Who Make This Possible
+          </h2>
+          <p className="mt-3 max-w-2xl text-slate">
+            Every free event, every speaker, every gathering — powered by the companies below.
+            We&rsquo;re grateful for their support of Minnesota&rsquo;s blockchain community.
+          </p>
+          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {sponsors.map((s) => (
+              <SponsorCard key={s.name} name={s.name} blurb={s.blurb} logo={s.logo} url={s.url} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-cloud py-20">
+        <div className="mx-auto max-w-6xl px-6">
           <SectionLabel>Sponsorship Tiers</SectionLabel>
           <h2 className="font-heading text-3xl font-extrabold text-navy-black">
             Packages Built for Real Value
@@ -48,7 +66,7 @@ export default function SponsorsPage() {
                 className={`rounded-2xl border p-8 ${
                   tier.featured
                     ? "border-brand-blue bg-navy-black text-white shadow-lg"
-                    : "border-slate-200 bg-cloud"
+                    : "border-slate-200 bg-white"
                 }`}
               >
                 <p
@@ -73,20 +91,6 @@ export default function SponsorsPage() {
                   ))}
                 </ul>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-cloud py-20">
-        <div className="mx-auto max-w-6xl px-6">
-          <SectionLabel>Current Sponsors</SectionLabel>
-          <h2 className="font-heading text-3xl font-extrabold text-navy-black">
-            Free Events, Powered by Great Partners
-          </h2>
-          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {sponsors.map((s) => (
-              <SponsorCard key={s.name} name={s.name} blurb={s.blurb} logo={s.logo} url={s.url} />
             ))}
           </div>
         </div>
