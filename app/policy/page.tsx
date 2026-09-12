@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Badge, PrimaryButton, SectionLabel } from "../components/ui";
 import { policyFocus } from "@/data/content";
 
@@ -10,8 +11,18 @@ export const metadata: Metadata = {
 export default function PolicyPage() {
   return (
     <>
-      <section className="bg-gradient-to-br from-navy-black via-navy-black to-navy-black py-20 text-center">
-        <div className="mx-auto max-w-3xl px-6">
+      <section className="relative overflow-hidden py-20 text-center">
+        <Image
+          src="/policy/header-photo-cropped.jpg"
+          alt="MNblockchain members at a Stand With Crypto policy event"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-top"
+        />
+        {/* Solid scrim so headline text stays legible over the photo. */}
+        <div className="absolute inset-0 bg-navy-black/70" />
+        <div className="relative mx-auto max-w-3xl px-6">
           <Badge>Government &amp; Law Committee</Badge>
           <h1 className="mt-6 font-heading text-4xl font-extrabold text-white sm:text-5xl">
             Policy &amp; Advocacy
