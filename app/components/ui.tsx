@@ -276,20 +276,70 @@ export function SponsorCard({
   );
 }
 
+const eventTypeIcon: Record<"meetup" | "spotlight" | "flagship", ReactNode> = {
+  meetup: (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="h-3.5 w-3.5">
+      <rect x="3" y="5" width="18" height="16" rx="2" />
+      <line x1="3" y1="9.5" x2="21" y2="9.5" />
+      <line x1="8" y1="3" x2="8" y2="7" />
+      <line x1="16" y1="3" x2="16" y2="7" />
+    </svg>
+  ),
+  spotlight: (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="h-3.5 w-3.5">
+      <rect x="3" y="6" width="13" height="12" rx="2" />
+      <path d="M16 10.5l5-3v9l-5-3z" />
+    </svg>
+  ),
+  flagship: (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="h-3.5 w-3.5">
+      <path d="M12 3.5l2.6 5.3 5.9.8-4.3 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8-4.3-4.1 5.9-.8z" />
+    </svg>
+  ),
+};
+
 export function EventCard({
   date,
   title,
   blurb,
+  image,
+  type = "meetup",
 }: {
   date: string;
   title: string;
   blurb: string;
+  image?: string;
+  type?: "meetup" | "spotlight" | "flagship";
 }) {
+  const orange = type === "flagship";
   return (
-    <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-      <p className="text-xs font-bold uppercase tracking-widest text-navy-black">{date}</p>
-      <p className="mt-2 font-heading text-lg font-bold text-navy-black">{title}</p>
-      <p className="mt-2 text-sm text-slate">{blurb}</p>
+    <div className="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+      <div className={orange ? "h-1.5 w-full bg-bitcoin-orange" : "h-1.5 w-full bg-brand-blue"} />
+      {image && (
+        <div className="relative aspect-[16/10] overflow-hidden">
+          <Image
+            src={image}
+            alt={title}
+            fill
+            sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
+            className="object-cover transition-transform duration-300 group-hover:scale-105"
+          />
+        </div>
+      )}
+      <div className="p-6">
+        <div
+          className={
+            orange
+              ? "inline-flex items-center gap-1.5 rounded-full bg-bitcoin-orange/10 px-3 py-1 text-xs font-bold uppercase tracking-widest text-bitcoin-orange"
+              : "inline-flex items-center gap-1.5 rounded-full bg-brand-blue/10 px-3 py-1 text-xs font-bold uppercase tracking-widest text-brand-blue"
+          }
+        >
+          {eventTypeIcon[type]}
+          {date}
+        </div>
+        <p className="mt-3 font-heading text-lg font-bold text-navy-black">{title}</p>
+        <p className="mt-2 text-sm text-slate">{blurb}</p>
+      </div>
     </div>
   );
 }

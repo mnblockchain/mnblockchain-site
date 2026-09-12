@@ -40,26 +40,36 @@ export const pastEvents = [
     date: "August 31, 2026",
     title: "How to Spot Red Flags in the Industry",
     blurb: "Crypto consultant Josiah Wilson (LIBREX Crypto Consulting) on spotting danger in the industry — beyond the obvious scams.",
+    image: "/news/red-flags-aug2026.jpeg",
+    type: "meetup" as const,
   },
   {
     date: "June 22, 2026",
     title: "A Team of One",
     blurb: "Builder Ben Carlson (\"Mr. Fun Guy\") on using AI to do the work of many — presented at Frankie's.",
+    image: "/news/team-of-one.jpg",
+    type: "meetup" as const,
   },
   {
     date: "June 22, 2026",
     title: "Impressive Turnout at Crypto Spring",
     blurb: "A packed room, topical discussion, and buzzing networking before and after the presentations.",
+    image: "/news/crypto-spring-2026.jpg",
+    type: "flagship" as const,
   },
   {
     date: "July 11, 2025",
     title: "“Bookmarks for Your Life”",
     blurb: "Jamie Thingelstad on the power of POAPs and the “612” Summer Scavenger Hunt — a full house at Frankie's.",
+    image: "/news/bookmarks-poaps.jpg",
+    type: "meetup" as const,
   },
   {
     date: "May 23, 2025",
     title: "MNblockchain Went to D.C.",
     blurb: "Stand With Crypto flew Brook Oldre and Brandon Ferdig to D.C. for Stand With Crypto Day, alongside 60 blockchain professionals from around the country.",
+    image: "/news/mnblockchain-dc.jpg",
+    type: "flagship" as const,
   },
 ];
 

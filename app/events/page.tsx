@@ -129,7 +129,7 @@ export default function EventsPage() {
           <h2 className="font-heading text-3xl font-extrabold text-navy-black">Recent Events</h2>
           <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {pastEvents.map((e) => (
-              <EventCard key={e.title} date={e.date} title={e.title} blurb={e.blurb} />
+              <EventCard key={e.title} date={e.date} title={e.title} blurb={e.blurb} image={e.image} type={e.type} />
             ))}
           </div>
         </div>
