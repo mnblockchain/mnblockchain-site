@@ -93,7 +93,9 @@ export default function Footer() {
           <p className="text-xs text-white/40">
             &copy; {new Date().getFullYear()} MNblockchain. All rights reserved.
           </p>
-          <p className="text-xs text-white/40">connect@mnblockchain.org</p>
+          <a href="mailto:connect@mnblockchain.org" className="text-xs text-white/40 hover:text-white">
+            connect@mnblockchain.org
+          </a>
         </div>
       </div>
     </footer>
