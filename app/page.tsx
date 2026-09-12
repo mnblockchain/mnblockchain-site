@@ -82,7 +82,7 @@ export default function Home() {
             </div>
 
             <div className="mt-10 flex justify-center">
-              <PrimaryButton href="/events">Register here</PrimaryButton>
+              <PrimaryButton href={nextEvent.eventbriteUrl}>Register here</PrimaryButton>
             </div>
 
             <div className="mt-6 grid grid-cols-2 gap-8 border-t border-white/10 pt-6">
@@ -116,7 +116,7 @@ export default function Home() {
               />
             )}
             <div className="mt-6">
-              <PrimaryButton href="/contact">Register Free →</PrimaryButton>
+              <PrimaryButton href={nextEvent.eventbriteUrl}>Register Free →</PrimaryButton>
             </div>
           </div>
         </div>

@@ -36,7 +36,7 @@ export default function EventsPage() {
             <Countdown target={nextEvent.date} />
           </div>
           <div className="mt-8">
-            <PrimaryButton href="/contact">Register for the Next Event</PrimaryButton>
+            <PrimaryButton href={nextEvent.eventbriteUrl}>Register for the Next Event</PrimaryButton>
           </div>
         </div>
       </section>

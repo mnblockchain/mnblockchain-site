@@ -6,6 +6,8 @@ export const nextEvent = {
   // Real details confirmed from the event flyer (2026-09-12): speaker,
   // topic, venue (Frankie's), and timing.
   title: "Building Stablecoins Under the GENIUS Act",
+  eventbriteUrl:
+    "https://www.eventbrite.com/e/spotlight-meetup-sept-28-lets-talk-stablecoins-tickets-2000731804686?aff=oddtdtcreator",
   date: "2026-09-28T17:00:00-05:00",
   dateLabel: "Monday, September 28, 2026",
   time: "5:00 PM arrival · 6:00 PM presentations",
