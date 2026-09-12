@@ -24,7 +24,7 @@ export default function NewsletterForm() {
         disabled={pending}
         className="rounded-full bg-bitcoin-orange px-6 py-3 text-sm font-bold uppercase tracking-wide text-brand-black-soft transition-colors hover:bg-bitcoin-orange/80 disabled:opacity-50"
       >
-        {pending ? "Sending…" : "Notify Me"}
+        {pending ? "Subscribing…" : "Subscribe"}
       </button>
       {state?.error && <p className="text-xs text-red-300">{state.error}</p>}
     </form>
