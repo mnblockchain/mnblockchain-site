@@ -13,9 +13,9 @@ const quickLinks = [
 ];
 
 const social = [
-  { label: "LinkedIn", href: "#" },
-  { label: "X", href: "#" },
-  { label: "YouTube", href: "#" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/company/mnblockchain/" },
+  { label: "X", href: "https://twitter.com/mnblockchain/" },
+  { label: "YouTube", href: "https://www.youtube.com/@mnblockchain" },
 ];
 
 export default function Footer() {
