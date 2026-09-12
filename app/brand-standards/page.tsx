@@ -12,7 +12,6 @@ const colors = [
   { name: "Brand Blue", hex: "#6495ed", usage: "Primary accent — logo \"MN\", headline highlights, badges, links." },
   { name: "Brand Blue Dark", hex: "#4a7bd4", usage: "Darker blue, used sparingly for text needing more contrast on white." },
   { name: "Bitcoin Orange", hex: "#f7931a", usage: "Every action button site-wide (standing rule, set 2026-09-11) — not in the original brand PDF." },
-  { name: "Bitcoin Orange Dark", hex: "#d97e0f", usage: "Defined as a token but not currently used — button hovers use 80%-opacity Bitcoin Orange instead." },
   { name: "Brand Black", hex: "#000000", usage: "Primary dark background/text (per original brand PDF)." },
   { name: "Brand Black Soft", hex: "#0a0a0a", usage: "Near-black — header, dark cards, countdown box." },
   { name: "Brand Orange (coral)", hex: "#ff7f50", usage: "Secondary color from the original PDF — reserved for policy/legislative content, not used as a button color." },
