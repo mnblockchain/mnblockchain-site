@@ -18,7 +18,7 @@ export default function AboutPage() {
           fill
           priority
           sizes="100vw"
-          className="object-cover"
+          className="object-cover object-top"
         />
         {/* Solid scrim so headline text stays legible over a busy indoor
             photo — no separate card behind the text on this page, unlike
