@@ -44,7 +44,7 @@ export default function EventsPage() {
             <ul className="space-y-3">
               {nextEvent.learn.map((item) => (
                 <li key={item} className="flex gap-3 text-sm text-slate">
-                  <span className="mt-0.5 text-brand-blue-dark">✦</span>
+                  <span className="mt-0.5 text-brand-black">✦</span>
                   {item}
                 </li>
               ))}

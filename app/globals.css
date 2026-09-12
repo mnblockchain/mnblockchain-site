@@ -1,17 +1,15 @@
 @import "tailwindcss";
 
-/* Brand tokens — per mnblockchain brand-standards.pdf (2026-08-21):
-   Primary: black / white, blue for rollovers/accents.
-   Secondary (marked "work in progress" in the doc): orange, dark purple.
-   Action buttons site-wide use Bitcoin orange (#F7931A, distinct from
-   brand-orange below, which stays reserved for policy/legislative content)
-   — set as a standing brand standard 2026-09-11. */
+/* Brand tokens — simplified 2026-09-12: one blue (#6495ed) for all accents,
+   one orange (Bitcoin orange, #F7931A) for all buttons, black for text.
+   Dropped brand-blue-dark (small text on white just uses black now) and
+   brand-orange/coral (was reserved for policy content in the original PDF,
+   but a second orange conflicted with the one-orange-for-buttons rule).
+   brand-plum is still unused; kept per the original PDF pending a decision. */
 @theme {
   --color-brand-black: #000000;
   --color-brand-black-soft: #0a0a0a;
   --color-brand-blue: #6495ed;
-  --color-brand-blue-dark: #4a7bd4;
-  --color-brand-orange: #ff7f50;
   --color-brand-plum: #342e37;
   --color-bitcoin-orange: #f7931a;
   --color-ink: #000000;

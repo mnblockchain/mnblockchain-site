@@ -9,12 +9,10 @@ export const metadata: Metadata = {
 };
 
 const colors = [
-  { name: "Brand Blue", hex: "#6495ed", usage: "Primary accent — logo \"MN\", headline highlights, badges, links." },
-  { name: "Brand Blue Dark", hex: "#4a7bd4", usage: "Darker blue, used sparingly for text needing more contrast on white." },
-  { name: "Bitcoin Orange", hex: "#f7931a", usage: "Every action button site-wide (standing rule, set 2026-09-11) — not in the original brand PDF." },
+  { name: "Brand Blue", hex: "#6495ed", usage: "The one blue — logo \"MN\", headline highlights, badges, links. Also used as plain black text on white where a second darker blue used to be (removed 2026-09-12)." },
+  { name: "Bitcoin Orange", hex: "#f7931a", usage: "The one orange — every action button site-wide, no exceptions (standing rule, set 2026-09-11) — not in the original brand PDF." },
   { name: "Brand Black", hex: "#000000", usage: "Primary dark background/text (per original brand PDF)." },
   { name: "Brand Black Soft", hex: "#0a0a0a", usage: "Near-black — header, dark cards, countdown box." },
-  { name: "Brand Orange (coral)", hex: "#ff7f50", usage: "Secondary color from the original PDF — reserved for policy/legislative content, not used as a button color." },
   { name: "Brand Plum", hex: "#342e37", usage: "Secondary color from the original PDF, marked \"work in progress\" — not currently used anywhere on the site." },
   { name: "Cloud", hex: "#f5f7fa", usage: "Light neutral section background (alternates with white for visual rhythm)." },
   { name: "Slate", hex: "#4b5563", usage: "Body copy / secondary text gray." },

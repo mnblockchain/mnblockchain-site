@@ -48,7 +48,7 @@ export default function MembershipPage() {
                 <ul className="mt-6 space-y-3">
                   {tier.perks.map((perk) => (
                     <li key={perk} className={`flex gap-2 text-sm ${tier.featured ? "text-white/80" : "text-slate"}`}>
-                      <span className="text-brand-blue-dark">✦</span>
+                      <span className="text-brand-black">✦</span>
                       {perk}
                     </li>
                   ))}

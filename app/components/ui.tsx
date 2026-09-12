@@ -21,7 +21,7 @@ export function renderRichText(text: string): ReactNode {
         href={href}
         target="_blank"
         rel="noopener noreferrer"
-        className="font-semibold text-brand-blue-dark underline decoration-brand-blue decoration-2 underline-offset-2 hover:text-brand-blue"
+        className="font-semibold text-brand-black underline decoration-brand-blue decoration-2 underline-offset-2 hover:text-brand-blue"
       >
         {linkText}
       </a>
@@ -29,40 +29,17 @@ export function renderRichText(text: string): ReactNode {
   });
 }
 
-export function Badge({
-  children,
-  accent = "blue",
-}: {
-  children: ReactNode;
-  /** "orange" is reserved for policy/legislative content per brand standards. */
-  accent?: "blue" | "orange";
-}) {
-  const classes =
-    accent === "orange"
-      ? "border-brand-orange/40 bg-brand-orange/10 text-brand-orange"
-      : "border-brand-blue/40 bg-brand-blue/10 text-brand-blue";
+export function Badge({ children }: { children: ReactNode }) {
   return (
-    <span
-      className={`inline-flex items-center gap-2 rounded-full border px-4 py-1.5 text-xs font-bold uppercase tracking-widest ${classes}`}
-    >
+    <span className="inline-flex items-center gap-2 rounded-full border border-brand-blue/40 bg-brand-blue/10 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-brand-blue">
       {children}
     </span>
   );
 }
 
-export function SectionLabel({
-  children,
-  accent = "blue",
-}: {
-  children: ReactNode;
-  accent?: "blue" | "orange";
-}) {
+export function SectionLabel({ children }: { children: ReactNode }) {
   return (
-    <p
-      className={`mb-3 text-xs font-bold uppercase tracking-[0.25em] ${
-        accent === "orange" ? "text-brand-orange" : "text-brand-blue-dark"
-      }`}
-    >
+    <p className="mb-3 text-xs font-bold uppercase tracking-[0.25em] text-brand-black">
       {children}
     </p>
   );
@@ -167,7 +144,7 @@ export function TeamCard({
         </div>
       )}
       <p className="font-heading font-bold text-brand-black">{name}</p>
-      <p className="mt-1 text-xs font-bold uppercase tracking-widest text-brand-blue-dark">
+      <p className="mt-1 text-xs font-bold uppercase tracking-widest text-brand-black">
         {role}
       </p>
       <a
@@ -263,7 +240,7 @@ export function EventCard({
 }) {
   return (
     <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-      <p className="text-xs font-bold uppercase tracking-widest text-brand-blue-dark">{date}</p>
+      <p className="text-xs font-bold uppercase tracking-widest text-brand-black">{date}</p>
       <p className="mt-2 font-heading text-lg font-bold text-brand-black">{title}</p>
       <p className="mt-2 text-sm text-slate">{blurb}</p>
     </div>
@@ -300,7 +277,7 @@ export function NewsCard({
         />
       </div>
       <div className="p-5">
-        <p className="text-xs font-bold uppercase tracking-widest text-brand-blue-dark">
+        <p className="text-xs font-bold uppercase tracking-widest text-brand-black">
           {dateLabel} · {category}
         </p>
         <p className="mt-2 font-heading font-bold leading-snug text-brand-black">{title}</p>

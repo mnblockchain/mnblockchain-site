@@ -37,12 +37,12 @@ export default async function NewsArticlePage({
       <div className="mx-auto max-w-3xl px-6">
         <Link
           href="/news"
-          className="text-sm font-bold text-brand-blue-dark underline decoration-brand-blue decoration-2 underline-offset-4"
+          className="text-sm font-bold text-brand-black underline decoration-brand-blue decoration-2 underline-offset-4"
         >
           ← All News &amp; Articles
         </Link>
 
-        <p className="mt-6 text-xs font-bold uppercase tracking-widest text-brand-blue-dark">
+        <p className="mt-6 text-xs font-bold uppercase tracking-widest text-brand-black">
           {article.dateLabel} · {article.category} · {article.author}
         </p>
         <h1 className="mt-2 font-heading text-3xl font-extrabold leading-tight text-brand-black sm:text-4xl">

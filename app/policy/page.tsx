@@ -12,7 +12,7 @@ export default function PolicyPage() {
     <>
       <section className="bg-gradient-to-br from-brand-black-soft via-brand-black to-brand-black-soft py-20 text-center">
         <div className="mx-auto max-w-3xl px-6">
-          <Badge accent="orange">Government &amp; Law Committee</Badge>
+          <Badge>Government &amp; Law Committee</Badge>
           <h1 className="mt-6 font-heading text-4xl font-extrabold text-white sm:text-5xl">
             Policy &amp; Advocacy
           </h1>
@@ -25,7 +25,7 @@ export default function PolicyPage() {
 
       <section className="bg-white py-20">
         <div className="mx-auto max-w-5xl px-6">
-          <SectionLabel accent="orange">What We Track</SectionLabel>
+          <SectionLabel>What We Track</SectionLabel>
           <h2 className="font-heading text-3xl font-extrabold text-brand-black">Our Focus Areas</h2>
           <div className="mt-8 grid gap-6 md:grid-cols-3">
             {policyFocus.map((p) => (
@@ -40,7 +40,7 @@ export default function PolicyPage() {
 
       <section className="bg-cloud py-20">
         <div className="mx-auto max-w-3xl px-6 text-center">
-          <SectionLabel accent="orange">Our Approach</SectionLabel>
+          <SectionLabel>Our Approach</SectionLabel>
           <h2 className="font-heading text-3xl font-extrabold text-brand-black">
             Nonpartisan by Design
           </h2>

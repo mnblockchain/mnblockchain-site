@@ -95,7 +95,7 @@ export default function Home() {
               (the old "Next Event" section wrapper and "You'll Learn" list
               were removed; this card is what's left of it). */}
           <div className="mt-8 rounded-3xl border border-slate-200 bg-cloud p-8 text-left shadow-sm sm:p-10">
-            <p className="text-xs font-bold uppercase tracking-widest text-brand-blue-dark">
+            <p className="text-xs font-bold uppercase tracking-widest text-brand-black">
               Free · Open to Everyone
             </p>
             <h3 className="mt-2 font-heading text-2xl font-bold text-brand-black">

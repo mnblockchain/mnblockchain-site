@@ -56,7 +56,7 @@ export default function SponsorsPage() {
                       key={perk}
                       className={`flex gap-2 text-sm ${tier.featured ? "text-white/80" : "text-slate"}`}
                     >
-                      <span className="text-brand-blue-dark">✦</span>
+                      <span className="text-brand-black">✦</span>
                       {perk}
                     </li>
                   ))}
