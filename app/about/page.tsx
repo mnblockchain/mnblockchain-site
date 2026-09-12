@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { Badge, SectionLabel, TeamCard } from "../components/ui";
-import MinnesotaOutline from "../components/MinnesotaOutline";
 import { boardMembers, boardOfficers, committees, staffAdvisors } from "@/data/content";
 
 export const metadata: Metadata = {
@@ -38,10 +37,14 @@ export default function AboutPage() {
       </section>
 
       <section className="relative overflow-hidden bg-white py-20">
-        {/* MN state outline as a subtle watermark behind the mission copy.
-            Path is CC0 (Wikimedia Commons "Simple Rounded Outline of the
-            state of Minnesota"), not a brand asset. */}
-        <MinnesotaOutline className="pointer-events-none absolute left-1/2 top-1/2 h-[85%] w-auto max-h-[420px] -translate-x-1/2 -translate-y-1/2 text-slate/15" />
+        {/* MN state outline as a subtle watermark behind the mission copy. */}
+        <Image
+          src="/about/minnesota-outline.png"
+          alt=""
+          width={2000}
+          height={1125}
+          className="pointer-events-none absolute left-1/2 top-1/2 h-[85%] w-auto max-h-[420px] -translate-x-1/2 -translate-y-1/2 object-contain opacity-15"
+        />
         <div className="relative mx-auto max-w-3xl px-6">
           <SectionLabel>Our Mission</SectionLabel>
           <h2 className="font-heading text-3xl font-extrabold text-navy-black">
