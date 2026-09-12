@@ -12,6 +12,10 @@
   --color-brand-blue: #6495ed;
   --color-brand-plum: #342e37;
   --color-bitcoin-orange: #f7931a;
+  /* Candidate dark-neutral alternative to pure black, piloted on the
+     homepage 2026-09-12 (plum was tried first and rejected). Deep
+     near-black navy, in the same family as institutional exchange dark UIs. */
+  --color-navy-black: #0b0e11;
   --color-ink: #000000;
   --color-slate: #4b5563;
   --color-cloud: #f5f7fa;
