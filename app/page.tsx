@@ -107,8 +107,9 @@ export default function Home() {
                 </svg>
                 Free · Open to Everyone
               </div>
-              <div className="mt-3 inline-block rounded-xl bg-navy-black px-4 py-2">
-                <h3 className="font-heading text-2xl font-bold text-white drop-shadow-[0_0_16px_rgba(247,147,26,0.6)]">
+              <div className="relative mt-3 inline-block">
+                <div className="pointer-events-none absolute -inset-4 rounded-full bg-bitcoin-orange/25 blur-2xl" />
+                <h3 className="relative font-heading text-2xl font-bold text-bitcoin-orange">
                   {nextEvent.title}
                 </h3>
               </div>

@@ -56,7 +56,8 @@ export function EventSpeaker({
       <div>
         <p className="inline-flex items-center gap-1 text-xs font-bold uppercase tracking-widest text-bitcoin-orange">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="h-3.5 w-3.5">
-            <path d="M12 3.5l2.6 5.3 5.9.8-4.3 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8-4.3-4.1 5.9-.8z" />
+            <path d="M9 3h6l3 8H6z" />
+            <ellipse cx="12" cy="20" rx="7" ry="2" />
           </svg>
           Featured Speaker
         </p>

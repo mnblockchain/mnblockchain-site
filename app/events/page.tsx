@@ -44,8 +44,9 @@ export default function EventsPage() {
       <section className="bg-cloud py-20">
         <div className="mx-auto max-w-5xl px-6">
           <SectionLabel>Up Next</SectionLabel>
-          <div className="inline-block rounded-xl bg-navy-black px-4 py-2">
-            <h2 className="font-heading text-3xl font-extrabold text-white drop-shadow-[0_0_16px_rgba(247,147,26,0.6)]">
+          <div className="relative inline-block">
+            <div className="pointer-events-none absolute -inset-5 rounded-full bg-bitcoin-orange/25 blur-2xl" />
+            <h2 className="relative font-heading text-3xl font-extrabold text-bitcoin-orange">
               {nextEvent.title}
             </h2>
           </div>
