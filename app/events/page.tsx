@@ -72,14 +72,17 @@ export default function EventsPage() {
                 />
               )}
             </div>
-            <ul className="space-y-3">
-              {nextEvent.learn.map((item) => (
-                <li key={item} className="flex gap-3 text-sm text-slate">
-                  <span className="mt-0.5 text-navy-black">✦</span>
-                  {item}
-                </li>
-              ))}
-            </ul>
+            <div className="h-fit rounded-2xl border border-brand-blue/20 bg-brand-blue/5 p-6">
+              <p className="text-xs font-bold uppercase tracking-widest text-brand-blue">You&rsquo;ll Learn</p>
+              <ul className="mt-4 space-y-3">
+                {nextEvent.learn.map((item) => (
+                  <li key={item} className="flex gap-3 text-sm text-slate">
+                    <span className="mt-0.5 text-brand-blue">✦</span>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
             </div>
           </div>
         </div>
