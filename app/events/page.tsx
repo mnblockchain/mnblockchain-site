@@ -46,8 +46,7 @@ export default function EventsPage() {
           <SectionLabel>Up Next</SectionLabel>
           <div className="relative mt-6 overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
             <div className="h-1.5 w-full bg-brand-blue" />
-            <div className="grid gap-8 p-8 md:grid-cols-2">
-            <div>
+            <div className="p-8">
               <div className="inline-flex items-center gap-1.5 rounded-full bg-brand-blue/10 px-3 py-1 text-xs font-bold uppercase tracking-widest text-brand-blue">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="h-3.5 w-3.5">
                   <path d="M9 3h6l3 8H6z" />
@@ -58,31 +57,34 @@ export default function EventsPage() {
               <h2 className="mt-6 font-heading text-2xl font-bold text-brand-blue [filter:drop-shadow(0_0_3px_rgba(247,147,26,0.6))_drop-shadow(0_0_8px_rgba(247,147,26,0.35))]">
                 {nextEvent.title}
               </h2>
-              <p className="mt-4 text-sm text-slate">{nextEvent.dateLabel}</p>
-              <p className="text-sm text-slate">{nextEvent.time}</p>
-              <p className="text-sm text-slate">{nextEvent.location}</p>
-              <p className="mt-4 text-sm leading-relaxed text-slate">{nextEvent.description}</p>
-              {nextEvent.speakers[0] && (
-                <EventSpeaker
-                  name={nextEvent.speakers[0].name}
-                  title={nextEvent.speakers[0].title}
-                  bio={nextEvent.speakers[0].bio}
-                  photo={nextEvent.speakers[0].photo}
-                  companyLogo={nextEvent.speakers[0].companyLogo}
-                />
-              )}
-            </div>
-            <div className="h-fit rounded-2xl border border-brand-blue/20 bg-brand-blue/5 p-6">
-              <p className="text-xs font-bold uppercase tracking-widest text-brand-blue">You&rsquo;ll Learn</p>
-              <ul className="mt-4 space-y-3">
-                {nextEvent.learn.map((item) => (
-                  <li key={item} className="flex gap-3 text-sm text-slate">
-                    <span className="mt-0.5 text-brand-blue">✦</span>
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
+              <div className="mt-8 grid gap-8 md:grid-cols-2">
+                <div>
+                  <p className="text-sm text-slate">{nextEvent.dateLabel}</p>
+                  <p className="text-sm text-slate">{nextEvent.time}</p>
+                  <p className="text-sm text-slate">{nextEvent.location}</p>
+                  <p className="mt-4 text-sm leading-relaxed text-slate">{nextEvent.description}</p>
+                  {nextEvent.speakers[0] && (
+                    <EventSpeaker
+                      name={nextEvent.speakers[0].name}
+                      title={nextEvent.speakers[0].title}
+                      bio={nextEvent.speakers[0].bio}
+                      photo={nextEvent.speakers[0].photo}
+                      companyLogo={nextEvent.speakers[0].companyLogo}
+                    />
+                  )}
+                </div>
+                <div className="h-fit rounded-2xl border border-brand-blue/20 bg-brand-blue/5 p-6">
+                  <p className="text-xs font-bold uppercase tracking-widest text-brand-blue">You&rsquo;ll Learn</p>
+                  <ul className="mt-4 space-y-3">
+                    {nextEvent.learn.map((item) => (
+                      <li key={item} className="flex gap-3 text-sm text-slate">
+                        <span className="mt-0.5 text-brand-blue">✦</span>
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
