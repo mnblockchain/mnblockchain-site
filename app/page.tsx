@@ -105,12 +105,9 @@ export default function Home() {
                 </svg>
                 Spotlight Meetup
               </div>
-              <div className="relative mt-6 block">
-                <div className="pointer-events-none absolute -inset-4 rounded-full bg-bitcoin-orange/25 blur-2xl" />
-                <h3 className="relative font-heading text-2xl font-bold text-brand-blue">
-                  {nextEvent.title}
-                </h3>
-              </div>
+              <h3 className="mt-6 font-heading text-2xl font-bold text-brand-blue [filter:drop-shadow(0_0_6px_rgba(247,147,26,0.85))_drop-shadow(0_0_14px_rgba(247,147,26,0.6))_drop-shadow(0_0_28px_rgba(247,147,26,0.35))]">
+                {nextEvent.title}
+              </h3>
             <p className="mt-3 text-sm text-slate">{nextEvent.dateLabel}</p>
             <p className="text-sm text-slate">{nextEvent.time}</p>
             <p className="text-sm text-slate">{nextEvent.location}</p>
