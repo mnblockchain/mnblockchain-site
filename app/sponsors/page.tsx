@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { Badge, SectionLabel, SponsorCard } from "../components/ui";
-import { sponsors, sponsorTiers } from "@/data/content";
+import { Badge, PrimaryButton, SectionLabel, SponsorCard, StatBlock } from "../components/ui";
+import { sponsorComparison, sponsors, sponsorStats, sponsorTiers, testimonials } from "@/data/content";
 import SponsorForm from "./SponsorForm";
+
+const sponsorTestimonial = testimonials.find((t) => t.name === "Sponsor Contact");
 
 export const metadata: Metadata = {
   title: "Sponsors — MNblockchain",
@@ -32,6 +34,19 @@ export default function SponsorsPage() {
             Your support keeps our events free and our community growing — with real visibility
             in front of Minnesota&rsquo;s blockchain builders and investors.
           </p>
+          <div className="mt-8">
+            <PrimaryButton href="#sponsor-form">Become a Sponsor</PrimaryButton>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-navy-black py-14">
+        <div className="mx-auto max-w-5xl px-6">
+          <div className="grid grid-cols-2 gap-8 sm:grid-cols-4">
+            {sponsorStats.map((s) => (
+              <StatBlock key={s.label} value={s.value} label={s.label} />
+            ))}
+          </div>
         </div>
       </section>
 
@@ -53,50 +68,95 @@ export default function SponsorsPage() {
         </div>
       </section>
 
-      <section className="bg-cloud py-20">
+      {sponsorTestimonial && (
+        <section className="bg-cloud py-16">
+          <div className="mx-auto max-w-2xl px-6 text-center">
+            <p className="font-heading text-xl font-medium leading-relaxed text-navy-black sm:text-2xl">
+              &ldquo;{sponsorTestimonial.quote}&rdquo;
+            </p>
+            <p className="mt-4 text-sm font-bold uppercase tracking-widest text-brand-blue">
+              {sponsorTestimonial.name} · {sponsorTestimonial.detail}
+            </p>
+          </div>
+        </section>
+      )}
+
+      <section className="bg-white py-20">
         <div className="mx-auto max-w-6xl px-6">
           <SectionLabel>Sponsorship Tiers</SectionLabel>
           <h2 className="font-heading text-3xl font-extrabold text-navy-black">
             Packages Built for Real Value
           </h2>
-          <div className="mt-8 grid gap-6 md:grid-cols-3">
-            {sponsorTiers.map((tier) => (
-              <div
-                key={tier.name}
-                className={`rounded-2xl border p-8 ${
-                  tier.featured
-                    ? "border-brand-blue bg-navy-black text-white shadow-lg"
-                    : "border-slate-200 bg-white"
-                }`}
-              >
-                <p
-                  className={`font-heading text-xl font-bold ${
-                    tier.featured ? "text-white" : "text-navy-black"
-                  }`}
-                >
-                  {tier.name}
-                </p>
-                <p className={`mt-1 text-2xl font-extrabold ${tier.featured ? "text-brand-blue" : "text-navy-black"}`}>
-                  {tier.price}
-                </p>
-                <ul className="mt-6 space-y-3">
-                  {tier.perks.map((perk) => (
-                    <li
-                      key={perk}
-                      className={`flex gap-2 text-sm ${tier.featured ? "text-white/80" : "text-slate"}`}
+          <p className="mt-3 max-w-2xl text-slate">
+            Every tier includes real access to our community — not just a logo. Compare what each
+            level unlocks below.
+          </p>
+
+          <div className="mt-10 overflow-x-auto">
+            <table className="w-full min-w-[720px] border-separate border-spacing-0">
+              <thead>
+                <tr>
+                  <th className="sticky left-0 z-10 w-1/3 min-w-[160px] bg-white" />
+                  {sponsorTiers.map((tier) => (
+                    <th
+                      key={tier.name}
+                      className={`rounded-t-2xl border p-6 text-left align-bottom ${
+                        tier.featured
+                          ? "border-brand-blue bg-navy-black"
+                          : "border-slate-200 bg-cloud"
+                      }`}
                     >
-                      <span className="text-navy-black">✦</span>
-                      {perk}
-                    </li>
+                      <p className={`font-heading text-lg font-bold ${tier.featured ? "text-white" : "text-navy-black"}`}>
+                        {tier.name}
+                      </p>
+                      <p className={`mt-1 text-xl font-extrabold ${tier.featured ? "text-brand-blue" : "text-navy-black"}`}>
+                        {tier.price}
+                      </p>
+                    </th>
                   ))}
-                </ul>
-              </div>
-            ))}
+                </tr>
+              </thead>
+              <tbody>
+                {sponsorComparison.map((row, i) => (
+                  <tr key={row.feature}>
+                    <td
+                      className={`sticky left-0 z-10 border-x border-slate-200 bg-white p-4 text-sm text-slate ${
+                        i === sponsorComparison.length - 1 ? "rounded-bl-2xl border-b" : ""
+                      }`}
+                    >
+                      {row.feature}
+                    </td>
+                    {row.values.map((value, j) => {
+                      const tier = sponsorTiers[j];
+                      const isLast = i === sponsorComparison.length - 1;
+                      return (
+                        <td
+                          key={tier.name}
+                          className={`border-x p-4 text-center text-sm ${
+                            tier.featured
+                              ? "border-brand-blue bg-navy-black/[0.03]"
+                              : "border-slate-200 bg-white"
+                          } ${isLast ? "border-b" : ""} ${isLast && j === row.values.length - 1 ? "rounded-br-2xl" : ""}`}
+                        >
+                          {value === true ? (
+                            <span className="text-brand-blue">✓</span>
+                          ) : value === false ? (
+                            <span className="text-slate-300">—</span>
+                          ) : (
+                            <span className="text-navy-black">{value}</span>
+                          )}
+                        </td>
+                      );
+                    })}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
         </div>
       </section>
 
-      <section className="bg-white py-20">
+      <section id="sponsor-form" className="bg-cloud py-20">
         <div className="mx-auto max-w-2xl px-6">
           <SectionLabel>Become a Sponsor</SectionLabel>
           <h2 className="font-heading text-3xl font-extrabold text-navy-black">

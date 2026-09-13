@@ -81,6 +81,16 @@ export const speakers = [
   { name: "Eric Thompson", title: "CFP® — Bitcoin ETF Presentation" },
 ];
 
+// Stats used to open the sponsors page with real proof of audience/reach
+// before asking anyone to pay — every number here also appears elsewhere on
+// the site (homepage stats, hero copy), so this stays truthful by construction.
+export const sponsorStats = [
+  { value: "2018", label: "Founded" },
+  { value: "33", label: "Active Members" },
+  { value: "12+", label: "Events / Year" },
+  { value: "2-3", label: "Flagship Events / Year" },
+];
+
 export const sponsorTiers = [
   {
     name: "Community Sponsor",
@@ -89,6 +99,7 @@ export const sponsorTiers = [
       "Logo on mnblockchain.org",
       "Recognition at monthly meetups",
       "2 complimentary memberships",
+      "Job postings to our Slack + site",
     ],
   },
   {
@@ -99,6 +110,9 @@ export const sponsorTiers = [
       "Logo on all event materials",
       "One speaking slot per year",
       "Newsletter mention (2x / year)",
+      "Guaranteed demo/table at every meetup",
+      "Recurring naming rights (e.g. a sponsored happy hour)",
+      "Post-event opt-in attendee intro list",
     ],
     featured: true,
   },
@@ -110,14 +124,41 @@ export const sponsorTiers = [
       "Title sponsorship of one flagship event",
       "Dedicated speaking slot at flagship event",
       "First-look access for hosting/venue opportunities",
+      "Private roundtable with the board",
+      "Policy committee briefings on MN blockchain legislation",
     ],
   },
 ];
 
+// Feature-by-feature breakdown of sponsorTiers above, for a side-by-side
+// comparison table. Keep in sync with the perks lists above by hand — small
+// enough list that a shared source-of-truth isn't worth the indirection yet.
+// Values: true = included, false = not included, string = tier-specific detail.
+export const sponsorComparison: {
+  feature: string;
+  values: [boolean | string, boolean | string, boolean | string];
+}[] = [
+  { feature: "Logo on mnblockchain.org", values: [true, true, true] },
+  { feature: "Recognition at monthly meetups", values: [true, true, true] },
+  { feature: "Complimentary memberships", values: ["2", "4", "8"] },
+  { feature: "Job postings to Slack + site", values: [true, true, true] },
+  { feature: "Logo on all event materials", values: [false, true, true] },
+  { feature: "Speaking slot per year", values: [false, "1", "Dedicated flagship slot"] },
+  { feature: "Newsletter mention", values: [false, "2x / year", "Every issue"] },
+  { feature: "Guaranteed demo/table at meetups", values: [false, true, true] },
+  { feature: "Recurring naming rights (e.g. sponsored happy hour)", values: [false, true, true] },
+  { feature: "Post-event opt-in attendee intro list", values: [false, true, true] },
+  { feature: "Title sponsorship of a flagship event", values: [false, false, true] },
+  { feature: "First-look access to hosting/venue opportunities", values: [false, false, true] },
+  { feature: "Private roundtable with the board", values: [false, false, true] },
+  { feature: "Policy committee legislative briefings", values: [false, false, true] },
+];
+
 // Real sponsor/partner logos pulled from the live site into /public/sponsors/.
 // The old site doesn't clearly distinguish paid sponsors from policy/community
-// partners (e.g. Stand With Crypto reads more like a partner) — flagged so
-// Brandon/Colin can correct the framing once real tiers are assigned.
+// partners (e.g. Stand With Crypto reads more like a partner), and none of
+// them have a confirmed dollar tier yet — flagged so Brandon/Colin can assign
+// real tiers once known, at which point the wall can size logos by tier.
 export const sponsors = [
   { name: "Spencer Fane", blurb: "Law firm partner.", logo: "/sponsors/spencer-fane.png", url: "https://www.spencerfane.com/" },
   { name: "Fredrikson", blurb: "Law firm partner.", logo: "/sponsors/fredrikson.png", url: "https://www.fredlaw.com/" },
