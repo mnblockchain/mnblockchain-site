@@ -26,7 +26,7 @@ export default function SponsorsPage() {
         {/* Solid scrim so headline text stays legible over the photo. */}
         <div className="absolute inset-0 bg-navy-black/70" />
         <div className="relative mx-auto max-w-3xl px-6">
-          <Badge>Reach an engaged, active community</Badge>
+          <Badge>Minnesota&rsquo;s largest &amp; longest-running blockchain community</Badge>
           <h1 className="mt-6 font-heading text-4xl font-extrabold text-white sm:text-5xl">
             Sponsor MNblockchain
           </h1>
@@ -41,8 +41,11 @@ export default function SponsorsPage() {
       </section>
 
       <section className="bg-navy-black py-14">
-        <div className="mx-auto max-w-5xl px-6">
-          <div className="grid grid-cols-2 gap-8 sm:grid-cols-4">
+        <div className="mx-auto max-w-5xl px-6 text-center">
+          <p className="text-xs font-bold uppercase tracking-widest text-brand-blue">
+            Minnesota&rsquo;s Leading Blockchain Organization, By the Numbers
+          </p>
+          <div className="mt-8 grid grid-cols-2 gap-8 sm:grid-cols-4">
             {sponsorStats.map((s) => (
               <StatBlock key={s.label} value={s.value} label={s.label} />
             ))}
