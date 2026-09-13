@@ -57,7 +57,7 @@ export default function EventsPage() {
               </div>
               <div className="relative mt-6 block">
                 <div className="pointer-events-none absolute -inset-4 rounded-full bg-bitcoin-orange/25 blur-2xl" />
-                <h2 className="relative font-heading text-2xl font-bold text-bitcoin-orange">
+                <h2 className="relative font-heading text-2xl font-bold text-brand-blue">
                   {nextEvent.title}
                 </h2>
               </div>
