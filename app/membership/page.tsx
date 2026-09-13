@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Badge, PrimaryButton, SectionLabel } from "../components/ui";
 import { membershipTiers } from "@/data/content";
 
@@ -10,8 +11,18 @@ export const metadata: Metadata = {
 export default function MembershipPage() {
   return (
     <>
-      <section className="bg-gradient-to-br from-navy-black via-navy-black to-navy-black py-20 text-center">
-        <div className="mx-auto max-w-3xl px-6">
+      <section className="relative overflow-hidden py-20 text-center">
+        <Image
+          src="/membership/header-collage.jpg"
+          alt="MNblockchain members at various meetups"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
+        />
+        {/* Solid scrim so headline text stays legible over the photo collage. */}
+        <div className="absolute inset-0 bg-navy-black/70" />
+        <div className="relative mx-auto max-w-3xl px-6">
           <Badge>Events are free — membership makes it easier to stay plugged in</Badge>
           <h1 className="mt-6 font-heading text-4xl font-extrabold text-white sm:text-5xl">
             Membership
