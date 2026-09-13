@@ -44,24 +44,24 @@ export default function EventsPage() {
       <section className="bg-cloud py-20">
         <div className="mx-auto max-w-5xl px-6">
           <SectionLabel>Up Next</SectionLabel>
-          <div className="relative inline-block">
-            <div className="pointer-events-none absolute -inset-5 rounded-full bg-bitcoin-orange/25 blur-2xl" />
-            <h2 className="relative font-heading text-3xl font-extrabold text-bitcoin-orange">
-              {nextEvent.title}
-            </h2>
-          </div>
           <div className="relative mt-6 overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
             <div className="h-1.5 w-full bg-brand-blue" />
             <div className="grid gap-8 p-8 md:grid-cols-2">
             <div>
-              <div className="mb-2 inline-flex items-center gap-1.5 rounded-full bg-brand-blue/10 px-3 py-1 text-xs font-bold uppercase tracking-widest text-brand-blue">
+              <div className="inline-flex items-center gap-1.5 rounded-full bg-brand-blue/10 px-3 py-1 text-xs font-bold uppercase tracking-widest text-brand-blue">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="h-3.5 w-3.5">
                   <path d="M9 3h6l3 8H6z" />
                   <ellipse cx="12" cy="20" rx="7" ry="2" />
                 </svg>
                 Spotlight Meetup
               </div>
-              <p className="text-sm text-slate">{nextEvent.dateLabel}</p>
+              <div className="relative mt-6 block">
+                <div className="pointer-events-none absolute -inset-4 rounded-full bg-bitcoin-orange/25 blur-2xl" />
+                <h2 className="relative font-heading text-2xl font-bold text-bitcoin-orange">
+                  {nextEvent.title}
+                </h2>
+              </div>
+              <p className="mt-4 text-sm text-slate">{nextEvent.dateLabel}</p>
               <p className="text-sm text-slate">{nextEvent.time}</p>
               <p className="text-sm text-slate">{nextEvent.location}</p>
               <p className="mt-4 text-sm leading-relaxed text-slate">{nextEvent.description}</p>
