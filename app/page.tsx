@@ -95,7 +95,7 @@ export default function Home() {
           {/* Next event details — moved up directly below the countdown box
               (the old "Next Event" section wrapper and "You'll Learn" list
               were removed; this card is what's left of it). */}
-          <div className="relative overflow-hidden rounded-3xl border border-slate-200 bg-cloud text-left shadow-sm">
+          <div className="relative mt-8 overflow-hidden rounded-3xl border border-slate-200 bg-cloud text-left shadow-sm">
             <div className="h-1.5 w-full bg-brand-blue" />
             <div className="p-8 sm:p-10">
               <div className="inline-flex items-center gap-1.5 rounded-full bg-brand-blue/10 px-3 py-1 text-xs font-bold uppercase tracking-widest text-brand-blue">
