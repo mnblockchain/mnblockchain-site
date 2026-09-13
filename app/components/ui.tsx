@@ -284,10 +284,8 @@ export function SponsorCard({
 const eventTypeIcon: Record<"meetup" | "spotlight" | "flagship", ReactNode> = {
   meetup: (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="h-3.5 w-3.5">
-      <rect x="3" y="5" width="18" height="16" rx="2" />
-      <line x1="3" y1="9.5" x2="21" y2="9.5" />
-      <line x1="8" y1="3" x2="8" y2="7" />
-      <line x1="16" y1="3" x2="16" y2="7" />
+      <path d="M9 3h6l3 8H6z" />
+      <ellipse cx="12" cy="20" rx="7" ry="2" />
     </svg>
   ),
   spotlight: (

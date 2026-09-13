@@ -107,9 +107,11 @@ export default function Home() {
                 </svg>
                 Free · Open to Everyone
               </div>
-              <h3 className="mt-3 font-heading text-2xl font-bold text-navy-black">
-                {nextEvent.title}
-              </h3>
+              <div className="mt-3 inline-block rounded-xl bg-navy-black px-4 py-2">
+                <h3 className="font-heading text-2xl font-bold text-white drop-shadow-[0_0_16px_rgba(247,147,26,0.6)]">
+                  {nextEvent.title}
+                </h3>
+              </div>
             <p className="mt-3 text-sm text-slate">{nextEvent.dateLabel}</p>
             <p className="text-sm text-slate">{nextEvent.time}</p>
             <p className="text-sm text-slate">{nextEvent.location}</p>

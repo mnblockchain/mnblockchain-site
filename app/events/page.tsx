@@ -44,19 +44,21 @@ export default function EventsPage() {
       <section className="bg-cloud py-20">
         <div className="mx-auto max-w-5xl px-6">
           <SectionLabel>Up Next</SectionLabel>
-          <h2 className="font-heading text-3xl font-extrabold text-navy-black">{nextEvent.title}</h2>
+          <div className="inline-block rounded-xl bg-navy-black px-4 py-2">
+            <h2 className="font-heading text-3xl font-extrabold text-white drop-shadow-[0_0_16px_rgba(247,147,26,0.6)]">
+              {nextEvent.title}
+            </h2>
+          </div>
           <div className="relative mt-6 overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
             <div className="h-1.5 w-full bg-brand-blue" />
             <div className="grid gap-8 p-8 md:grid-cols-2">
             <div>
               <div className="mb-2 inline-flex items-center gap-1.5 rounded-full bg-brand-blue/10 px-3 py-1 text-xs font-bold uppercase tracking-widest text-brand-blue">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="h-3.5 w-3.5">
-                  <rect x="3" y="5" width="18" height="16" rx="2" />
-                  <line x1="3" y1="9.5" x2="21" y2="9.5" />
-                  <line x1="8" y1="3" x2="8" y2="7" />
-                  <line x1="16" y1="3" x2="16" y2="7" />
+                  <path d="M9 3h6l3 8H6z" />
+                  <ellipse cx="12" cy="20" rx="7" ry="2" />
                 </svg>
-                Monthly Meetup
+                Spotlight Meetup
               </div>
               <p className="text-sm text-slate">{nextEvent.dateLabel}</p>
               <p className="text-sm text-slate">{nextEvent.time}</p>
@@ -116,14 +118,12 @@ export default function EventsPage() {
           <div className="mt-8 grid gap-6 sm:grid-cols-3">
             {[
               {
-                title: "Monthly Meetups",
+                title: "Spotlight Meetups",
                 blurb: "In-person, every month — open discussion, local speakers, and networking.",
                 icon: (
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6">
-                    <rect x="3" y="5" width="18" height="16" rx="2" />
-                    <line x1="3" y1="9.5" x2="21" y2="9.5" />
-                    <line x1="8" y1="3" x2="8" y2="7" />
-                    <line x1="16" y1="3" x2="16" y2="7" />
+                    <path d="M9 3h6l3 8H6z" />
+                    <ellipse cx="12" cy="20" rx="7" ry="2" />
                   </svg>
                 ),
               },
