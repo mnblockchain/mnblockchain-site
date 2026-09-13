@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Badge, InvolvementCard, PrimaryButton, SectionLabel } from "../components/ui";
 import { committees, volunteerRoles, slackInviteUrl } from "@/data/content";
 
@@ -11,8 +12,18 @@ export const metadata: Metadata = {
 export default function GetInvolvedPage() {
   return (
     <>
-      <section className="bg-gradient-to-br from-navy-black via-navy-black to-navy-black py-20 text-center">
-        <div className="mx-auto max-w-3xl px-6">
+      <section className="relative overflow-hidden py-20 text-center">
+        <Image
+          src="/get-involved/header-collage.jpg"
+          alt="MNblockchain members at various events"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
+        />
+        {/* Solid scrim so headline text stays legible over the photo collage. */}
+        <div className="absolute inset-0 bg-navy-black/70" />
+        <div className="relative mx-auto max-w-3xl px-6">
           <Badge>No membership required to get involved</Badge>
           <h1 className="mt-6 font-heading text-4xl font-extrabold text-white sm:text-5xl">
             Get Involved
