@@ -122,7 +122,7 @@ export default function Home() {
               />
             )}
             <div className="mt-6">
-              <PrimaryButton href={nextEvent.eventbriteUrl}>Register Free →</PrimaryButton>
+              <PrimaryButton href={nextEvent.eventbriteUrl}>Register Here →</PrimaryButton>
             </div>
             </div>
           </div>
