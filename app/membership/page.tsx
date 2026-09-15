@@ -40,6 +40,12 @@ export default function MembershipPage() {
           <h2 className="font-heading text-3xl font-extrabold text-navy-black">
             One Membership, Real Benefits
           </h2>
+          <p className="mt-4 max-w-2xl text-slate">
+            As a volunteer-run nonprofit, membership dues go straight back into keeping our events
+            free, bringing in great speakers, and growing this community — that support matters
+            more than the price tag suggests. Every member is a real part of how far we can take
+            this, not just a name on a list.
+          </p>
           <div className="mx-auto mt-8 grid max-w-md gap-6">
             {membershipTiers.map((tier) => (
               <div
