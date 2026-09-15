@@ -42,10 +42,7 @@ export default function SponsorsPage() {
 
       <section className="bg-navy-black py-14">
         <div className="mx-auto max-w-5xl px-6 text-center">
-          <p className="text-xs font-bold uppercase tracking-widest text-brand-blue">
-            Minnesota&rsquo;s Leading Blockchain Organization, By the Numbers
-          </p>
-          <div className="mt-8 grid grid-cols-2 gap-8 sm:grid-cols-4">
+          <div className="grid grid-cols-3 gap-8">
             {sponsorStats.map((s) => (
               <StatBlock key={s.label} value={s.value} label={s.label} />
             ))}

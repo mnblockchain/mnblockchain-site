@@ -76,7 +76,6 @@ export const speakers = [
 // the site (homepage stats, hero copy), so this stays truthful by construction.
 export const sponsorStats = [
   { value: "2018", label: "Founded" },
-  { value: "33", label: "Active Members" },
   { value: "12+", label: "Events / Year" },
   { value: "2-3", label: "Flagship Events / Year" },
 ];
