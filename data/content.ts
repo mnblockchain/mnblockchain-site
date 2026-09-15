@@ -61,14 +61,6 @@ export const pastEvents = [
     type: "meetup" as const,
     slug: "a-team-of-one",
   },
-  {
-    date: "July 11, 2025",
-    title: "“Bookmarks for Your Life”",
-    blurb: "Jamie Thingelstad on the power of POAPs and the “612” Summer Scavenger Hunt — a full house at Frankie's.",
-    image: "/news/bookmarks-poaps.jpg",
-    type: "meetup" as const,
-    slug: "bookmarks-for-your-life",
-  },
 ];
 
 // Real past speakers, pulled from News & Articles coverage of past events.

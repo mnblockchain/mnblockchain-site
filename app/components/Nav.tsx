@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 import Logo from "./Logo";
 
@@ -14,8 +15,13 @@ const links = [
   { label: "Contact", href: "/contact" },
 ];
 
+function isActive(pathname: string, href: string) {
+  return pathname === href || pathname.startsWith(`${href}/`);
+}
+
 export default function Nav() {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
     <header className="sticky top-0 z-50 bg-navy-black">
@@ -27,7 +33,9 @@ export default function Nav() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm font-semibold uppercase tracking-wide text-white/80 transition-colors hover:text-white"
+              className={`text-sm uppercase tracking-wide transition-colors hover:text-white ${
+                isActive(pathname, link.href) ? "font-bold text-white" : "font-semibold text-white/80"
+              }`}
             >
               {link.label}
             </Link>
@@ -61,7 +69,9 @@ export default function Nav() {
               key={link.href}
               href={link.href}
               onClick={() => setOpen(false)}
-              className="text-sm font-semibold uppercase tracking-wide text-white/80 hover:text-white"
+              className={`text-sm uppercase tracking-wide hover:text-white ${
+                isActive(pathname, link.href) ? "font-bold text-white" : "font-semibold text-white/80"
+              }`}
             >
               {link.label}
             </Link>
