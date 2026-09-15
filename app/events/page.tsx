@@ -83,6 +83,9 @@ export default function EventsPage() {
                       </li>
                     ))}
                   </ul>
+                  <div className="mt-6">
+                    <PrimaryButton href={nextEvent.eventbriteUrl}>Register Free →</PrimaryButton>
+                  </div>
                 </div>
               </div>
             </div>
