@@ -6,10 +6,11 @@ import SponsorForm from "./SponsorForm";
 
 const sponsorTestimonial = testimonials.find((t) => t.name === "Sponsor Contact");
 
-// TODO(Colin): both temporarily hidden per request (2026-09-15) — bring back
+// TODO(Colin): all temporarily hidden per request (2026-09-15) — bring back
 // once ready. Content/data is untouched, just not rendered.
 const SHOW_SPONSOR_TESTIMONIAL = false;
 const SHOW_SPONSOR_PRICING = false;
+const SHOW_SPONSOR_TIERS = false;
 
 export const metadata: Metadata = {
   title: "Sponsors — MNblockchain",
@@ -86,6 +87,7 @@ export default function SponsorsPage() {
         </section>
       )}
 
+      {SHOW_SPONSOR_TIERS && (
       <section className="bg-white py-20">
         <div className="mx-auto max-w-6xl px-6">
           <SectionLabel>Sponsorship Tiers</SectionLabel>
@@ -162,6 +164,7 @@ export default function SponsorsPage() {
           </div>
         </div>
       </section>
+      )}
 
       <section id="sponsor-form" className="bg-cloud py-20">
         <div className="mx-auto max-w-2xl px-6">
