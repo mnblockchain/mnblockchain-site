@@ -2,7 +2,6 @@
 
 import { useActionState } from "react";
 import { submitSponsorInquiry } from "@/actions/contact.action";
-import { sponsorTiers } from "@/data/content";
 
 export default function SponsorForm() {
   const [state, action, pending] = useActionState(submitSponsorInquiry, null);
@@ -52,22 +51,6 @@ export default function SponsorForm() {
           required
           className="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm focus:border-navy-black focus:outline-none"
         />
-      </div>
-      <div>
-        <label className="mb-1.5 block text-xs font-bold uppercase tracking-widest text-navy-black">
-          Tier of Interest
-        </label>
-        <select
-          name="tier"
-          className="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm focus:border-navy-black focus:outline-none"
-        >
-          <option value="">Not sure yet</option>
-          {sponsorTiers.map((t) => (
-            <option key={t.name} value={t.name}>
-              {t.name}
-            </option>
-          ))}
-        </select>
       </div>
       <div>
         <label className="mb-1.5 block text-xs font-bold uppercase tracking-widest text-navy-black">

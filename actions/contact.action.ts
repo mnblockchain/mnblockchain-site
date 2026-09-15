@@ -60,7 +60,6 @@ export async function submitSponsorInquiry(
   const name = (formData.get("name") as string)?.trim();
   const email = (formData.get("email") as string)?.trim();
   const company = (formData.get("company") as string)?.trim();
-  const tier = (formData.get("tier") as string)?.trim();
   const message = (formData.get("message") as string)?.trim();
 
   if (!name || !email || !company) {
@@ -70,8 +69,8 @@ export async function submitSponsorInquiry(
   try {
     await send(
       `New sponsor inquiry from ${company}`,
-      `Name: ${name}\nEmail: ${email}\nCompany: ${company}\nTier interest: ${tier || "—"}\n\nMessage:\n${message || "—"}`,
-      `<p><strong>Name:</strong> ${name}</p><p><strong>Email:</strong> ${email}</p><p><strong>Company:</strong> ${company}</p><p><strong>Tier:</strong> ${tier || "—"}</p><br /><p>${(message || "—").replace(/\n/g, "<br />")}</p>`,
+      `Name: ${name}\nEmail: ${email}\nCompany: ${company}\n\nMessage:\n${message || "—"}`,
+      `<p><strong>Name:</strong> ${name}</p><p><strong>Email:</strong> ${email}</p><p><strong>Company:</strong> ${company}</p><br /><p>${(message || "—").replace(/\n/g, "<br />")}</p>`,
       email
     );
     return { success: true };
