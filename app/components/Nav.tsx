@@ -11,6 +11,7 @@ const links = [
   { label: "Membership", href: "/membership" },
   { label: "Policy", href: "/policy" },
   { label: "News", href: "/news" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export default function Nav() {
