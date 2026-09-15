@@ -15,8 +15,9 @@ export const nextEvent = {
   description:
     "Zach Robins, Head of Legal at Brale, joins us to talk about building stablecoins under the new GENIUS Act — plus free pizza and open networking. Presented with Stand With Crypto.",
   learn: [
-    "What the GENIUS Act actually requires of stablecoin issuers",
-    "How Brale builds compliant, programmable money",
+    "How stablecoins went from a niche crypto tool to a mainstream payment rail",
+    "What the GENIUS Act means for stablecoin issuers, in plain terms",
+    "How Brale approaches building compliant, programmable money",
     "Open Q&A and networking with the community",
   ],
   speakers: [
