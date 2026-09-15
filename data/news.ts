@@ -46,8 +46,8 @@ export const newsArticles: NewsArticle[] = [
   {
     slug: "a-team-of-one",
     title: "A Team of One",
-    date: "2026-06-22",
-    dateLabel: "June 22, 2026",
+    date: "2026-04-05",
+    dateLabel: "April 5, 2026",
     author: "Matthew Rogers",
     category: "News",
     image: "/news/team-of-one.jpg",
@@ -66,8 +66,8 @@ export const newsArticles: NewsArticle[] = [
   {
     slug: "impressive-turnout-at-crypto-spring",
     title: "Impressive Turnout at Crypto Spring",
-    date: "2026-06-22",
-    dateLabel: "June 22, 2026",
+    date: "2026-05-13",
+    dateLabel: "May 13, 2026",
     author: "Matthew Rogers",
     category: "News",
     image: "/news/crypto-spring-2026.jpg",
