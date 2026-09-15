@@ -25,7 +25,7 @@ export default function PolicyPage() {
         <div className="relative mx-auto max-w-3xl px-6">
           <Badge>Government &amp; Law Committee</Badge>
           <h1 className="mt-6 font-heading text-4xl font-extrabold text-white sm:text-5xl">
-            Policy &amp; Advocacy
+            Policy &amp; Education
           </h1>
           <p className="mt-4 text-xl font-medium text-white/90">
             Keeping Minnesota&rsquo;s blockchain community informed and represented — nonpartisan,
