@@ -65,13 +65,6 @@ export const pastEvents = [
     image: "/news/bookmarks-poaps.jpg",
     type: "meetup" as const,
   },
-  {
-    date: "May 23, 2025",
-    title: "MNblockchain Went to D.C.",
-    blurb: "Stand With Crypto flew Brook Oldre and Brandon Ferdig to D.C. for Stand With Crypto Day, alongside 60 blockchain professionals from around the country.",
-    image: "/news/mnblockchain-dc.jpg",
-    type: "flagship" as const,
-  },
 ];
 
 // Real past speakers, pulled from News & Articles coverage of past events.
