@@ -43,7 +43,7 @@ export default async function NewsArticlePage({
         </Link>
 
         <p className="mt-6 text-xs font-bold uppercase tracking-widest text-navy-black">
-          {article.dateLabel} · {article.category} · {article.author}
+          {article.dateLabel} · {article.category}
         </p>
         <h1 className="mt-2 font-heading text-3xl font-extrabold leading-tight text-navy-black sm:text-4xl">
           {article.title}
