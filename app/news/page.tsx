@@ -29,7 +29,7 @@ export default function NewsPage() {
           <h1 className="mt-6 font-heading text-4xl font-extrabold text-white sm:text-5xl">
             News &amp; Articles
           </h1>
-          <p className="mt-4 text-lg text-white/70">
+          <p className="mt-4 text-xl font-medium text-white/90">
             What&rsquo;s happened at MNblockchain events and initiatives, straight from the source.
           </p>
         </div>

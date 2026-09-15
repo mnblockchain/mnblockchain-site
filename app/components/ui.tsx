@@ -76,7 +76,7 @@ export function EventSpeaker({
 
 export function Badge({ children }: { children: ReactNode }) {
   return (
-    <span className="inline-flex items-center gap-2 rounded-full border border-brand-blue/50 bg-brand-blue/25 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-brand-blue">
+    <span className="inline-flex items-center gap-2 rounded-full border border-brand-blue/70 bg-brand-blue/40 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-white">
       {children}
     </span>
   );

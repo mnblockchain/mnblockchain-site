@@ -30,7 +30,7 @@ export default function SponsorsPage() {
           <h1 className="mt-6 font-heading text-4xl font-extrabold text-white sm:text-5xl">
             Sponsor MNblockchain
           </h1>
-          <p className="mt-4 text-lg text-white/70">
+          <p className="mt-4 text-xl font-medium text-white/90">
             Your support keeps our events free and our community growing — with real visibility
             in front of Minnesota&rsquo;s blockchain builders and investors.
           </p>

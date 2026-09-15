@@ -19,7 +19,7 @@ export default function SpeakersPage() {
           <h1 className="mt-6 font-heading text-4xl font-extrabold text-white sm:text-5xl">
             Speakers
           </h1>
-          <p className="mt-4 text-lg text-white/70">
+          <p className="mt-4 text-xl font-medium text-white/90">
             Every speaker is an active operator, investor, or policymaker — no theory, no fluff.
           </p>
         </div>

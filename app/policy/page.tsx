@@ -27,7 +27,7 @@ export default function PolicyPage() {
           <h1 className="mt-6 font-heading text-4xl font-extrabold text-white sm:text-5xl">
             Policy &amp; Advocacy
           </h1>
-          <p className="mt-4 text-lg text-white/70">
+          <p className="mt-4 text-xl font-medium text-white/90">
             Keeping Minnesota&rsquo;s blockchain community informed and represented — nonpartisan,
             fact-based, and engaged early.
           </p>

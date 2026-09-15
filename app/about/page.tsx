@@ -29,7 +29,7 @@ export default function AboutPage() {
           <h1 className="mt-6 font-heading text-4xl font-extrabold text-white sm:text-5xl">
             About MNblockchain
           </h1>
-          <p className="mt-4 text-lg text-white/70">
+          <p className="mt-4 text-xl font-medium text-white/90">
             Building community and industry in blockchain &amp; web3 — driving education and policy
             across Minnesota.
           </p>

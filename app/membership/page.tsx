@@ -27,7 +27,7 @@ export default function MembershipPage() {
           <h1 className="mt-6 font-heading text-4xl font-extrabold text-white sm:text-5xl">
             Membership
           </h1>
-          <p className="mt-4 text-lg text-white/70">
+          <p className="mt-4 text-xl font-medium text-white/90">
             Priority access, a real community, and a direct line into Minnesota&rsquo;s blockchain
             ecosystem.
           </p>

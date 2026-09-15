@@ -28,7 +28,7 @@ export default function GetInvolvedPage() {
           <h1 className="mt-6 font-heading text-4xl font-extrabold text-white sm:text-5xl">
             Get Involved
           </h1>
-          <p className="mt-4 text-lg text-white/70">
+          <p className="mt-4 text-xl font-medium text-white/90">
             MNblockchain runs on committee members, volunteers, and people willing to show up.
             Here&rsquo;s how to plug in.
           </p>
