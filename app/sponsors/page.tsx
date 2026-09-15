@@ -173,8 +173,7 @@ export default function SponsorsPage() {
             Let&rsquo;s Talk Partnership
           </h2>
           <p className="mt-4 text-slate">
-            Tell us a bit about your company and which tier interests you — we&rsquo;ll follow up
-            within a few days.
+            Tell us a bit about your company — we&rsquo;ll follow up within a few days.
           </p>
           <div className="mt-8">
             <SponsorForm />
