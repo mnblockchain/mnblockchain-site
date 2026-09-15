@@ -43,6 +43,7 @@ export const pastEvents = [
     blurb: "Crypto consultant Josiah Wilson (LIBREX Crypto Consulting) on spotting danger in the industry — beyond the obvious scams.",
     image: "/news/red-flags-aug2026.jpeg",
     type: "meetup" as const,
+    slug: "spotlight-meetup-aug-31-red-flags",
   },
   {
     date: "May 13, 2026",
@@ -50,6 +51,7 @@ export const pastEvents = [
     blurb: "A packed room, topical discussion, and buzzing networking before and after the presentations.",
     image: "/news/crypto-spring-2026.jpg",
     type: "flagship" as const,
+    slug: "impressive-turnout-at-crypto-spring",
   },
   {
     date: "April 5, 2026",
@@ -57,6 +59,7 @@ export const pastEvents = [
     blurb: "Builder Ben Carlson (\"Mr. Fun Guy\") on using AI to do the work of many — presented at Frankie's.",
     image: "/news/team-of-one.jpg",
     type: "meetup" as const,
+    slug: "a-team-of-one",
   },
   {
     date: "July 11, 2025",
@@ -64,6 +67,7 @@ export const pastEvents = [
     blurb: "Jamie Thingelstad on the power of POAPs and the “612” Summer Scavenger Hunt — a full house at Frankie's.",
     image: "/news/bookmarks-poaps.jpg",
     type: "meetup" as const,
+    slug: "bookmarks-for-your-life",
   },
 ];
 

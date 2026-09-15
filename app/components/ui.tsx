@@ -308,16 +308,20 @@ export function EventCard({
   blurb,
   image,
   type = "meetup",
+  slug,
 }: {
   date: string;
   title: string;
   blurb: string;
   image?: string;
   type?: "meetup" | "spotlight" | "flagship";
+  slug?: string;
 }) {
   const orange = type === "flagship";
-  return (
-    <div className="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+  const className =
+    "group block overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg";
+  const content = (
+    <>
       <div className={orange ? "h-1.5 w-full bg-bitcoin-orange" : "h-1.5 w-full bg-brand-blue"} />
       {image && (
         <div className="relative aspect-[16/10] overflow-hidden">
@@ -344,8 +348,18 @@ export function EventCard({
         <p className="mt-3 font-heading text-lg font-bold text-navy-black">{title}</p>
         <p className="mt-2 text-sm text-slate">{blurb}</p>
       </div>
-    </div>
+    </>
   );
+
+  if (slug) {
+    return (
+      <Link href={`/news/${slug}`} className={className}>
+        {content}
+      </Link>
+    );
+  }
+
+  return <div className={className}>{content}</div>;
 }
 
 export function NewsCard({
