@@ -70,7 +70,33 @@ export default function MembershipPage() {
               </div>
             ))}
           </div>
-          <p className="mt-8 text-center text-sm text-slate">
+
+          <div className="mx-auto mt-12 max-w-3xl border-t border-slate-200 pt-10">
+            <p className="text-center text-xs font-bold uppercase tracking-widest text-navy-black">
+              Or Pay by QR Code
+            </p>
+            <div className="mt-6 grid gap-6 sm:grid-cols-3">
+              {[
+                { label: "PayPal", src: "/membership/qr-paypal.png" },
+                { label: "Venmo", src: "/membership/qr-venmo.png" },
+                { label: "Coinbase", src: "/membership/qr-coinbase.png" },
+              ].map((qr) => (
+                <div key={qr.label} className="rounded-2xl border border-slate-200 bg-cloud p-6 text-center">
+                  <div className="relative mx-auto h-36 w-36">
+                    <Image src={qr.src} alt={`${qr.label} QR code`} fill sizes="144px" className="object-contain" />
+                  </div>
+                  <p className="mt-4 font-heading font-bold text-navy-black">{qr.label}</p>
+                </div>
+              ))}
+            </div>
+            <p className="mt-6 text-center text-xs text-slate">
+              Paying via USDC on Coinbase? Send to{" "}
+              <span className="font-mono">0x6c680fEa814196C07D0E9C72dAA6013842Ac23ec</span> and email{" "}
+              connect@mnblockchain.org so we can activate your membership.
+            </p>
+          </div>
+
+          <p className="mt-10 text-center text-sm text-slate">
             All of our monthly meetups remain free and open to everyone — membership adds priority
             access and deeper involvement, it&rsquo;s never required to attend.
           </p>
