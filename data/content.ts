@@ -45,18 +45,18 @@ export const pastEvents = [
     type: "meetup" as const,
   },
   {
-    date: "June 22, 2026",
-    title: "A Team of One",
-    blurb: "Builder Ben Carlson (\"Mr. Fun Guy\") on using AI to do the work of many — presented at Frankie's.",
-    image: "/news/team-of-one.jpg",
-    type: "meetup" as const,
-  },
-  {
-    date: "June 22, 2026",
+    date: "May 13, 2026",
     title: "Impressive Turnout at Crypto Spring",
     blurb: "A packed room, topical discussion, and buzzing networking before and after the presentations.",
     image: "/news/crypto-spring-2026.jpg",
     type: "flagship" as const,
+  },
+  {
+    date: "April 5, 2026",
+    title: "A Team of One",
+    blurb: "Builder Ben Carlson (\"Mr. Fun Guy\") on using AI to do the work of many — presented at Frankie's.",
+    image: "/news/team-of-one.jpg",
+    type: "meetup" as const,
   },
   {
     date: "July 11, 2025",
