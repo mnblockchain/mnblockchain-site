@@ -28,7 +28,7 @@ export default function EventsPage() {
           <h1 className="mt-6 font-heading text-4xl font-extrabold text-white sm:text-5xl">
             Events
           </h1>
-          <p className="mt-4 text-lg text-white/70">
+          <p className="mt-4 text-xl font-medium text-white/90">
             Free, in-person monthly meetups, marquee flagship events, and a growing remote
             &ldquo;spotlight&rdquo; speaker series.
           </p>
