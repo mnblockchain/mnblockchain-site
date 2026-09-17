@@ -8,8 +8,11 @@ export type ActionState = {
 } | null;
 
 const TO_EMAIL = "connect@mnblockchain.org";
-// Requires a verified sending domain in Resend before this will actually deliver.
-const FROM_EMAIL = "MNblockchain <noreply@send.mnblockchain.org>";
+// Using Resend's built-in test sender so this works immediately with zero DNS
+// setup. Once send.mnblockchain.org (or similar) is verified as a sending
+// domain in Resend, swap this to "MNblockchain <noreply@send.mnblockchain.org>"
+// for a branded From address — see RESEND_API_KEY notes.
+const FROM_EMAIL = "MNblockchain <onboarding@resend.dev>";
 
 async function send(subject: string, text: string, html: string, replyTo?: string) {
   if (!process.env.RESEND_API_KEY) {
