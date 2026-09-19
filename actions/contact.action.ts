@@ -21,7 +21,7 @@ async function send(subject: string, text: string, html: string, replyTo?: strin
     return { success: true } as const;
   }
   const resend = new Resend(process.env.RESEND_API_KEY);
-  await resend.emails.send({
+  const { error } = await resend.emails.send({
     from: FROM_EMAIL,
     to: TO_EMAIL,
     replyTo,
@@ -29,6 +29,12 @@ async function send(subject: string, text: string, html: string, replyTo?: strin
     text,
     html,
   });
+  // The Resend SDK returns errors instead of throwing, so surface them here or
+  // the visitor sees "success" while nothing is delivered.
+  if (error) {
+    console.error("[resend send failed]", error);
+    throw new Error(error.message);
+  }
   return { success: true } as const;
 }
 
