@@ -84,13 +84,13 @@ export async function submitSponsorInquiry(
   try {
     await send(
       `New sponsor inquiry from ${company}`,
-      `Name: ${name}\nEmail: ${email}\nCompany: ${company}\n\nMessage:\n${message || "—"}`,
+      `Name: ${name}\nEmail: ${email}\nOrganization: ${company}\n\nMessage:\n${message || "—"}`,
       notificationHtml({
         heading: "New sponsor inquiry",
         fields: [
           { label: "Name", value: name },
           { label: "Email", value: email },
-          { label: "Company", value: company },
+          { label: "Organization", value: company },
         ],
         message: message || undefined,
       }),

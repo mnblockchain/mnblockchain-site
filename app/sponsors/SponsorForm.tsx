@@ -10,7 +10,7 @@ export default function SponsorForm() {
     return (
       <div className="rounded-2xl border border-brand-blue bg-cloud p-8">
         <p className="font-heading font-bold text-navy-black">Thanks for reaching out!</p>
-        <p className="mt-1 text-sm text-slate">We&rsquo;ll be in touch within a few business days.</p>
+        <p className="mt-1 text-sm text-slate">We&rsquo;ll be in touch soon.</p>
       </div>
     );
   }
@@ -43,7 +43,7 @@ export default function SponsorForm() {
       </div>
       <div>
         <label className="mb-1.5 block text-xs font-bold uppercase tracking-widest text-navy-black">
-          Company
+          Organization
         </label>
         <input
           type="text"
