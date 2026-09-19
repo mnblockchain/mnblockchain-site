@@ -1,0 +1,181 @@
+<!--
+  MNblockchain newsletter / event recap template for Resend Broadcasts.
+
+  HOW TO USE
+  1. Copy this whole file into a new Resend Broadcast (HTML editor / "Import HTML").
+  2. Find the "EDIT:" comments below and swap in your content. Everything else is
+     branded and safe to leave alone.
+  3. Merge tags Resend fills in for you:
+       {{{FIRST_NAME|there}}}          first name, falls back to "there"
+       {{{RESEND_UNSUBSCRIBE_URL}}}    required unsubscribe link (legal requirement)
+  4. Images must be full https:// URLs. Files in /public on the site work, e.g.
+     https://mnblockchain.org/news/your-photo.jpg
+
+  Built with tables and inline styles on purpose - that is what renders reliably
+  in Gmail, Outlook, and Apple Mail.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="x-apple-disable-message-reformatting">
+  <title>MNblockchain</title>
+</head>
+<body style="margin:0;padding:0;background-color:#f5f7fa;">
+
+  <!-- EDIT: preheader (the gray preview text shown next to the subject in the inbox) -->
+  <div style="display:none;max-height:0;overflow:hidden;opacity:0;color:#f5f7fa;">
+    Josiah took us to safety school. Here is the recap, plus what is coming up next.
+  </div>
+
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#f5f7fa;">
+    <tr>
+      <td align="center" style="padding:24px 12px;">
+
+        <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:600px;max-width:100%;background-color:#ffffff;border-radius:16px;overflow:hidden;">
+
+          <!-- Header -->
+          <tr>
+            <td align="center" style="background-color:#0b0e11;padding:28px 24px;">
+              <a href="https://mnblockchain.org" style="text-decoration:none;font-family:Helvetica,Arial,sans-serif;font-size:30px;font-weight:700;letter-spacing:-0.5px;">
+                <span style="color:#6495ed;">MN</span><span style="color:#ffffff;">blockchain</span>
+              </a>
+              <div style="font-family:Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#9ca3af;margin-top:8px;">
+                Minnesota&rsquo;s home for blockchain &amp; web3
+              </div>
+            </td>
+          </tr>
+
+          <!-- Hero image -->
+          <!-- EDIT: image URL + alt text. Best size: 1200 x 675 (16:9). -->
+          <tr>
+            <td>
+              <img src="https://mnblockchain.org/news/red-flags-aug2026.jpeg" width="600" alt="Josiah Wilson presenting at the August Spotlight Meetup" style="display:block;width:100%;max-width:600px;height:auto;border:0;">
+            </td>
+          </tr>
+
+          <!-- Headline block -->
+          <tr>
+            <td style="padding:32px 36px 8px 36px;font-family:Helvetica,Arial,sans-serif;">
+              <!-- EDIT: kicker (small label above the headline) -->
+              <div style="display:inline-block;background-color:#e8effc;color:#3b6fd4;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:6px 12px;border-radius:999px;">
+                Spotlight Meetup Recap
+              </div>
+              <!-- EDIT: headline -->
+              <h1 style="margin:16px 0 0 0;font-size:28px;line-height:1.25;color:#0b0e11;">
+                How to Spot Red Flags in the Industry
+              </h1>
+            </td>
+          </tr>
+
+          <!-- Body copy -->
+          <!-- EDIT: paragraphs. Copy one <p> block per paragraph. -->
+          <tr>
+            <td style="padding:8px 36px 8px 36px;font-family:Helvetica,Arial,sans-serif;font-size:16px;line-height:1.65;color:#4b5563;">
+              <p style="margin:12px 0;">Hi {{{FIRST_NAME|there}}},</p>
+              <p style="margin:12px 0;">
+                Monday night, <strong style="color:#0b0e11;">Josiah Wilson</strong> of LIBREX Crypto Consulting
+                walked us through how to stay safe in blockchain and crypto, in an interactive, classroom-style
+                session capped off with a fun Q&amp;A.
+              </p>
+              <p style="margin:12px 0;">
+                Before Josiah took the mic, MNblockchain VP Colin Hirdman gave an update on the federal CLARITY Act
+                and what attendees can do about it.
+              </p>
+              <p style="margin:12px 0;">
+                Huge thanks to everyone who came out, to our monthly host Frankie&rsquo;s Chicago Style Pizza, and to
+                our supporters at Stand With Crypto.
+              </p>
+            </td>
+          </tr>
+
+          <!-- Primary button -->
+          <!-- EDIT: button label + link (replay, article, registration, etc.) -->
+          <tr>
+            <td align="center" style="padding:16px 36px 32px 36px;">
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td align="center" style="background-color:#f7931a;border-radius:999px;">
+                    <a href="https://lnkd.in/gyxkgJg6" style="display:inline-block;padding:14px 32px;font-family:Helvetica,Arial,sans-serif;font-size:14px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#0b0e11;text-decoration:none;">
+                      Watch the replay
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Next event card -->
+          <!-- EDIT: upcoming event details. Delete this whole <tr> if there is no next event. -->
+          <tr>
+            <td style="padding:0 36px 32px 36px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#0b0e11;border-radius:14px;">
+                <tr>
+                  <td style="padding:28px;font-family:Helvetica,Arial,sans-serif;">
+                    <div style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#f7931a;">Up next</div>
+                    <div style="font-size:22px;font-weight:700;line-height:1.3;color:#ffffff;margin-top:10px;">
+                      Building Stablecoins Under the GENIUS Act
+                    </div>
+                    <div style="font-size:14px;line-height:1.7;color:#d1d5db;margin-top:10px;">
+                      Monday, September 28 &middot; 5:00 PM arrival, 6:00 PM presentations<br>
+                      Frankie&rsquo;s, 3556 Winnetka Ave N, New Hope, MN<br>
+                      With Zach Robins, Head of Legal at Brale
+                    </div>
+                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-top:18px;">
+                      <tr>
+                        <td align="center" style="background-color:#6495ed;border-radius:999px;">
+                          <a href="https://www.eventbrite.com/e/spotlight-meetup-sept-28-lets-talk-stablecoins-tickets-2000731804686" style="display:inline-block;padding:12px 26px;font-family:Helvetica,Arial,sans-serif;font-size:13px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#0b0e11;text-decoration:none;">
+                            Register here
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Get involved / membership -->
+          <tr>
+            <td style="padding:0 36px 36px 36px;font-family:Helvetica,Arial,sans-serif;">
+              <div style="border-top:1px solid #e5e7eb;padding-top:28px;">
+                <div style="font-size:18px;font-weight:700;color:#0b0e11;">Get involved</div>
+                <p style="margin:10px 0 0 0;font-size:15px;line-height:1.65;color:#4b5563;">
+                  We are looking for volunteers to help with event planning and community management. Email
+                  <a href="mailto:connect@mnblockchain.org" style="color:#3b6fd4;">connect@mnblockchain.org</a>.
+                  You can also <a href="https://mnblockchain.org/membership" style="color:#3b6fd4;">join as a member</a>
+                  to support our work and get member perks.
+                </p>
+              </div>
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td align="center" style="background-color:#0b0e11;padding:28px 24px;font-family:Helvetica,Arial,sans-serif;">
+              <div style="font-size:13px;line-height:2;">
+                <a href="https://www.linkedin.com/company/mnblockchain/" style="color:#9ca3af;text-decoration:none;">LinkedIn</a>
+                <span style="color:#4b5563;">&nbsp;&middot;&nbsp;</span>
+                <a href="https://twitter.com/mnblockchain/" style="color:#9ca3af;text-decoration:none;">X</a>
+                <span style="color:#4b5563;">&nbsp;&middot;&nbsp;</span>
+                <a href="https://www.youtube.com/@mnblockchain" style="color:#9ca3af;text-decoration:none;">YouTube</a>
+                <span style="color:#4b5563;">&nbsp;&middot;&nbsp;</span>
+                <a href="https://mnblockchain.org" style="color:#9ca3af;text-decoration:none;">mnblockchain.org</a>
+              </div>
+              <div style="font-size:12px;line-height:1.7;color:#6b7280;margin-top:14px;">
+                Minnesota Blockchain Initiative &middot; Minnesota<br>
+                You are receiving this because you signed up at mnblockchain.org.<br>
+                <a href="{{{RESEND_UNSUBSCRIBE_URL}}}" style="color:#9ca3af;text-decoration:underline;">Unsubscribe</a>
+              </div>
+            </td>
+          </tr>
+
+        </table>
+
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

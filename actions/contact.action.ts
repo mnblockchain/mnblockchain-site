@@ -1,6 +1,7 @@
 "use server";
 
 import { Resend } from "resend";
+import { notificationHtml } from "./email-template";
 
 export type ActionState = {
   success: boolean;
@@ -47,7 +48,14 @@ export async function submitContact(
     await send(
       `New message from ${name} via MNblockchain.org`,
       `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
-      `<p><strong>Name:</strong> ${name}</p><p><strong>Email:</strong> ${email}</p><br /><p>${message.replace(/\n/g, "<br />")}</p>`,
+      notificationHtml({
+        heading: "New contact message",
+        fields: [
+          { label: "Name", value: name },
+          { label: "Email", value: email },
+        ],
+        message,
+      }),
       email
     );
     return { success: true };
@@ -73,7 +81,15 @@ export async function submitSponsorInquiry(
     await send(
       `New sponsor inquiry from ${company}`,
       `Name: ${name}\nEmail: ${email}\nCompany: ${company}\n\nMessage:\n${message || "—"}`,
-      `<p><strong>Name:</strong> ${name}</p><p><strong>Email:</strong> ${email}</p><p><strong>Company:</strong> ${company}</p><br /><p>${(message || "—").replace(/\n/g, "<br />")}</p>`,
+      notificationHtml({
+        heading: "New sponsor inquiry",
+        fields: [
+          { label: "Name", value: name },
+          { label: "Email", value: email },
+          { label: "Company", value: company },
+        ],
+        message: message || undefined,
+      }),
       email
     );
     return { success: true };
@@ -93,7 +109,11 @@ export async function submitNewsletter(
   }
 
   try {
-    await send(`New newsletter signup`, `Email: ${email}`, `<p><strong>Email:</strong> ${email}</p>`);
+    await send(
+      `New newsletter signup`,
+      `Email: ${email}`,
+      notificationHtml({ heading: "New newsletter signup", fields: [{ label: "Email", value: email }] })
+    );
     return { success: true };
   } catch {
     return { success: false, error: "Something went wrong. Please try again." };
