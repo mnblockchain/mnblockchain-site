@@ -2,6 +2,7 @@
 
 import { useActionState } from "react";
 import { submitSponsorInquiry } from "@/actions/contact.action";
+import BotTrap from "../components/BotTrap";
 
 export default function SponsorForm() {
   const [state, action, pending] = useActionState(submitSponsorInquiry, null);
@@ -17,6 +18,7 @@ export default function SponsorForm() {
 
   return (
     <form action={action} className="space-y-4">
+      <BotTrap />
       <div className="grid gap-4 sm:grid-cols-2">
         <div>
           <label className="mb-1.5 block text-xs font-bold uppercase tracking-widest text-navy-black">

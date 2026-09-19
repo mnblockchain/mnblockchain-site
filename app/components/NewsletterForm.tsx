@@ -2,6 +2,7 @@
 
 import { useActionState } from "react";
 import { submitNewsletter } from "@/actions/contact.action";
+import BotTrap from "./BotTrap";
 
 export default function NewsletterForm() {
   const [state, action, pending] = useActionState(submitNewsletter, null);
@@ -12,6 +13,7 @@ export default function NewsletterForm() {
 
   return (
     <form action={action} className="flex flex-col gap-3 sm:flex-row">
+      <BotTrap />
       <input
         type="email"
         name="email"

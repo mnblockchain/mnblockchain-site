@@ -1,6 +1,7 @@
 "use server";
 
 import { Resend } from "resend";
+import { isBot } from "./bot-check";
 import { notificationHtml } from "./email-template";
 
 export type ActionState = {
@@ -40,6 +41,11 @@ export async function submitContact(
   prevState: ActionState,
   formData: FormData
 ): Promise<ActionState> {
+  if (isBot(formData)) {
+    console.warn("[spam blocked]", "submitContact");
+    return { success: true };
+  }
+
   const name = (formData.get("name") as string)?.trim();
   const email = (formData.get("email") as string)?.trim();
   const message = (formData.get("message") as string)?.trim();
@@ -72,6 +78,11 @@ export async function submitSponsorInquiry(
   prevState: ActionState,
   formData: FormData
 ): Promise<ActionState> {
+  if (isBot(formData)) {
+    console.warn("[spam blocked]", "submitSponsorInquiry");
+    return { success: true };
+  }
+
   const name = (formData.get("name") as string)?.trim();
   const email = (formData.get("email") as string)?.trim();
   const company = (formData.get("company") as string)?.trim();
@@ -106,6 +117,11 @@ export async function submitNewsletter(
   prevState: ActionState,
   formData: FormData
 ): Promise<ActionState> {
+  if (isBot(formData)) {
+    console.warn("[spam blocked]", "submitNewsletter");
+    return { success: true };
+  }
+
   const email = (formData.get("email") as string)?.trim();
 
   if (!email) {

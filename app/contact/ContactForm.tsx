@@ -2,6 +2,7 @@
 
 import { useActionState } from "react";
 import { submitContact } from "@/actions/contact.action";
+import BotTrap from "../components/BotTrap";
 
 export default function ContactForm() {
   const [state, action, pending] = useActionState(submitContact, null);
@@ -17,6 +18,7 @@ export default function ContactForm() {
 
   return (
     <form action={action} className="space-y-4">
+      <BotTrap />
       <div className="grid gap-4 sm:grid-cols-2">
         <div>
           <label className="mb-1.5 block text-xs font-bold uppercase tracking-widest text-navy-black">
