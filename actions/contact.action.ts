@@ -9,11 +9,9 @@ export type ActionState = {
 } | null;
 
 const TO_EMAIL = "connect@mnblockchain.org";
-// Using Resend's built-in test sender so this works immediately with zero DNS
-// setup. Once send.mnblockchain.org (or similar) is verified as a sending
-// domain in Resend, swap this to "MNblockchain <noreply@send.mnblockchain.org>"
-// for a branded From address — see RESEND_API_KEY notes.
-const FROM_EMAIL = "MNblockchain <onboarding@resend.dev>";
+// send.mnblockchain.org is verified in Resend (DNS records live at Squarespace
+// under the "send" prefix, separate from the Workspace email records).
+const FROM_EMAIL = "MNblockchain <noreply@send.mnblockchain.org>";
 
 async function send(subject: string, text: string, html: string, replyTo?: string) {
   if (!process.env.RESEND_API_KEY) {
