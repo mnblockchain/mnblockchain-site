@@ -42,7 +42,9 @@ const nextConfig: NextConfig = {
 
       // Events
       { source: "/event/:path*", destination: "/events", permanent },
-      { source: "/events/:path+", destination: "/events", permanent },
+      // Specific slug only: a broad /events/:path+ rule would also catch image
+      // files served from /public/events/.
+      { source: "/events/november-18-election-2024-a-look-back-a-look-ahead", destination: "/events", permanent },
       { source: "/events-2", destination: "/events", permanent },
       { source: "/events-filter", destination: "/events", permanent },
       { source: "/event-calendar", destination: "/events", permanent },
