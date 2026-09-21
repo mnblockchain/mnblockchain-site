@@ -78,6 +78,14 @@ export const pastEvents = [
     slug: "blockchain-block-party-stand-with-crypto",
   },
   {
+    date: "July 11, 2025",
+    title: "“Bookmarks for Your Life”",
+    blurb: "Jamie Thingelstad on the power of POAPs and the “612” Summer Scavenger Hunt, to a full house at Frankie's.",
+    image: "/news/bookmarks-poaps.jpg",
+    type: "meetup" as const,
+    slug: "bookmarks-for-your-life",
+  },
+  {
     date: "June 5, 2025",
     title: "Crypto Spring 2025: Blockchain Goes Mainstream",
     blurb: "Our 3rd annual event at Surly Brewing's Scheid Hall, with talks on asset management, supply chain, and humanitarian aid.",
