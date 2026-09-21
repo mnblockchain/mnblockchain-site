@@ -61,6 +61,46 @@ export const pastEvents = [
     type: "meetup" as const,
     slug: "a-team-of-one",
   },
+  {
+    date: "October 27, 2025",
+    title: "\u201cOffering Some Clarity\u201d",
+    blurb: "Ben Sizelove of CryptoQuant on reading the charts behind crypto markets, in front of a full house.",
+    image: "/news/cryptoquant-oct-2025.jpg",
+    type: "meetup" as const,
+    slug: "offering-some-clarity-cryptoquant",
+  },
+  {
+    date: "September 13, 2025",
+    title: "Blockchain Block Party",
+    blurb: "Hundreds gathered at North Loop Green for a concert, NFT art, and the launch of Stand With Crypto's Minnesota chapter.",
+    image: "/news/block-party-2025.jpg",
+    type: "flagship" as const,
+    slug: "blockchain-block-party-stand-with-crypto",
+  },
+  {
+    date: "June 5, 2025",
+    title: "Crypto Spring 2025: Blockchain Goes Mainstream",
+    blurb: "Our 3rd annual event at Surly Brewing's Scheid Hall, with talks on asset management, supply chain, and humanitarian aid.",
+    image: "/news/crypto-spring-2025.jpeg",
+    type: "flagship" as const,
+    slug: "another-successful-crypto-spring",
+  },
+  {
+    date: "December 18, 2024",
+    title: "Holiday Party",
+    blurb: "Celebrating 2024 and looking ahead to 2025, with potluck, prizes, and thanks to our volunteers and sponsors.",
+    image: "/news/holiday-party-2024.jpg",
+    type: "meetup" as const,
+    slug: "holiday-party-2024",
+  },
+  {
+    date: "November 18, 2024",
+    title: "Blockchain & Government",
+    blurb: "Every table filled at the St. Thomas School of Law Atrium for our fall conference on blockchain and government.",
+    image: "/news/blockchain-government-2024.jpeg",
+    type: "flagship" as const,
+    slug: "blockchain-government-best-moments",
+  },
 ];
 
 // Real past speakers, pulled from News & Articles coverage of past events.
