@@ -38,7 +38,7 @@ export default function MembershipPage() {
         <div className="mx-auto max-w-4xl px-6">
           <SectionLabel>Membership</SectionLabel>
           <h2 className="font-heading text-3xl font-extrabold text-navy-black">
-            One Membership, Real Benefits
+            Belong to Minnesota&rsquo;s Blockchain Community
           </h2>
           <p className="mt-4 max-w-2xl text-slate">
             As a volunteer-run nonprofit, membership dues go straight back into keeping our events
