@@ -75,7 +75,7 @@ export default function MembershipPage() {
             ))}
           </div>
 
-          <div className="mx-auto mt-10 max-w-md rounded-2xl border border-slate-200 bg-cloud p-6">
+          <div className="mx-auto mt-10 max-w-2xl rounded-2xl border border-slate-200 bg-cloud p-6">
             <ZeffySignup />
           </div>
 
