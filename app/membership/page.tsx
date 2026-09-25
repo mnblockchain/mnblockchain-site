@@ -103,8 +103,8 @@ export default function MembershipPage() {
           </div>
 
           <p className="mt-10 text-center text-sm text-slate">
-            All of our monthly meetups remain free and open to everyone — membership adds priority
-            access and deeper involvement, it&rsquo;s never required to attend.
+            All of our monthly meetups remain free and open to everyone; membership adds priority
+            access and deeper involvement.
           </p>
         </div>
       </section>
