@@ -8,6 +8,13 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
 };
 
+const logoFiles = [
+  { slug: "mnblockchain-logo-on-white", label: "On White", previewBg: "#ffffff", lightText: false },
+  { slug: "mnblockchain-logo-on-navy", label: "On Navy", previewBg: "#0b0e11", lightText: true },
+  { slug: "mnblockchain-logo-dark-text", label: "Transparent, Dark Text", previewBg: "#f5f7fa", lightText: false },
+  { slug: "mnblockchain-logo-white-text", label: "Transparent, White Text", previewBg: "#0b0e11", lightText: true },
+];
+
 const colors = [
   { name: "Brand Blue", hex: "#6495ed", usage: "The one blue - logo \"MN\", headline highlights, badges, links. Also used as plain text where a second darker blue used to be (removed 2026-09-12)." },
   { name: "Bitcoin Orange", hex: "#f7931a", usage: "The one orange - every action button site-wide, no exceptions (standing rule, set 2026-09-11) - not in the original brand PDF." },
@@ -56,6 +63,33 @@ export default function BrandStandardsPage() {
             <div className="rounded-2xl border border-slate-200 bg-navy-black p-8">
               <Logo />
             </div>
+          </div>
+
+          <h3 className="mt-10 font-heading text-lg font-bold text-navy-black">Download Logo Files</h3>
+          <p className="mt-1 max-w-2xl text-sm text-slate">
+            Vector paths traced from the real Cloud Bold font, so these match the site exactly and
+            scale to any size. SVG for print/design work, PNG for quick use (both transparent
+            background except the two solid-background versions below).
+          </p>
+          <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {logoFiles.map((f) => (
+              <div key={f.slug} className="rounded-2xl border border-slate-200 p-4" style={{ backgroundColor: f.previewBg }}>
+                <div className="flex h-16 items-center justify-center">
+                  <img src={`/logo/${f.slug}.png`} alt={f.label} className="max-h-10 max-w-full" />
+                </div>
+                <p className={`mt-3 text-xs font-bold uppercase tracking-widest ${f.lightText ? "text-white" : "text-navy-black"}`}>
+                  {f.label}
+                </p>
+                <div className="mt-2 flex gap-3 text-xs font-bold uppercase tracking-widest">
+                  <a href={`/logo/${f.slug}.svg`} download className={f.lightText ? "text-white underline" : "text-brand-blue underline"}>
+                    SVG
+                  </a>
+                  <a href={`/logo/${f.slug}.png`} download className={f.lightText ? "text-white underline" : "text-brand-blue underline"}>
+                    PNG
+                  </a>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
