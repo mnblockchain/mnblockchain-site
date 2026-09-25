@@ -4,7 +4,7 @@ import { Badge, NewsCard, SectionLabel } from "../components/ui";
 import { newsArticles } from "@/data/news";
 
 export const metadata: Metadata = {
-  title: "News & Articles — MNblockchain",
+  title: "News & Articles - MNblockchain",
   description: "Recaps, updates, and stories from MNblockchain events and initiatives.",
 };
 

@@ -35,13 +35,13 @@ export default function Home() {
           className="object-cover object-top brightness-125 contrast-105 saturate-110"
         />
         {/* Light, uniform scrim so the photo reads clearly outside the cards
-            below — the cards themselves are what guarantee text legibility,
+            below - the cards themselves are what guarantee text legibility,
             not this overlay. */}
         <div className="absolute inset-0 bg-navy-black/25" />
 
         {/* Box 1: headline, blended directly into the nav bar (full width,
-            flush against the top, no gap) so the photo's crowd — heads
-            included — only becomes visible below it, instead of a floating
+            flush against the top, no gap) so the photo's crowd - heads
+            included - only becomes visible below it, instead of a floating
             card sitting on top of people's faces. */}
         <div className="relative w-full bg-navy-black px-6 py-2 text-center shadow-2xl sm:py-4">
           <div className="mx-auto max-w-4xl">
@@ -55,7 +55,7 @@ export default function Home() {
             </h1>
           </div>
         </div>
-        {/* Tall gradient vignette instead of a hard edge below Box 1 — the
+        {/* Tall gradient vignette instead of a hard edge below Box 1 - the
             crowd's heads start high enough in the photo that no reasonably
             sized header box avoids them entirely, so this fades solid black
             into the photo gradually, reading as an intentional dark
@@ -63,7 +63,7 @@ export default function Home() {
         <div className="relative h-40 w-full bg-gradient-to-b from-navy-black to-transparent sm:h-56" />
       </section>
 
-      {/* Box 2: next event + org stats — pulled up to start over the bottom
+      {/* Box 2: next event + org stats - pulled up to start over the bottom
           of the hero photo, then bleeds down into the section below. */}
       <div className="relative z-10 -mt-28 px-6 sm:-mt-32">
         <div className="mx-auto max-w-4xl">
@@ -92,7 +92,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Next event details — moved up directly below the countdown box
+          {/* Next event details - moved up directly below the countdown box
               (the old "Next Event" section wrapper and "You'll Learn" list
               were removed; this card is what's left of it). */}
           <div className="relative mt-8 overflow-hidden rounded-3xl border border-slate-200 bg-cloud text-left shadow-sm">
@@ -129,7 +129,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* News & Articles — pulls the latest real posts from /news instead of
+      {/* News & Articles - pulls the latest real posts from /news instead of
           a separate hardcoded list, so this section stays current for free
           whenever /news is updated. */}
       <section className="bg-white py-20">
@@ -164,7 +164,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Team preview — moved up two sections, ahead of Speakers/Sponsors */}
+      {/* Team preview - moved up two sections, ahead of Speakers/Sponsors */}
       <section className="bg-cloud py-20">
         <div className="mx-auto max-w-6xl px-6">
           <div className="flex flex-wrap items-end justify-between gap-4">
@@ -221,7 +221,7 @@ export default function Home() {
             Get Notified About Upcoming Events
           </h2>
           <p className="mt-3 text-sm text-white/70">
-            Free events, expert speakers, and real networking — straight to your inbox.
+            Free events, expert speakers, and real networking - straight to your inbox.
           </p>
           <div className="mt-6 flex justify-center">
             <NewsletterForm />

@@ -4,7 +4,7 @@ import { Badge, SectionLabel, TeamCard } from "../components/ui";
 import { boardMembers, boardOfficers, committees, staffAdvisors } from "@/data/content";
 
 export const metadata: Metadata = {
-  title: "About — MNblockchain",
+  title: "About - MNblockchain",
   description: "MNblockchain's mission, board of directors, and committee structure.",
 };
 
@@ -21,7 +21,7 @@ export default function AboutPage() {
           className="object-cover object-top"
         />
         {/* Solid scrim so headline text stays legible over a busy indoor
-            photo — no separate card behind the text on this page, unlike
+            photo - no separate card behind the text on this page, unlike
             the homepage hero. */}
         <div className="absolute inset-0 bg-navy-black/70" />
         <div className="relative mx-auto max-w-3xl px-6">
@@ -30,7 +30,7 @@ export default function AboutPage() {
             About MNblockchain
           </h1>
           <p className="mt-4 text-xl font-medium text-white/90">
-            Building community and industry in blockchain &amp; web3 — driving education and policy
+            Building community and industry in blockchain &amp; web3 - driving education and policy
             across Minnesota.
           </p>
         </div>
@@ -71,7 +71,7 @@ export default function AboutPage() {
           </p>
           <p className="mt-4 text-lg leading-relaxed text-slate">
             MNblockchain exists to build community and industry around blockchain and web3
-            technologies in Minnesota — through free monthly events, flagship gatherings,
+            technologies in Minnesota - through free monthly events, flagship gatherings,
             education, and policy advocacy with state and federal lawmakers.
           </p>
         </div>
@@ -111,7 +111,7 @@ export default function AboutPage() {
           <h2 className="font-heading text-3xl font-extrabold text-navy-black">How We&rsquo;re Organized</h2>
           <p className="mt-4 text-slate">
             Beyond the board, our work runs through four committees. Committee leads are being
-            assigned — check back soon for who&rsquo;s driving each one.
+            assigned - check back soon for who&rsquo;s driving each one.
           </p>
           <div className="mt-8 grid gap-6 sm:grid-cols-2">
             {committees.map((c) => (

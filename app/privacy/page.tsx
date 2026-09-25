@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy — MNblockchain",
+  title: "Privacy - MNblockchain",
   description: "How MNblockchain handles the information you share through this website.",
 };
 

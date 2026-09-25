@@ -3,7 +3,7 @@ import { SectionLabel } from "../components/ui";
 import ContactForm from "./ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contact — MNblockchain",
+  title: "Contact - MNblockchain",
   description: "Get in touch with MNblockchain.",
 };
 
@@ -16,7 +16,7 @@ export default function ContactPage() {
           Contact MNblockchain
         </h1>
         <p className="mt-4 text-slate">
-          Questions about events, membership, sponsorship, or speaking? Send us a note — we&rsquo;ll
+          Questions about events, membership, sponsorship, or speaking? Send us a note - we&rsquo;ll
           get back to you soon.
         </p>
         <div className="mt-8">

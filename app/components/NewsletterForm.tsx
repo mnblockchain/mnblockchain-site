@@ -8,7 +8,7 @@ export default function NewsletterForm() {
   const [state, action, pending] = useActionState(submitNewsletter, null);
 
   if (state?.success) {
-    return <p className="text-sm font-semibold text-brand-blue">You're on the list — thanks!</p>;
+    return <p className="text-sm font-semibold text-brand-blue">You're on the list - thanks!</p>;
   }
 
   return (

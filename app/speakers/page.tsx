@@ -3,10 +3,10 @@ import { Badge, PrimaryButton, SectionLabel, SpeakerCard } from "../components/u
 import { speakers } from "@/data/content";
 
 export const metadata: Metadata = {
-  title: "Speakers — MNblockchain",
-  description: "Meet the speakers who've shaped MNblockchain events — local builders, national voices, and everything in between.",
+  title: "Speakers - MNblockchain",
+  description: "Meet the speakers who've shaped MNblockchain events - local builders, national voices, and everything in between.",
   // Page is unlinked from nav/footer for now while this section is
-  // reworked — keep it out of search results until it's ready to relink.
+  // reworked - keep it out of search results until it's ready to relink.
   robots: { index: false, follow: false },
 };
 
@@ -20,7 +20,7 @@ export default function SpeakersPage() {
             Speakers
           </h1>
           <p className="mt-4 text-xl font-medium text-white/90">
-            Every speaker is an active operator, investor, or policymaker — no theory, no fluff.
+            Every speaker is an active operator, investor, or policymaker - no theory, no fluff.
           </p>
         </div>
       </section>

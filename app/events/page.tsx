@@ -5,7 +5,7 @@ import { Badge, EventCard, EventSpeaker, PrimaryButton, SectionLabel } from "../
 import { nextEvent, pastEvents } from "@/data/content";
 
 export const metadata: Metadata = {
-  title: "Events — MNblockchain",
+  title: "Events - MNblockchain",
   description: "Monthly meetups, flagship events, and remote spotlight speaker sessions across Minnesota.",
 };
 
@@ -108,7 +108,7 @@ export default function EventsPage() {
                 Teaming Up with Culture Convergence
               </h2>
               <p className="mx-auto mt-4 max-w-xl text-slate">
-                We&rsquo;re partnering with Culture Convergence for their annual gathering —
+                We&rsquo;re partnering with Culture Convergence for their annual gathering -
                 panel discussions and food provided. Full details, date, and registration
                 coming soon.
               </p>
@@ -125,7 +125,7 @@ export default function EventsPage() {
             {[
               {
                 title: "Spotlight Meetups",
-                blurb: "In-person, every month — open discussion, local speakers, and networking.",
+                blurb: "In-person, every month - open discussion, local speakers, and networking.",
                 icon: (
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6">
                     <path d="M9 3h6l3 8H6z" />

@@ -18,7 +18,7 @@ export async function generateMetadata({
   const article = newsArticles.find((a) => a.slug === slug);
   if (!article) return {};
   return {
-    title: `${article.title} — MNblockchain`,
+    title: `${article.title} - MNblockchain`,
     description: article.excerpt,
   };
 }

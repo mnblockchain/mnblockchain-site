@@ -4,9 +4,9 @@ import { Badge, InvolvementCard, PrimaryButton, SectionLabel } from "../componen
 import { committees, volunteerRoles, slackInviteUrl } from "@/data/content";
 
 export const metadata: Metadata = {
-  title: "Get Involved — MNblockchain",
+  title: "Get Involved - MNblockchain",
   description:
-    "Join a committee, volunteer for a role, speak at an event, or partner with MNblockchain — real ways to plug in, not just a signup form.",
+    "Join a committee, volunteer for a role, speak at an event, or partner with MNblockchain - real ways to plug in, not just a signup form.",
 };
 
 export default function GetInvolvedPage() {
@@ -43,7 +43,7 @@ export default function GetInvolvedPage() {
             Find Your Committee
           </h2>
           <p className="mt-3 max-w-2xl text-slate">
-            Each committee owns a real part of the organization — not just advice from the
+            Each committee owns a real part of the organization - not just advice from the
             sidelines.
           </p>
           <div className="mt-8 grid gap-6 sm:grid-cols-2">

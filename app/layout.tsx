@@ -7,7 +7,7 @@ import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 
 // Brand standards leave headline/body typography unspecified ("default
-// fonts") — Manrope is used throughout for a clean, modern, single-family
+// fonts") - Manrope is used throughout for a clean, modern, single-family
 // system.
 const manrope = Manrope({
   weight: ["400", "500", "600", "700", "800"],
@@ -16,7 +16,7 @@ const manrope = Manrope({
 });
 
 // Wordmark only: the actual "Cloud Bold" font from the brand standards doc,
-// self-hosted (weight 700 — it's a single-weight font, not a variable one).
+// self-hosted (weight 700 - it's a single-weight font, not a variable one).
 const cloudBold = localFont({
   src: "./fonts/Cloud-Bold.otf",
   weight: "700",
@@ -25,7 +25,7 @@ const cloudBold = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "MNblockchain — Minnesota Blockchain & Web3 Community",
+  title: "MNblockchain - Minnesota Blockchain & Web3 Community",
   description:
     "MNblockchain is a Minnesota nonprofit building community and industry in blockchain & web3 through events, education, and policy advocacy.",
 };

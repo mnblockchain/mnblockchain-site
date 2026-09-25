@@ -6,14 +6,14 @@ import SponsorForm from "./SponsorForm";
 
 const sponsorTestimonial = testimonials.find((t) => t.name === "Sponsor Contact");
 
-// TODO(Colin): all temporarily hidden per request (2026-09-15) — bring back
+// TODO(Colin): all temporarily hidden per request (2026-09-15) - bring back
 // once ready. Content/data is untouched, just not rendered.
 const SHOW_SPONSOR_TESTIMONIAL = false;
 const SHOW_SPONSOR_PRICING = false;
 const SHOW_SPONSOR_TIERS = false;
 
 export const metadata: Metadata = {
-  title: "Sponsors — MNblockchain",
+  title: "Sponsors - MNblockchain",
   description: "Sponsorship tiers and partnership opportunities with MNblockchain.",
 };
 
@@ -37,7 +37,7 @@ export default function SponsorsPage() {
             Sponsor MNblockchain
           </h1>
           <p className="mt-4 text-xl font-medium text-white/90">
-            Your support keeps our events free and our community growing — with real visibility
+            Your support keeps our events free and our community growing - with real visibility
             in front of Minnesota&rsquo;s blockchain builders and investors.
           </p>
           <div className="mt-8">
@@ -63,7 +63,7 @@ export default function SponsorsPage() {
             The Partners Who Make This Possible
           </h2>
           <p className="mt-3 max-w-2xl text-slate">
-            Every free event, every speaker, every gathering — powered by the companies below.
+            Every free event, every speaker, every gathering - powered by the companies below.
             We&rsquo;re grateful for their support of Minnesota&rsquo;s blockchain community.
           </p>
           <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -95,7 +95,7 @@ export default function SponsorsPage() {
             Packages Built for Real Value
           </h2>
           <p className="mt-3 max-w-2xl text-slate">
-            Every tier includes real access to our community — not just a logo. Compare what each
+            Every tier includes real access to our community - not just a logo. Compare what each
             level unlocks below.
           </p>
 
@@ -150,7 +150,7 @@ export default function SponsorsPage() {
                           {value === true ? (
                             <span className="text-brand-blue">✓</span>
                           ) : value === false ? (
-                            <span className="text-slate-300">—</span>
+                            <span className="text-slate-300">-</span>
                           ) : (
                             <span className="text-navy-black">{value}</span>
                           )}

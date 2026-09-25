@@ -13,7 +13,7 @@ export const nextEvent = {
   time: "5:00 PM arrival · 6:00 PM presentations",
   location: "Frankie's, 3556 Winnetka Ave N, New Hope, MN 55427",
   description:
-    "Zach Robins, Head of Legal at Brale, joins us to talk about building stablecoins under the new GENIUS Act — plus free pizza and open networking. Presented with Stand With Crypto.",
+    "Zach Robins, Head of Legal at Brale, joins us to talk about building stablecoins under the new GENIUS Act - plus free pizza and open networking. Presented with Stand With Crypto.",
   learn: [
     "How stablecoins went from a niche crypto tool to a mainstream payment rail",
     "What the GENIUS Act means for stablecoin issuers, in plain terms",
@@ -40,7 +40,7 @@ export const pastEvents = [
   {
     date: "August 31, 2026",
     title: "How to Spot Red Flags in the Industry",
-    blurb: "Crypto consultant Josiah Wilson (LIBREX Crypto Consulting) on spotting danger in the industry — beyond the obvious scams.",
+    blurb: "Crypto consultant Josiah Wilson (LIBREX Crypto Consulting) on spotting danger in the industry - beyond the obvious scams.",
     image: "/news/red-flags-aug2026.jpeg",
     type: "meetup" as const,
     slug: "spotlight-meetup-aug-31-red-flags",
@@ -56,7 +56,7 @@ export const pastEvents = [
   {
     date: "April 5, 2026",
     title: "A Team of One",
-    blurb: "Builder Ben Carlson (\"Mr. Fun Guy\") on using AI to do the work of many — presented at Frankie's.",
+    blurb: "Builder Ben Carlson (\"Mr. Fun Guy\") on using AI to do the work of many - presented at Frankie's.",
     image: "/news/team-of-one.jpg",
     type: "meetup" as const,
     slug: "a-team-of-one",
@@ -114,13 +114,13 @@ export const pastEvents = [
 // Real past speakers, pulled from News & Articles coverage of past events.
 export const speakers = [
   { name: "Josiah Wilson", title: "Owner, LIBREX Crypto Consulting" },
-  { name: "Ben Carlson", title: "Builder — AI & Automation (\"Mr. Fun Guy\")" },
+  { name: "Ben Carlson", title: "Builder - AI & Automation (\"Mr. Fun Guy\")" },
   { name: "Jamie Thingelstad", title: "POAPs & the “612” Summer Scavenger Hunt" },
-  { name: "Eric Thompson", title: "CFP® — Bitcoin ETF Presentation" },
+  { name: "Eric Thompson", title: "CFP® - Bitcoin ETF Presentation" },
 ];
 
 // Stats used to open the sponsors page with real proof of audience/reach
-// before asking anyone to pay — every number here also appears elsewhere on
+// before asking anyone to pay - every number here also appears elsewhere on
 // the site (homepage stats, hero copy), so this stays truthful by construction.
 export const sponsorStats = [
   { value: "2018", label: "Founded" },
@@ -168,7 +168,7 @@ export const sponsorTiers = [
 ];
 
 // Feature-by-feature breakdown of sponsorTiers above, for a side-by-side
-// comparison table. Keep in sync with the perks lists above by hand — small
+// comparison table. Keep in sync with the perks lists above by hand - small
 // enough list that a shared source-of-truth isn't worth the indirection yet.
 // Values: true = included, false = not included, string = tier-specific detail.
 export const sponsorComparison: {
@@ -194,7 +194,7 @@ export const sponsorComparison: {
 // Real sponsor/partner logos pulled from the live site into /public/sponsors/.
 // The old site doesn't clearly distinguish paid sponsors from policy/community
 // partners (e.g. Stand With Crypto reads more like a partner), and none of
-// them have a confirmed dollar tier yet — flagged so Brandon/Colin can assign
+// them have a confirmed dollar tier yet - flagged so Brandon/Colin can assign
 // real tiers once known, at which point the wall can size logos by tier.
 export const sponsors = [
   { name: "Stand With Crypto", blurb: "Policy partner.", logo: "/sponsors/stand-with-crypto.png", url: "https://www.standwithcrypto.org/" },
@@ -203,9 +203,9 @@ export const sponsors = [
   { name: "Quantum Lex", blurb: "Partner.", logo: "/sponsors/quantum-lex.jpg", url: "https://www.quantumlex.io/" },
 ];
 
-// Real membership program, from mnblockchain.org/membership/ — a single paid
+// Real membership program, from mnblockchain.org/membership/ - a single paid
 // tier, not the multi-tier structure this page used to have. Skips the
-// NFT/crypto-payment mechanics (PayPal/Venmo/Coinbase QR codes) — described
+// NFT/crypto-payment mechanics (PayPal/Venmo/Coinbase QR codes) - described
 // here as plain pricing/benefits; wire up real payment flow separately if
 // wanted.
 export const membershipTiers = [
@@ -244,19 +244,19 @@ export const staffAdvisors = [
   { name: "Graham Christopherson", role: "Accounting", linkedin: "https://www.linkedin.com/in/graham-christopherson-37041b107/", photo: "/team/graham-christopherson.png" },
 ];
 
-// Committee structure — leads not yet assigned to individuals (as of 2026-08-21).
+// Committee structure - leads not yet assigned to individuals (as of 2026-08-21).
 export const committees = [
   {
     name: "Events & Programming",
-    blurb: "Owns the event calendar and speaker pipeline — monthly meetups, flagship events, and the remote spotlight series.",
+    blurb: "Owns the event calendar and speaker pipeline - monthly meetups, flagship events, and the remote spotlight series.",
   },
   {
     name: "Membership",
-    blurb: "Owns the member experience — benefits, renewals, and growing a community worth belonging to.",
+    blurb: "Owns the member experience - benefits, renewals, and growing a community worth belonging to.",
   },
   {
     name: "Sponsorships & Corporate Partnerships",
-    blurb: "Owns sponsor relationships and revenue — packaging, prospecting, and delivering real value to partners.",
+    blurb: "Owns sponsor relationships and revenue - packaging, prospecting, and delivering real value to partners.",
   },
   {
     name: "Government & Law",
@@ -264,25 +264,25 @@ export const committees = [
   },
 ];
 
-// From mnblockchain.org/get-involved-with-minnesota-blockchain/ — the three
+// From mnblockchain.org/get-involved-with-minnesota-blockchain/ - the three
 // standing volunteer roles the org has actually asked for.
 export const volunteerRoles = [
   {
     name: "Event Planning & Operations",
-    blurb: "Help run monthly meetups and flagship events — logistics, day-of operations, and venue coordination.",
+    blurb: "Help run monthly meetups and flagship events - logistics, day-of operations, and venue coordination.",
   },
   {
     name: "Community Management & Memberships",
-    blurb: "Help members feel like members — onboarding, renewals, Slack engagement, and member communication.",
+    blurb: "Help members feel like members - onboarding, renewals, Slack engagement, and member communication.",
   },
   {
     name: "Podcast & Video Editing",
-    blurb: "Help produce the podcast and event video/photo content — editing, publishing, and promotion.",
+    blurb: "Help produce the podcast and event video/photo content - editing, publishing, and promotion.",
   },
 ];
 
 // Real invite link, pulled from a migrated news article (2026-09-04).
-// Slack invite links can expire — verify this still works before relying
+// Slack invite links can expire - verify this still works before relying
 // on it for a launch push.
 export const slackInviteUrl =
   "https://join.slack.com/t/mnblockchain/shared_invite/zt-1ms7z9uc0-FESZ7iuHr4OaHYStwDD77Q";
@@ -290,7 +290,7 @@ export const slackInviteUrl =
 export const testimonials = [
   {
     quote:
-      "I've made most of my real connections in this space through MNblockchain — consistent, welcoming, and never salesy.",
+      "I've made most of my real connections in this space through MNblockchain - consistent, welcoming, and never salesy.",
     name: "Member Name One",
     detail: "Member since 2022",
   },
@@ -322,6 +322,6 @@ export const policyFocus = [
   {
     title: "Lawmaker relationships",
     blurb:
-      "Building relationships with Minnesota's congressional delegation and state legislators — evenhandedly, across both parties.",
+      "Building relationships with Minnesota's congressional delegation and state legislators - evenhandedly, across both parties.",
   },
 ];

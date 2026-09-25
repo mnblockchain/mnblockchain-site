@@ -16,7 +16,7 @@ const FROM_EMAIL = "MNblockchain <noreply@send.mnblockchain.org>";
 
 async function send(subject: string, text: string, html: string, replyTo?: string) {
   if (!process.env.RESEND_API_KEY) {
-    console.log("[contact form — no RESEND_API_KEY set]", subject, text);
+    console.log("[contact form - no RESEND_API_KEY set]", subject, text);
     return { success: true } as const;
   }
   const resend = new Resend(process.env.RESEND_API_KEY);
@@ -95,7 +95,7 @@ export async function submitSponsorInquiry(
   try {
     await send(
       `New sponsor inquiry from ${company}`,
-      `Name: ${name}\nEmail: ${email}\nOrganization: ${company}\n\nMessage:\n${message || "—"}`,
+      `Name: ${name}\nEmail: ${email}\nOrganization: ${company}\n\nMessage:\n${message || "-"}`,
       notificationHtml({
         heading: "New sponsor inquiry",
         fields: [

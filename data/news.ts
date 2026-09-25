@@ -1,6 +1,6 @@
 // Real articles pulled from mnblockchain.org/news-articles/ on 2026-09-04.
 // Body content is preserved as published (light cleanup of stray whitespace
-// only) — this is historical record, not marketing copy to be polished.
+// only) - this is historical record, not marketing copy to be polished.
 // Inline links use markdown-style [text](url) syntax, rendered by
 // renderRichText() in app/news/[slug]/page.tsx.
 
@@ -28,12 +28,12 @@ export const newsArticles: NewsArticle[] = [
     excerpt: "Josiah Wilson (LIBREX Crypto Consulting) walked us through wallet drainers, address poisoning, and the habits that keep you safe.",
     body: [
       "Josiah, er, Professor Wilson took us to safety school.",
-      "[Josiah Wilson](https://www.linkedin.com/in/josiahjdwilson/) ([LIBREX Crypto Consulting](https://librexconsulting.com/)) walked us through how to stay safe when navigating the world of blockchain and cryptocurrency — an interactive, classroom-style session capped off with a fun Q&A.",
-      "Before Josiah took the mic, MNblockchain VP [Colin Hirdman](https://www.linkedin.com/in/colinhirdman/) gave attendees an update on the federal CLARITY Act. Colin, along with board members [Alex Schoephoerster](https://www.linkedin.com/in/alex-schoephoerster/) and president [Brandon Ferdig](https://www.linkedin.com/in/brandonferdig/), recently met with US Rep. (and original CLARITY co-sponsor) Bryan Steil at a roundtable hosted by St. Cloud Financial Credit Union — so Colin had plenty of fresh detail on where the bill stands and what attendees can do about it.",
-      "From there, Josiah broke down the threats that actually put people at risk — wallet drainers, address poisoning, and the sneaky points of failure that get missed until it's too late — plus the defense habits that keep you safe, like reading every signature request and never copying a destination address straight out of a transaction.",
+      "[Josiah Wilson](https://www.linkedin.com/in/josiahjdwilson/) ([LIBREX Crypto Consulting](https://librexconsulting.com/)) walked us through how to stay safe when navigating the world of blockchain and cryptocurrency - an interactive, classroom-style session capped off with a fun Q&A.",
+      "Before Josiah took the mic, MNblockchain VP [Colin Hirdman](https://www.linkedin.com/in/colinhirdman/) gave attendees an update on the federal CLARITY Act. Colin, along with board members [Alex Schoephoerster](https://www.linkedin.com/in/alex-schoephoerster/) and president [Brandon Ferdig](https://www.linkedin.com/in/brandonferdig/), recently met with US Rep. (and original CLARITY co-sponsor) Bryan Steil at a roundtable hosted by St. Cloud Financial Credit Union - so Colin had plenty of fresh detail on where the bill stands and what attendees can do about it.",
+      "From there, Josiah broke down the threats that actually put people at risk - wallet drainers, address poisoning, and the sneaky points of failure that get missed until it's too late - plus the defense habits that keep you safe, like reading every signature request and never copying a destination address straight out of a transaction.",
       "Missed it live? [Watch the replay of the night's LinkedIn livestream here](https://lnkd.in/gyxkgJg6).",
       "Thank you to all our attendees, to our monthly host Frankie's Chicago Style Pizza, to our supporters from [Stand With Crypto](https://www.standwithcrypto.org/), and, of course, to Josiah!",
-      "—MNblockchain",
+      "-MNblockchain",
     ],
   },
   {
@@ -53,7 +53,7 @@ export const newsArticles: NewsArticle[] = [
       "We’re well beyond creating photos or generating some text. Today’s A.I. tools, as Ben showed, can mimic and achieve the work of a team of developers. Also in these further reaches of A.I. and A.I. agents, we begin to see its intersection with blockchain tech.",
       "This won’t be the last A.I. talk we have. But if you’d like a replay, [watch Ben’s talk here](https://lnkd.in/gfEc8NQr).",
       "Big thanks to Ben, to our venue host [Frankies Chicago Style Pizza](https://www.frankieschicagostyle.com/), and to all those making it out in-person, especially our newcomers who introduced themselves!",
-      "—MNblockchain",
+      "-MNblockchain",
     ],
   },
   {
@@ -64,7 +64,7 @@ export const newsArticles: NewsArticle[] = [
     author: "Matthew Rogers",
     category: "News",
     image: "/news/crypto-spring-2026.jpg",
-    excerpt: "A truly impressive turnout — social energy and topical discussion filled the room.",
+    excerpt: "A truly impressive turnout - social energy and topical discussion filled the room.",
     body: [
       "People filled the room. Social energy and topical discussion filled the air. A truly impressive turnout Wednesday night.",
       "Attendees were buzzing before & after the presentations over drinks and networking.",
@@ -72,7 +72,7 @@ export const newsArticles: NewsArticle[] = [
       "Downturn in the market be damned. This is a massive movement on the rise.",
       "Huge thanks to all who came out, to all who spoke, to the venue Surly Brewing for the great space and food, and to the event sponsor, [Stand With Crypto](https://standwithcrypto.org/).",
       "Look for a more detailed write-up and speaker videos on the way. Have an awesome weekend!",
-      "—MNblockchain",
+      "-MNblockchain",
     ],
   },
   {
@@ -93,7 +93,7 @@ export const newsArticles: NewsArticle[] = [
       "To learn more about Jamie, POAPs, and the summer scavenger hunt, check it out on [Jamie’s website](http://612.poapchallenge.com/).",
       "For event organizers, POAPs also offer a way to track engagement and engage with participants. On that note, come attend our next Meetup.",
       "Thank you, Jamie. Thank you, [Frankie’s Chicago Style](https://www.frankieschicagostyle.com/), and your phenomenal pizza. And thank you, attendees, for joining our community last night!",
-      "—MNblockchain Team",
+      "-MNblockchain Team",
     ],
   },
   {
@@ -127,7 +127,7 @@ export const newsArticles: NewsArticle[] = [
       "Each region visited several congresspeople, sharing their experience in the industry. Stand With Crypto Day is about putting a face on the issue as well as educating lawmakers about this industry and technology.",
       "Our Central cohort had seven members from Wisconsin, Illinois, and Minnesota, representing a variety of projects: a ticket marketplace, a business document transfer service, and a couple of musicians leveraging blockchain for better connection with fans and consumers. Our cohort met with Wisconsin Congressman Mark Pocan.",
       "Brandon took the testimonials many of you provided to create a handout for the lawmakers. Big thanks to those of you who submitted these words for our representatives! Each office eagerly received this document, contributing much to our cohort which itself contributed much to the whole 60-member team of Stand With Crypto representatives stretching from Hawaii to Rhode Island.",
-      "To conclude, we attended a reception featuring an all-star panel with blockchain-friendly Senators Lummis and Gillibrand and Coinbase’s Brian Armstrong. Discussion focused on facilitating bipartisan support that looks past differences and distractions, as well as the priority of [stablecoin legislation—being voted on THIS WEEK](https://www.standwithcrypto.org/action/email).",
+      "To conclude, we attended a reception featuring an all-star panel with blockchain-friendly Senators Lummis and Gillibrand and Coinbase’s Brian Armstrong. Discussion focused on facilitating bipartisan support that looks past differences and distractions, as well as the priority of [stablecoin legislation-being voted on THIS WEEK](https://www.standwithcrypto.org/action/email).",
       "Altogether, it homed in on a legislative goal and the teamwork needed to see it through. It was a fitting message for this day and our efforts moving forward! Stay tuned for such efforts.",
     ],
   },
@@ -144,14 +144,14 @@ export const newsArticles: NewsArticle[] = [
       "Greetings from Minnesota Blockchain Initiative!",
       "Last year introduced many “firsts” we’re excited to build upon in 2025.",
       "We unveiled our Membership program, seeing 40+ folks in the community sign up to offer their support, help in our initiatives, and enjoy the Membership benefits along the way. This year, we’re expanding the benefits, including free courses from our new partner, The Blockchain Academy (one of many new partners).",
-      "We also premiered the MNblockchain Conversations podcast! Featuring several local builders, shakers, and thought leaders—and thanks to the studio space sponsored by Quantum Lex law firm (another great partner)—we covered everything from crypto banking to AI development, government regulation, and much more.",
+      "We also premiered the MNblockchain Conversations podcast! Featuring several local builders, shakers, and thought leaders-and thanks to the studio space sponsored by Quantum Lex law firm (another great partner)-we covered everything from crypto banking to AI development, government regulation, and much more.",
       "Speaking of showcasing, our Spotlight Meetups increased to being monthly events at Frankie’s Chicago Style in New Hope. In May, we combined this event with the annual Bitcoin Pizza Day party.",
-      "In addition to the Meetups were our Spring and Fall conferences, each featuring several speakers around a theme—Spring was the Bull Market; Fall was Blockchain & Government.",
+      "In addition to the Meetups were our Spring and Fall conferences, each featuring several speakers around a theme-Spring was the Bull Market; Fall was Blockchain & Government.",
       "Our Fall 2024 event was held for the second straight year at the University of St. Thomas School of Law. We’re excited to continue working with them for an even larger event for Fall 2025!",
-      "Merchant & Gould law firm—an annual sponsor of MNblockchain—had a starring role at another 2024 first for Minnesota. New organization NFT-MSP kicked off their first annual NFT Art Fair, where they also featured panel discussions featuring MNB leaders and area experts (such as IP law firm Merchant & Gould).",
+      "Merchant & Gould law firm-an annual sponsor of MNblockchain-had a starring role at another 2024 first for Minnesota. New organization NFT-MSP kicked off their first annual NFT Art Fair, where they also featured panel discussions featuring MNB leaders and area experts (such as IP law firm Merchant & Gould).",
       "Finally, we were humbled to gain two new annual sponsors in 2024! Fredrikson law firm and Otter Tail Power Company, the latter representing our entrance into the Bitcoin mining space. This introduction was kicked off at The Mining Conference in Brainerd in September.",
-      "All this and more will be a part of our 2025—more community, more events, more media, education, partnerships, and collaborations. Come be a part and help see Minnesota become a hub for blockchain education and development for the world!",
-      "—Brandon Ferdig, President, Minnesota Blockchain Initiative",
+      "All this and more will be a part of our 2025-more community, more events, more media, education, partnerships, and collaborations. Come be a part and help see Minnesota become a hub for blockchain education and development for the world!",
+      "-Brandon Ferdig, President, Minnesota Blockchain Initiative",
     ],
   },
   {
@@ -165,14 +165,14 @@ export const newsArticles: NewsArticle[] = [
     excerpt: "Attendees filled every table at the St. Thomas School of Law Atrium for our fall conference on blockchain and government.",
     body: [
       "With echoes of the election, excitement of a rising market, and promise of a new era for this industry, attendees filled every table at the [St. Thomas School of Law](https://law.stthomas.edu/) Atrium, downtown Minneapolis.",
-      "Following our “Web3 & Law” conference at St. Thomas last year, we returned Monday evening, November 18—this time focused on blockchain technology’s growing role in government.",
+      "Following our “Web3 & Law” conference at St. Thomas last year, we returned Monday evening, November 18-this time focused on blockchain technology’s growing role in government.",
       "While St. Thomas School of Law served as host, other sponsors included government affairs specialists [Terrapin Strategy](https://www.terrapinstrategy.com/) and cryptocurrency advocacy nonprofit [Stand With Crypto](https://www.standwithcrypto.org/), whose generous support as co-presenter allowed us to offer free admission this year!",
       "Kicking off the program: a [welcome from law school dean Daniel B. Kelly](https://www.youtube.com/watch?v=mx9XLnwKoqw); [opening remarks from MNblockchain president Brandon Ferdig](https://youtu.be/wrggU4XCTsk) on the blending of old & new systems; and a [video message from Rep. Tom Emmer](https://www.youtube.com/watch?v=DbitKgHwkMo) (recently re-elected to MN-6), outspoken industry advocate in U.S. Congress.",
       "Technologist and MNblockchain board member Rafael Mojden served as the night’s emcee. He introduced the first of four featured presentations: [a fireside chat on institutional bitcoin adoption](https://youtu.be/DMjlULpGxvo) with Swan Bitcoin’s Chief Revenue Officer, Brandon Quittem.",
       "Then, fresh off the election, application architect Robert Phillips [presented “Voting on Chain.”](https://youtu.be/zIFPj4Sax8s) From the national to the state level, South Dakota Blockchain Institute’s Barry Sackett [discussed “Regulations at the State Level”](https://youtu.be/a3Ok5FsFkdc) in a fireside chat led by Rafael.",
-      "Lastly, Matthew Bowen [offered insights into “Decentralized Governance”](https://youtu.be/1el44vZ_00k)—what new form of government might manifest from this new technological revolution.",
+      "Lastly, Matthew Bowen [offered insights into “Decentralized Governance”](https://youtu.be/1el44vZ_00k)-what new form of government might manifest from this new technological revolution.",
       "Big thanks again to our sponsors, speakers, event organizers, and all the attendees of our fall event. This confluence of topics and timing cap off an incredible 2024 and set our sights on the industry in 2025 and beyond!",
-      "—MNblockchain Team",
+      "-MNblockchain Team",
     ],
   },
   {
@@ -183,14 +183,14 @@ export const newsArticles: NewsArticle[] = [
     author: "A. L.",
     category: "Business",
     image: "/news/bitcoin-etf-2024.jpeg",
-    excerpt: "March Meetup Recap: Eric Thompson, CFP®, on the Bitcoin ETF—from basics to nuances.",
+    excerpt: "March Meetup Recap: Eric Thompson, CFP®, on the Bitcoin ETF-from basics to nuances.",
     body: [
       "On a bustling Monday evening at Frankie’s Pizza, attendees eagerly gathered for our March Meetup featuring Eric Thompson, CFP®. With his unique expertise spanning traditional finance and cryptocurrency, Eric captivated newcomers and seasoned professionals alike.",
       "Delving into the intricacies of the Bitcoin ETF, Eric elucidated its appeal from basics to nuances, shedding light on why it has garnered such widespread attention. As Eric aptly said, “If you’re in $1000, the most you can lose is $1000, but the upside can be much more.”",
       "Highlighting Bitcoin’s role as an alternative to prevailing monetary policies, Eric emphasized its growing traction among retail investors, signaling a promising trajectory ahead. The lively Q&A session underscored the enthusiastic engagement of participants, fostering valuable networking opportunities throughout the evening.",
       "Whether you want to join our Membership program or become part of our vibrant [Slack community](https://join.slack.com/t/mnblockchain/shared_invite/zt-1ms7z9uc0-FESZ7iuHr4OaHYStwDD77Q), we welcome your involvement!",
       "A heartfelt thank you to Eric, our attendees, and Frankie’s Pizza for contributing to yet another enriching event. Here’s to continued learning and connection within the MNblockchain community!",
-      "—The MNblockchain Team",
+      "-The MNblockchain Team",
     ],
   },
   {
@@ -210,7 +210,7 @@ export const newsArticles: NewsArticle[] = [
       "In addition to amplifying local voices, we’re broadening our media footprint by launching “MNB Conversations,” our very own podcast. This platform will feature in-depth discussions and narratives on topics and projects closely tied to our state, providing an exploration of the blockchain and web3 landscape.",
       "Furthermore, we’re scaling our efforts from grassroots activism to collaborations with C-suite executives. We aim to support more Minnesota institutions in navigating the opportunities and challenges presented by the emergence of Web3 technology.",
       "In essence, 2024 marks the continuation of our successful strategies while introducing new initiatives tailored to advance the blockchain and Web3 industry in Minnesota. Here’s to a transformative 2024!",
-      "—Brandon Ferdig, President, Minnesota Blockchain Initiative",
+      "-Brandon Ferdig, President, Minnesota Blockchain Initiative",
     ],
   },
   {
@@ -241,7 +241,7 @@ export const newsArticles: NewsArticle[] = [
     author: "A. L.",
     category: "Business",
     image: "/news/pitch-night-2023.jpeg",
-    excerpt: "Four finalists pitched at Minnesota Blockchain Pitch Night, part of Twin Cities Startup Week — Evergreen Miner took the win.",
+    excerpt: "Four finalists pitched at Minnesota Blockchain Pitch Night, part of Twin Cities Startup Week - Evergreen Miner took the win.",
     body: [
       "There was a synchronicity between this event, the contestants, the judges, the sponsors, and all the attendees, who come equally from the MNblockchain and [Twin Cities Startup Week](https://info.tcstartupweek.com/) communities.",
       "A full room watched seven presentations, heard from six sponsoring partners, and witnessed four finalists pitch their best to the judges’ panel. This was Minnesota Blockchain Pitch Night!",
@@ -264,7 +264,7 @@ export const newsArticles: NewsArticle[] = [
     body: [
       "200+ blockchain professionals mingling on the historic trading floor of the former Minneapolis Grain Exchange. Finally, at the forefront: the stage upon which seven presentations showcased various integrations of blockchain into society.",
       "Art, data storage, finance, education, community development, policy, and more: this was our event “The State of Blockchain,” held October 6.",
-      "Read all about this evening—as well as how we at Minnesota Blockchain Initiative are building upon the momentum of this milestone—at our [newsletter article](https://mailchi.mp/mnblockchain/october-event-nfts-at-uptown-art-fair-11577294). Here, enjoy the recap video as well as a few photos from this special night.",
+      "Read all about this evening-as well as how we at Minnesota Blockchain Initiative are building upon the momentum of this milestone-at our [newsletter article](https://mailchi.mp/mnblockchain/october-event-nfts-at-uptown-art-fair-11577294). Here, enjoy the recap video as well as a few photos from this special night.",
     ],
   },
   {

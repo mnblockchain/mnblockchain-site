@@ -4,7 +4,7 @@ import { Badge, PrimaryButton, SectionLabel } from "../components/ui";
 import { membershipTiers } from "@/data/content";
 
 export const metadata: Metadata = {
-  title: "Membership — MNblockchain",
+  title: "Membership - MNblockchain",
   description: "MNblockchain membership tiers and benefits.",
 };
 

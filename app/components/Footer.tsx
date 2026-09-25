@@ -39,7 +39,7 @@ export default function Footer() {
           <div>
             <Logo />
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/60">
-              Building community and industry in blockchain &amp; web3 across Minnesota — education,
+              Building community and industry in blockchain &amp; web3 across Minnesota - education,
               events, and policy.
             </p>
             <div className="mt-6 flex gap-3">
@@ -82,7 +82,7 @@ export default function Footer() {
               Get Notified
             </p>
             <p className="mb-4 text-sm leading-relaxed text-white/60">
-              Free events, expert speakers, and real networking — straight to your inbox.
+              Free events, expert speakers, and real networking - straight to your inbox.
             </p>
             <NewsletterForm />
           </div>

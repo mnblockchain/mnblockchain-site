@@ -1,6 +1,6 @@
 import { nextEvent } from "@/data/content";
 
-const message = `Next event: ${nextEvent.title} — ${nextEvent.dateLabel} · ${nextEvent.time} · ${nextEvent.location}`;
+const message = `Next event: ${nextEvent.title} - ${nextEvent.dateLabel} · ${nextEvent.time} · ${nextEvent.location}`;
 const items = Array.from({ length: 6 }, () => message);
 
 export default function Ticker() {

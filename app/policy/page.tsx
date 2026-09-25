@@ -4,8 +4,8 @@ import { Badge, PrimaryButton, SectionLabel } from "../components/ui";
 import { policyFocus } from "@/data/content";
 
 export const metadata: Metadata = {
-  title: "Policy — MNblockchain",
-  description: "MNblockchain's Government & Law committee — policy tracking and lawmaker relationships.",
+  title: "Policy - MNblockchain",
+  description: "MNblockchain's Government & Law committee - policy tracking and lawmaker relationships.",
 };
 
 export default function PolicyPage() {
@@ -28,7 +28,7 @@ export default function PolicyPage() {
             Policy &amp; Education
           </h1>
           <p className="mt-4 text-xl font-medium text-white/90">
-            Keeping Minnesota&rsquo;s blockchain community informed and represented — nonpartisan,
+            Keeping Minnesota&rsquo;s blockchain community informed and represented - nonpartisan,
             fact-based, and engaged early.
           </p>
         </div>
@@ -57,7 +57,7 @@ export default function PolicyPage() {
           </h2>
           <p className="mt-4 text-slate">
             We engage lawmakers and candidates evenhandedly, regardless of party, because
-            blockchain policy is a knowledge issue — not a partisan one. Our goal is an informed
+            blockchain policy is a knowledge issue - not a partisan one. Our goal is an informed
             Minnesota delegation, not a specific outcome for any one campaign.
           </p>
           <div className="mt-8">

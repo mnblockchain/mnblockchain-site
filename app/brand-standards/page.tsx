@@ -3,15 +3,15 @@ import Logo from "../components/Logo";
 import { PrimaryButton } from "../components/ui";
 
 export const metadata: Metadata = {
-  title: "Brand Standards — MNblockchain",
+  title: "Brand Standards - MNblockchain",
   description: "Internal reference: MNblockchain's brand standards as implemented on this site.",
   robots: { index: false, follow: false },
 };
 
 const colors = [
-  { name: "Brand Blue", hex: "#6495ed", usage: "The one blue — logo \"MN\", headline highlights, badges, links. Also used as plain text where a second darker blue used to be (removed 2026-09-12)." },
-  { name: "Bitcoin Orange", hex: "#f7931a", usage: "The one orange — every action button site-wide, no exceptions (standing rule, set 2026-09-11) — not in the original brand PDF." },
-  { name: "Navy Black", hex: "#0b0e11", usage: "The one dark neutral — replaces plain black/near-black everywhere (headings, dark backgrounds, header, footer). Adopted 2026-09-12 after piloting plum first and rejecting it; navy-black's cool undertone pairs with brand blue and slate instead of fighting them." },
+  { name: "Brand Blue", hex: "#6495ed", usage: "The one blue - logo \"MN\", headline highlights, badges, links. Also used as plain text where a second darker blue used to be (removed 2026-09-12)." },
+  { name: "Bitcoin Orange", hex: "#f7931a", usage: "The one orange - every action button site-wide, no exceptions (standing rule, set 2026-09-11) - not in the original brand PDF." },
+  { name: "Navy Black", hex: "#0b0e11", usage: "The one dark neutral - replaces plain black/near-black everywhere (headings, dark backgrounds, header, footer). Adopted 2026-09-12 after piloting plum first and rejecting it; navy-black's cool undertone pairs with brand blue and slate instead of fighting them." },
   { name: "Cloud", hex: "#f5f7fa", usage: "Light neutral section background (alternates with white for visual rhythm)." },
   { name: "Slate", hex: "#4b5563", usage: "Body copy / secondary text gray." },
 ];
@@ -34,7 +34,7 @@ export default function BrandStandardsPage() {
         <div className="mx-auto max-w-3xl px-6">
           <h1 className="font-heading text-4xl font-extrabold text-white">Brand Standards</h1>
           <p className="mt-4 text-white/70">
-            Internal reference only — not indexed, not linked from nav. Documents what&rsquo;s actually
+            Internal reference only - not indexed, not linked from nav. Documents what&rsquo;s actually
             implemented on this site as of 2026-09-12, which in a few places has evolved past the
             original draft brand-standards PDF.
           </p>
@@ -64,7 +64,7 @@ export default function BrandStandardsPage() {
         <div className="mx-auto max-w-5xl px-6">
           <h2 className="font-heading text-2xl font-extrabold text-navy-black">Colors</h2>
           <p className="mt-2 max-w-2xl text-sm text-slate">
-            All defined as CSS theme tokens in <code>app/globals.css</code> — this grid is generated from
+            All defined as CSS theme tokens in <code>app/globals.css</code> - this grid is generated from
             the same hex values, so it stays accurate as those change.
           </p>
           <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -79,7 +79,7 @@ export default function BrandStandardsPage() {
         <div className="mx-auto max-w-5xl px-6">
           <h2 className="font-heading text-2xl font-extrabold text-navy-black">Typography</h2>
           <ul className="mt-4 space-y-2 text-sm text-slate">
-            <li><strong>Headings &amp; body:</strong> Manrope (Google Font) — the original PDF left this unspecified ("default fonts").</li>
+            <li><strong>Headings &amp; body:</strong> Manrope (Google Font) - the original PDF left this unspecified ("default fonts").</li>
             <li><strong>Wordmark only:</strong> Cloud Bold (self-hosted, single weight).</li>
           </ul>
         </div>
@@ -90,7 +90,7 @@ export default function BrandStandardsPage() {
           <h2 className="font-heading text-2xl font-extrabold text-navy-black">Buttons &amp; Links</h2>
           <ul className="mt-4 space-y-2 text-sm text-slate">
             <li>Every action button site-wide is Bitcoin Orange, dark text, no exceptions.</li>
-            <li>Hover state is the same color at 80% opacity — never a different color, never white.</li>
+            <li>Hover state is the same color at 80% opacity - never a different color, never white.</li>
             <li>Every button shows the pointer/hand cursor (enforced globally in CSS).</li>
             <li>Every external link opens in a new tab (<code>target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;</code>).</li>
           </ul>
