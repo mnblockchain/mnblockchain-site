@@ -16,7 +16,7 @@ const claimUrl = "https://claim.dropchain.network/claim/v3/93bb6a6e-7903-431d-b2
 export default function MembershipNftPage() {
   return (
     <>
-      <section className="bg-brand-blue/50 py-10 text-center">
+      <section className="bg-brand-blue/85 py-10 text-center">
         <div className="mx-auto max-w-2xl px-6">
           <Badge>For current MNblockchain members</Badge>
           <h1 className="mt-6 whitespace-nowrap font-heading text-2xl font-extrabold text-white sm:text-4xl md:text-5xl">
