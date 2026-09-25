@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import { Badge, PrimaryButton, SectionLabel } from "../components/ui";
 import { membershipTiers } from "@/data/content";
 
@@ -76,6 +77,14 @@ export default function MembershipPage() {
               </div>
             ))}
           </div>
+
+          <p className="mt-8 text-center text-sm text-slate">
+            Already a member?{" "}
+            <Link href="/membership/nft" className="font-bold text-navy-black underline decoration-brand-blue decoration-2">
+              Claim your Membership NFT
+            </Link>
+            .
+          </p>
 
           <div className="mx-auto mt-12 max-w-3xl border-t border-slate-200 pt-10">
             <p className="text-center text-xs font-bold uppercase tracking-widest text-navy-black">

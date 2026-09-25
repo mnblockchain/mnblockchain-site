@@ -30,7 +30,7 @@ const nextConfig: NextConfig = {
       { source: "/get-involved-with-minnesota-blockchain", destination: "/get-involved", permanent },
       { source: "/join_us", destination: "/get-involved", permanent },
       { source: "/membership-confirmation", destination: "/membership", permanent },
-      { source: "/2025-member-nft", destination: "/membership", permanent },
+      { source: "/2025-member-nft", destination: "/membership/nft", permanent },
       { source: "/donation", destination: "/membership", permanent },
       { source: "/donation-received", destination: "/membership", permanent },
       { source: "/donation-failed", destination: "/membership", permanent },
