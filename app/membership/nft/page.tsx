@@ -4,6 +4,9 @@ import { Badge, PrimaryButton, SectionLabel } from "../../components/ui";
 export const metadata: Metadata = {
   title: "Claim Your Membership NFT - MNblockchain",
   description: "How current MNblockchain members claim their annual Membership NFT via DropChain.",
+  // Orphaned on purpose: reachable only via direct link/redirect, not linked
+  // from anywhere else on the site, and kept out of search results.
+  robots: { index: false, follow: false },
 };
 
 // Rotates each year when a new NFT is issued - update alongside the claim
