@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { Badge, PrimaryButton, SectionLabel } from "../components/ui";
+import { Badge, SectionLabel } from "../components/ui";
 import { membershipTiers } from "@/data/content";
+import ZeffySignup from "./ZeffySignup";
 
 export const metadata: Metadata = {
   title: "Membership - MNblockchain",
@@ -70,16 +71,17 @@ export default function MembershipPage() {
                     </li>
                   ))}
                 </ul>
-                <div className="mt-8">
-                  <PrimaryButton href="/contact">Become a Member</PrimaryButton>
-                </div>
               </div>
             ))}
           </div>
 
+          <div className="mx-auto mt-10 max-w-md rounded-2xl border border-slate-200 bg-cloud p-6">
+            <ZeffySignup />
+          </div>
+
           <div className="mx-auto mt-12 max-w-3xl border-t border-slate-200 pt-10">
             <p className="text-center text-xs font-bold uppercase tracking-widest text-navy-black">
-              Or Pay by QR Code
+              Prefer to Pay Another Way?
             </p>
             <div className="mt-6 grid gap-6 sm:grid-cols-3">
               {[
