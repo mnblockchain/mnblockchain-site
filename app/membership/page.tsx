@@ -23,7 +23,7 @@ export default function MembershipPage() {
         {/* Solid scrim so headline text stays legible over the photo collage. */}
         <div className="absolute inset-0 bg-navy-black/70" />
         <div className="relative mx-auto max-w-3xl px-6">
-          <Badge>Events are free — membership makes it easier to stay plugged in</Badge>
+          <Badge>Free monthly meetups, priority access to everything else</Badge>
           <h1 className="mt-6 font-heading text-4xl font-extrabold text-white sm:text-5xl">
             Membership
           </h1>
