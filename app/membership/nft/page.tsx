@@ -18,17 +18,20 @@ const currentYearNft = { year: "2026", name: "EMBARK", image: "/membership/nft/2
 export default function MembershipNftPage() {
   return (
     <>
-      <section className="relative overflow-hidden py-10 text-center">
+      <section className="relative overflow-hidden bg-navy-black py-10 text-center">
+        {/* object-contain (not cover) so the full collage - all 3 NFTs - stays
+            visible at every screen width instead of the side ones getting
+            cropped off on narrower/more-square containers. */}
         <Image
           src="/membership/nft/header-collage.jpg"
           alt="MNblockchain Membership NFTs from 2024, 2025, and 2026"
           fill
           priority
           sizes="100vw"
-          className="object-cover"
+          className="object-contain"
         />
         {/* Solid scrim so headline text stays legible over the collage. */}
-        <div className="absolute inset-0 bg-brand-blue/80" />
+        <div className="absolute inset-0 bg-navy-black/70" />
         <div className="relative mx-auto max-w-2xl px-6">
           <Badge>For current MNblockchain members</Badge>
           <h1 className="mt-6 whitespace-nowrap font-heading text-2xl font-extrabold text-white sm:text-4xl md:text-5xl">
