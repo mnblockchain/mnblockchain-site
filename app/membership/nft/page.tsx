@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Badge, PrimaryButton, SectionLabel } from "../../components/ui";
 
 export const metadata: Metadata = {
@@ -10,14 +11,25 @@ export const metadata: Metadata = {
 };
 
 // Rotates each year when a new NFT is issued - update alongside the claim
-// copy below if the process ever changes.
+// copy, current-year image, and year label below if the process ever changes.
 const claimUrl = "https://claim.dropchain.network/claim/v3/93bb6a6e-7903-431d-b2fa-4dcf294a6243";
+const currentYearNft = { year: "2026", name: "EMBARK", image: "/membership/nft/2026-embark.jpg" };
 
 export default function MembershipNftPage() {
   return (
     <>
-      <section className="bg-brand-blue/85 py-10 text-center">
-        <div className="mx-auto max-w-2xl px-6">
+      <section className="relative overflow-hidden py-10 text-center">
+        <Image
+          src="/membership/nft/header-collage.jpg"
+          alt="MNblockchain Membership NFTs from 2024, 2025, and 2026"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
+        />
+        {/* Solid scrim so headline text stays legible over the collage. */}
+        <div className="absolute inset-0 bg-brand-blue/80" />
+        <div className="relative mx-auto max-w-2xl px-6">
           <Badge>For current MNblockchain members</Badge>
           <h1 className="mt-6 whitespace-nowrap font-heading text-2xl font-extrabold text-white sm:text-4xl md:text-5xl">
             Claim Your Membership NFT
@@ -30,6 +42,18 @@ export default function MembershipNftPage() {
             <PrimaryButton href={claimUrl}>Claim Your NFT</PrimaryButton>
           </div>
           <p className="mt-3 text-xs text-white/60">You&rsquo;ll need to sign in to DropChain.</p>
+        </div>
+      </section>
+
+      <section className="bg-cloud py-16 text-center">
+        <div className="mx-auto max-w-xs px-6">
+          <p className="text-xs font-bold uppercase tracking-widest text-brand-blue">
+            {currentYearNft.year} Membership NFT
+          </p>
+          <div className="relative mt-4 aspect-square overflow-hidden rounded-2xl border border-slate-200 shadow-lg">
+            <Image src={currentYearNft.image} alt={`${currentYearNft.year} MNblockchain Membership NFT: ${currentYearNft.name}`} fill sizes="320px" className="object-cover" />
+          </div>
+          <p className="mt-4 font-heading text-xl font-bold text-navy-black">&ldquo;{currentYearNft.name}&rdquo;</p>
         </div>
       </section>
 

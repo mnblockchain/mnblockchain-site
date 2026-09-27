@@ -13,6 +13,14 @@ export const metadata: Metadata = {
 // Content/data is untouched, just not rendered.
 const SHOW_ALTERNATE_PAYMENT_METHODS = false;
 
+// One new NFT per membership year. Add the next one here when it's ready -
+// same images used on the (unlinked) /membership/nft claim page.
+const nftCollection = [
+  { year: "2024", name: "From the Lakes to the Moon", image: "/membership/nft/2024-lakes-to-the-moon.jpg" },
+  { year: "2025", name: "Let's Go", image: "/membership/nft/2025-lets-go.jpg" },
+  { year: "2026", name: "EMBARK", image: "/membership/nft/2026-embark.jpg" },
+];
+
 export default function MembershipPage() {
   return (
     <>
@@ -77,6 +85,25 @@ export default function MembershipPage() {
                 </ul>
               </div>
             ))}
+          </div>
+
+          <div className="mx-auto mt-14 max-w-3xl text-center">
+            <p className="text-xs font-bold uppercase tracking-widest text-brand-blue">
+              A New Collectible Every Year
+            </p>
+            <h3 className="mt-2 font-heading text-2xl font-extrabold text-navy-black">
+              The Member NFT Collection
+            </h3>
+            <div className="mt-6 grid grid-cols-3 gap-4 sm:gap-6">
+              {nftCollection.map((nft) => (
+                <div key={nft.year}>
+                  <div className="relative aspect-square overflow-hidden rounded-xl border border-slate-200 shadow-sm">
+                    <Image src={nft.image} alt={`${nft.year} MNblockchain Membership NFT: ${nft.name}`} fill sizes="(min-width: 640px) 200px, 33vw" className="object-cover" />
+                  </div>
+                  <p className="mt-2 text-xs font-bold uppercase tracking-widest text-slate">{nft.year}</p>
+                </div>
+              ))}
+            </div>
           </div>
 
           <div className="mx-auto mt-10 max-w-2xl rounded-2xl border border-slate-200 bg-cloud p-6">
