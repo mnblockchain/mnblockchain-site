@@ -10,19 +10,20 @@ const sections = [
     title: "What we collect",
     body: [
       "When you use a form on this site, we receive what you type into it: your name, email address, organization (for sponsor inquiries), and your message. When you subscribe to our newsletter, we receive your email address.",
-      "We do not ask for payment details on this site. Registrations for events happen on Eventbrite, and membership payments happen through PayPal, Venmo, or Coinbase, each under their own privacy policies.",
+      "Donations and memberships are processed by Zeffy, a payment platform for nonprofits. Zeffy collects your name, email, location, and payment details on its own secure form. We never see or store your card or bank information, but we do receive your name, email, and what you gave or purchased so we can thank you, send receipts, and manage your membership.",
+      "Event registrations happen on Eventbrite or on a partner's own ticket site (for example, Culture Convergence), and members claim their annual Membership NFT through DropChain. Each of these services has its own privacy policy.",
     ],
   },
   {
     title: "How we use it",
     body: [
-      "We use your information to reply to your message, follow up on sponsorship or membership inquiries, and send you our newsletter if you signed up for it. Form submissions are delivered by email to our team through Resend, our email delivery service.",
+      "We use your information to reply to your message, follow up on sponsorship or membership inquiries, thank donors and members, send receipts, and send you our newsletter if you signed up for it. Form submissions are delivered by email to our team through Resend, our email delivery service.",
     ],
   },
   {
     title: "Who sees it",
     body: [
-      "Only our board, committee members, and volunteers who handle these inquiries. We do not sell your information. We share it only with the service providers that run this website and our email (such as Vercel for hosting, Resend for email delivery, and our newsletter provider), and only as needed to operate them.",
+      "Only our board, committee members, and volunteers who handle these inquiries. We do not sell your information. We share it only with the service providers that run this website and our email (such as Vercel for hosting, Resend for email delivery, Zeffy for donations and memberships, and our newsletter provider), and only as needed to operate them.",
     ],
   },
   {
@@ -45,7 +46,7 @@ export default function PrivacyPage() {
         <h1 className="font-heading text-4xl font-extrabold text-navy-black">Privacy</h1>
         <p className="mt-4 text-slate">
           MNblockchain is a volunteer-run Minnesota nonprofit. This page explains, in plain language,
-          what happens to the information you share on this website.
+          what happens to the information you share on this website. Last updated October 2026.
         </p>
         <div className="mt-10 space-y-8">
           {sections.map((s) => (
