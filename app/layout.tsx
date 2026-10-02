@@ -5,6 +5,7 @@ import "./globals.css";
 import Ticker from "./components/Ticker";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
+import ZeffyPopupScript from "./components/ZeffyPopupScript";
 
 // Brand standards leave headline/body typography unspecified ("default
 // fonts") - Manrope is used throughout for a clean, modern, single-family
@@ -38,6 +39,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${manrope.variable} ${cloudBold.variable}`}>
       <body className="flex min-h-screen flex-col bg-white text-ink antialiased">
+        <ZeffyPopupScript />
         <Ticker />
         <Nav />
         <main className="flex-1">{children}</main>

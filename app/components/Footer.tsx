@@ -58,6 +58,13 @@ export default function Footer() {
                 </a>
               ))}
             </div>
+            <button
+              type="button"
+              zeffy-form-link="https://www.zeffy.com/embed/donation-form/donate-to-mnblockchain?modal=true"
+              className="mt-6 inline-flex items-center justify-center rounded-full bg-bitcoin-orange px-6 py-2.5 text-sm font-bold uppercase tracking-wide text-navy-black transition-colors hover:bg-bitcoin-orange/80"
+            >
+              Donate
+            </button>
           </div>
 
           <div>
