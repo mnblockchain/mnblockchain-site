@@ -32,6 +32,13 @@ export default function GetInvolvedPage() {
             MNblockchain runs on committee members, volunteers, and people willing to show up.
             Here&rsquo;s how to plug in.
           </p>
+          <button
+            type="button"
+            zeffy-form-link="https://www.zeffy.com/embed/donation-form/donate-to-mnblockchain?modal=true"
+            className="mt-6 inline-flex items-center justify-center rounded-full bg-bitcoin-orange px-5 py-2 text-xs font-bold uppercase tracking-wide text-navy-black transition-colors hover:bg-bitcoin-orange/80"
+          >
+            Donate
+          </button>
         </div>
       </section>
 
