@@ -50,3 +50,17 @@ button:not(:disabled) {
   animation: ticker 75s linear infinite;
   will-change: transform;
 }
+
+/* Zeffy donation popup: its script sizes the box to 80% x 90% of the screen with
+   inline styles, which is huge on desktop. Override to a compact centered card. */
+@media (min-width: 769px) {
+  div:has(> iframe[title="Form powered and secured by Zeffy"]) {
+    top: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    width: min(520px, 94vw) !important;
+    height: min(620px, 90vh) !important;
+    margin: auto !important;
+  }
+}
