@@ -35,7 +35,7 @@ export default function GetInvolvedPage() {
           <button
             type="button"
             zeffy-form-link="https://www.zeffy.com/embed/donation-form/donate-to-mnblockchain?modal=true"
-            className="mt-6 inline-flex items-center justify-center rounded-full bg-bitcoin-orange px-5 py-2 text-xs font-bold uppercase tracking-wide text-navy-black transition-colors hover:bg-bitcoin-orange/80"
+            className="mt-6 inline-flex items-center justify-center rounded-full bg-bitcoin-orange px-8 py-3 text-sm font-bold uppercase tracking-wide text-navy-black transition-colors hover:bg-bitcoin-orange/80"
           >
             Donate
           </button>
