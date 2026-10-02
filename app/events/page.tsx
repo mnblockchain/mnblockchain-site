@@ -62,6 +62,9 @@ export default function EventsPage() {
                   <p className="text-sm text-slate">{nextEvent.time}</p>
                   <p className="text-sm text-slate">{nextEvent.location}</p>
                   <p className="mt-4 text-sm leading-relaxed text-slate">{nextEvent.description}</p>
+                  <div className="mt-6">
+                    <PrimaryButton href={nextEvent.registerUrl}>Register Here →</PrimaryButton>
+                  </div>
                   <MemberPerk {...nextEvent.memberPerk} />
                   {nextEvent.speakers[0] && (
                     <EventSpeaker
@@ -83,9 +86,6 @@ export default function EventsPage() {
                       </li>
                     ))}
                   </ul>
-                  <div className="mt-6">
-                    <PrimaryButton href={nextEvent.registerUrl}>Register Here →</PrimaryButton>
-                  </div>
                 </div>
               </div>
             </div>

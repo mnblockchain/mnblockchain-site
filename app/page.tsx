@@ -112,6 +112,9 @@ export default function Home() {
             <p className="text-sm text-slate">{nextEvent.time}</p>
             <p className="text-sm text-slate">{nextEvent.location}</p>
             <p className="mt-4 text-sm leading-relaxed text-slate">{nextEvent.description}</p>
+            <div className="mt-6">
+              <PrimaryButton href={nextEvent.registerUrl}>Register Here →</PrimaryButton>
+            </div>
             <MemberPerk {...nextEvent.memberPerk} />
             {nextEvent.speakers[0] && (
               <EventSpeaker
@@ -122,9 +125,6 @@ export default function Home() {
                 companyLogo={nextEvent.speakers[0].companyLogo}
               />
             )}
-            <div className="mt-6">
-              <PrimaryButton href={nextEvent.registerUrl}>Register Here →</PrimaryButton>
-            </div>
             </div>
           </div>
         </div>
