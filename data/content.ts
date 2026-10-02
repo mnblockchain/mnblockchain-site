@@ -207,10 +207,10 @@ export const sponsorComparison: {
 // them have a confirmed dollar tier yet - flagged so Brandon/Colin can assign
 // real tiers once known, at which point the wall can size logos by tier.
 export const sponsors = [
-  { name: "Stand With Crypto", blurb: "Policy partner.", logo: "/sponsors/stand-with-crypto.png", url: "https://www.standwithcrypto.org/" },
-  { name: "Spencer Fane", blurb: "Law firm partner.", logo: "/sponsors/spencer-fane.png", url: "https://www.spencerfane.com/" },
-  { name: "Fredrikson", blurb: "Law firm partner.", logo: "/sponsors/fredrikson.png", url: "https://www.fredlaw.com/" },
-  { name: "Quantum Lex", blurb: "Partner.", logo: "/sponsors/quantum-lex.jpg", url: "https://www.quantumlex.io/" },
+  { name: "Stand With Crypto", logo: "/sponsors/stand-with-crypto.png", url: "https://www.standwithcrypto.org/" },
+  { name: "Spencer Fane", logo: "/sponsors/spencer-fane.png", url: "https://www.spencerfane.com/" },
+  { name: "Fredrikson", logo: "/sponsors/fredrikson.png", url: "https://www.fredlaw.com/" },
+  { name: "Quantum Lex", logo: "/sponsors/quantum-lex.jpg", url: "https://www.quantumlex.io/" },
 ];
 
 // Real membership program, from mnblockchain.org/membership/ - a single paid

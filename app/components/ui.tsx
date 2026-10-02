@@ -254,12 +254,10 @@ export function InvolvementCard({
 
 export function SponsorCard({
   name,
-  blurb,
   logo,
   url,
 }: {
   name: string;
-  blurb: string;
   logo?: string;
   url?: string;
 }) {
@@ -272,7 +270,6 @@ export function SponsorCard({
       ) : (
         <p className="font-heading text-lg font-bold text-navy-black">{name}</p>
       )}
-      <p className="mt-2 text-sm text-slate">{blurb}</p>
       {url ? (
         <a
           href={url}
