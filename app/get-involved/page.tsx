@@ -40,7 +40,7 @@ export default function GetInvolvedPage() {
         <div className="mx-auto max-w-6xl px-6">
           <SectionLabel>Committees</SectionLabel>
           <h2 className="font-heading text-3xl font-extrabold text-navy-black sm:text-4xl">
-            Find Your Committee
+            Join a Committee
           </h2>
           <p className="mt-3 max-w-2xl text-slate">
             Each committee owns a real part of the organization - not just advice from the
