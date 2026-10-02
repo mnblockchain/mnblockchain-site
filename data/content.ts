@@ -3,33 +3,31 @@
 // Keeping it in one file makes a content swap a data edit, not a design edit.
 
 export const nextEvent = {
-  // Real details confirmed from the event flyer (2026-09-12): speaker,
-  // topic, venue (Frankie's), and timing.
-  title: "Building Stablecoins Under the GENIUS Act",
-  eventbriteUrl:
-    "https://www.eventbrite.com/e/spotlight-meetup-sept-28-lets-talk-stablecoins-tickets-2000731804686?aff=oddtdtcreator",
-  date: "2026-09-28T17:00:00-05:00",
-  dateLabel: "Monday, September 28, 2026",
-  time: "5:00 PM arrival · 6:00 PM presentations",
-  location: "Frankie's, 3556 Winnetka Ave N, New Hope, MN 55427",
+  // Partner event with Culture Convergence. Details from culture-convergence.com
+  // (2026-10-02). Registration happens on their site, not Eventbrite.
+  title: "Culture Convergence 2026",
+  badge: "Partner Event",
+  registerUrl: "https://culture-convergence.com/buy-tickets",
+  date: "2026-10-22T16:00:00-05:00",
+  dateLabel: "Thursday, October 22, 2026",
+  time: "4:00 - 10:00 PM",
+  location: "Baja Haus, 830 Lake St E, Wayzata, MN 55391",
   description:
-    "Zach Robins, Head of Legal at Brale, joins us to talk about building stablecoins under the new GENIUS Act - plus free pizza and open networking. Presented with Stand With Crypto.",
+    "We're partnering with Culture Convergence for an intimate evening of tech, art, and innovation: three moderated panels, dinner, and conversation with founders, developers, artists, and educators from across blockchain, AI, data, and real estate. Tickets start at $75.",
   learn: [
-    "How stablecoins went from a niche crypto tool to a mainstream payment rail",
-    "What the GENIUS Act means for stablecoin issuers, in plain terms",
-    "How Brale approaches building compliant, programmable money",
-    "Open Q&A and networking with the community",
+    "Three moderated panels on decentralized data and compute, electric vehicle infrastructure, and digital and tokenized assets",
+    "How these technologies are changing the game locally and beyond",
+    "Dinner and real conversation with Minnesota's founders, builders, and creators",
   ],
-  speakers: [
-    {
-      name: "Zach Robins",
-      title: "Head of Legal, Brale",
-      bio: "Passionate about crypto, programmable money, and building the future of finance.",
-      photo: "/speakers/zach-robins.jpg",
-      companyLogo: "/speakers/brale-logo.png",
-    },
-  ],
+  speakers: [] as {
+    name: string;
+    title: string;
+    bio?: string;
+    photo?: string;
+    companyLogo?: string;
+  }[],
 };
+
 
 export const stats = [
   { value: "2018", label: "Founded" },
@@ -37,6 +35,13 @@ export const stats = [
 ];
 
 export const pastEvents = [
+  {
+    date: "September 28, 2026",
+    title: "Building Stablecoins Under the GENIUS Act",
+    blurb: "Zach Robins, Head of Legal at Brale, on building stablecoins under the new GENIUS Act, presented with Stand With Crypto at Frankie's.",
+    image: "/social/linkedin-event-sept28.jpg",
+    type: "meetup" as const,
+  },
   {
     date: "August 31, 2026",
     title: "How to Spot Red Flags in the Industry",

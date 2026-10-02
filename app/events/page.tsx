@@ -36,7 +36,7 @@ export default function EventsPage() {
             <Countdown target={nextEvent.date} />
           </div>
           <div className="mt-8">
-            <PrimaryButton href={nextEvent.eventbriteUrl}>Register for the Next Event</PrimaryButton>
+            <PrimaryButton href={nextEvent.registerUrl}>Register for the Next Event</PrimaryButton>
           </div>
         </div>
       </section>
@@ -49,10 +49,9 @@ export default function EventsPage() {
             <div className="p-8">
               <div className="inline-flex items-center gap-1.5 rounded-full bg-brand-blue/10 px-3 py-1 text-xs font-bold uppercase tracking-widest text-brand-blue">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="h-3.5 w-3.5">
-                  <path d="M9 3h6l3 8H6z" />
-                  <ellipse cx="12" cy="20" rx="7" ry="2" />
+                  <path d="M12 3.5l2.6 5.3 5.9.8-4.3 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8-4.3-4.1 5.9-.8z" />
                 </svg>
-                Spotlight Meetup
+                {nextEvent.badge}
               </div>
               <h2 className="mt-6 font-heading text-2xl font-bold text-brand-blue [filter:drop-shadow(0_0_3px_rgba(247,147,26,0.6))_drop-shadow(0_0_8px_rgba(247,147,26,0.35))]">
                 {nextEvent.title}
@@ -84,34 +83,10 @@ export default function EventsPage() {
                     ))}
                   </ul>
                   <div className="mt-6">
-                    <PrimaryButton href={nextEvent.eventbriteUrl}>Register Here →</PrimaryButton>
+                    <PrimaryButton href={nextEvent.registerUrl}>Register Here →</PrimaryButton>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-white py-16">
-        <div className="mx-auto max-w-3xl px-6">
-          <div className="relative overflow-hidden rounded-3xl border border-slate-200 bg-cloud text-center shadow-sm">
-            <div className="h-1.5 w-full bg-bitcoin-orange" />
-            <div className="p-8 sm:p-10">
-              <div className="mx-auto inline-flex items-center gap-2 rounded-full bg-bitcoin-orange/10 px-5 py-2 text-base font-bold uppercase tracking-widest text-bitcoin-orange">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5">
-                  <path d="M12 3.5l2.6 5.3 5.9.8-4.3 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8-4.3-4.1 5.9-.8z" />
-                </svg>
-                Coming in October
-              </div>
-              <h2 className="mt-3 font-heading text-3xl font-extrabold text-navy-black">
-                Teaming Up with Culture Convergence
-              </h2>
-              <p className="mx-auto mt-4 max-w-xl text-slate">
-                We&rsquo;re partnering with Culture Convergence for their annual gathering -
-                panel discussions and food provided. Full details, date, and registration
-                coming soon.
-              </p>
             </div>
           </div>
         </div>

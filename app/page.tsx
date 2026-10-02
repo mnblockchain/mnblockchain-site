@@ -82,7 +82,7 @@ export default function Home() {
             </div>
 
             <div className="mt-10 flex justify-center">
-              <PrimaryButton href={nextEvent.eventbriteUrl}>Register here</PrimaryButton>
+              <PrimaryButton href={nextEvent.registerUrl}>Register here</PrimaryButton>
             </div>
 
             <div className="mt-6 grid grid-cols-2 gap-8 border-t border-white/10 pt-6">
@@ -100,10 +100,9 @@ export default function Home() {
             <div className="p-8 sm:p-10">
               <div className="inline-flex items-center gap-1.5 rounded-full bg-brand-blue/10 px-3 py-1 text-xs font-bold uppercase tracking-widest text-brand-blue">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="h-3.5 w-3.5">
-                  <path d="M9 3h6l3 8H6z" />
-                  <ellipse cx="12" cy="20" rx="7" ry="2" />
+                  <path d="M12 3.5l2.6 5.3 5.9.8-4.3 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8-4.3-4.1 5.9-.8z" />
                 </svg>
-                Spotlight Meetup
+                {nextEvent.badge}
               </div>
               <h3 className="mt-6 font-heading text-2xl font-bold text-brand-blue [filter:drop-shadow(0_0_3px_rgba(247,147,26,0.6))_drop-shadow(0_0_8px_rgba(247,147,26,0.35))]">
                 {nextEvent.title}
@@ -122,7 +121,7 @@ export default function Home() {
               />
             )}
             <div className="mt-6">
-              <PrimaryButton href={nextEvent.eventbriteUrl}>Register Here →</PrimaryButton>
+              <PrimaryButton href={nextEvent.registerUrl}>Register Here →</PrimaryButton>
             </div>
             </div>
           </div>
