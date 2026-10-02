@@ -5,6 +5,7 @@ import NewsletterForm from "./components/NewsletterForm";
 import {
   Badge,
   EventSpeaker,
+  MemberPerk,
   NewsCard,
   PrimaryButton,
   SectionLabel,
@@ -111,6 +112,7 @@ export default function Home() {
             <p className="text-sm text-slate">{nextEvent.time}</p>
             <p className="text-sm text-slate">{nextEvent.location}</p>
             <p className="mt-4 text-sm leading-relaxed text-slate">{nextEvent.description}</p>
+            <MemberPerk {...nextEvent.memberPerk} />
             {nextEvent.speakers[0] && (
               <EventSpeaker
                 name={nextEvent.speakers[0].name}

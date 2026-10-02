@@ -74,6 +74,18 @@ export function EventSpeaker({
   );
 }
 
+export function MemberPerk({ headline, detail }: { headline: string; detail: string }) {
+  return (
+    <div className="mt-6 rounded-2xl border border-bitcoin-orange/30 bg-bitcoin-orange/5 p-4">
+      <p className="font-heading text-lg font-bold text-navy-black">{headline}</p>
+      <p className="mt-1 text-sm leading-relaxed text-slate">{detail}</p>
+      <div className="mt-3">
+        <PrimaryButton href="/membership">Become a Member</PrimaryButton>
+      </div>
+    </div>
+  );
+}
+
 export function Badge({ children }: { children: ReactNode }) {
   return (
     <span className="inline-flex items-center gap-2 rounded-full border border-brand-blue/70 bg-brand-blue/40 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-white">

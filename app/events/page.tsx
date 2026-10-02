@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Countdown from "../components/Countdown";
-import { Badge, EventCard, EventSpeaker, PrimaryButton, SectionLabel } from "../components/ui";
+import { Badge, EventCard, EventSpeaker, MemberPerk, PrimaryButton, SectionLabel } from "../components/ui";
 import { nextEvent, pastEvents } from "@/data/content";
 
 export const metadata: Metadata = {
@@ -62,6 +62,7 @@ export default function EventsPage() {
                   <p className="text-sm text-slate">{nextEvent.time}</p>
                   <p className="text-sm text-slate">{nextEvent.location}</p>
                   <p className="mt-4 text-sm leading-relaxed text-slate">{nextEvent.description}</p>
+                  <MemberPerk {...nextEvent.memberPerk} />
                   {nextEvent.speakers[0] && (
                     <EventSpeaker
                       name={nextEvent.speakers[0].name}

@@ -13,12 +13,16 @@ export const nextEvent = {
   time: "4:00 - 10:00 PM",
   location: "Baja Haus, 830 Lake St E, Wayzata, MN 55391",
   description:
-    "We're partnering with Culture Convergence for an intimate evening of tech, art, and innovation: three moderated panels, dinner, and conversation with founders, developers, artists, and educators from across blockchain, AI, data, and real estate. Tickets start at $75.",
+    "We're partnering with Culture Convergence for an intimate evening of tech, art, and innovation: three moderated panels, dinner, and conversation with founders, developers, artists, and educators from across blockchain, AI, data, and real estate.",
   learn: [
     "Three moderated panels on decentralized data and compute, electric vehicle infrastructure, and digital and tokenized assets",
     "How these technologies are changing the game locally and beyond",
     "Dinner and real conversation with Minnesota's founders, builders, and creators",
   ],
+  memberPerk: {
+    headline: "MNblockchain members get 50% off",
+    detail: "Members receive a discount code from MNblockchain leadership. Not a member yet? Join to unlock this discount, plus member pricing on future paid events.",
+  },
   speakers: [] as {
     name: string;
     title: string;
