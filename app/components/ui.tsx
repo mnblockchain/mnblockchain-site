@@ -74,7 +74,29 @@ export function EventSpeaker({
   );
 }
 
-export function MemberPerk({ headline, detail }: { headline: string; detail: string }) {
+export function MemberPerk({
+  headline,
+  detail,
+  wide = false,
+}: {
+  headline: string;
+  detail: string;
+  wide?: boolean;
+}) {
+  if (wide) {
+    // Full-width bar: text on the left, button on the right (desktop).
+    return (
+      <div className="mt-6 flex flex-col gap-4 rounded-2xl border border-bitcoin-orange/30 bg-bitcoin-orange/5 p-5 sm:flex-row sm:items-center sm:justify-between sm:gap-8">
+        <div>
+          <p className="font-heading text-lg font-bold text-navy-black">{headline}</p>
+          <p className="mt-1 text-sm leading-relaxed text-slate">{detail}</p>
+        </div>
+        <div className="flex-shrink-0">
+          <PrimaryButton href="/membership">Become a Member</PrimaryButton>
+        </div>
+      </div>
+    );
+  }
   return (
     <div className="mt-6 rounded-2xl border border-bitcoin-orange/30 bg-bitcoin-orange/5 p-4">
       <p className="font-heading text-lg font-bold text-navy-black">{headline}</p>

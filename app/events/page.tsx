@@ -65,7 +65,6 @@ export default function EventsPage() {
                   <div className="mt-6">
                     <PrimaryButton href={nextEvent.registerUrl}>Register Here →</PrimaryButton>
                   </div>
-                  <MemberPerk {...nextEvent.memberPerk} />
                   {nextEvent.speakers[0] && (
                     <EventSpeaker
                       name={nextEvent.speakers[0].name}
@@ -88,6 +87,7 @@ export default function EventsPage() {
                   </ul>
                 </div>
               </div>
+              <MemberPerk {...nextEvent.memberPerk} wide />
             </div>
           </div>
         </div>
