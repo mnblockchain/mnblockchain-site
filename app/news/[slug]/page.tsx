@@ -61,11 +61,25 @@ export default async function NewsArticlePage({
         </div>
 
         <div className="mt-8 space-y-5">
-          {article.body.map((paragraph, i) => (
-            <p key={i} className="text-base leading-relaxed text-ink">
-              {renderRichText(paragraph)}
-            </p>
-          ))}
+          {article.body.map((paragraph, i) => {
+            // A body line like "![caption](/news/photo.jpg)" renders as an inline photo.
+            const img = paragraph.match(/^!\[([^\]]*)\]\(([^)]+)\)$/);
+            if (img) {
+              return (
+                <figure key={i} className="my-2">
+                  <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
+                    <Image src={img[2]} alt={img[1]} fill sizes="(min-width: 768px) 768px, 100vw" className="object-cover" />
+                  </div>
+                  {img[1] && <figcaption className="mt-2 text-center text-xs text-slate">{img[1]}</figcaption>}
+                </figure>
+              );
+            }
+            return (
+              <p key={i} className="text-base leading-relaxed text-ink">
+                {renderRichText(paragraph)}
+              </p>
+            );
+          })}
         </div>
       </div>
     </article>

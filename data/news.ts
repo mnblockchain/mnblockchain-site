@@ -371,6 +371,7 @@ export const newsArticles: NewsArticle[] = [
       "Monday night, we learned how stablecoins are changing money.",
       "Stablecoin expert [Zach Robins](https://www.linkedin.com/in/zjrobins/) gave a full house at Frankie's an overview of this monumental technology, plus a deep dive into some of its many use cases. Zach is Head of Legal for [Brale](https://brale.xyz/), a stablecoin issuer out of Des Moines.",
       "He shared examples of how this monetary tech can benefit its users, including Brale's clients, whether they use stablecoins in general or issue their own: untrapping money from where it isn't useful, having a hand in a stablecoin's economics, micropayments, and speeding up transactions. \u201cMoney is too slow,\u201d said Zach.",
+      "![Zach Robins presenting at Frankie's](/news/reinventing-the-dollar-slide.jpg)",
       "The potential of this dollar reinvention is vast, reaching companies, nonprofits, municipalities, or any group that might want to use or issue its own stablecoin.",
       "It all sounds like the benefits Bitcoin and other cryptocurrency supporters have imagined for years. Now those benefits are showing up through this crypto-fiat bridge technology, and that larger trend opens eyes to what it means for the future of both fiat and crypto.",
       "Thank you to Zach for presenting; to everyone who came out or watched the livestream; and, as always, to our host [Frankie's](https://www.frankieschicagostyle.com/) and sponsor [Stand With Crypto](https://www.standwithcrypto.org/).",
