@@ -42,9 +42,10 @@ export const pastEvents = [
   {
     date: "September 28, 2026",
     title: "Building Stablecoins Under the GENIUS Act",
-    blurb: "Zach Robins, Head of Legal at Brale, on building stablecoins under the new GENIUS Act, presented with Stand With Crypto at Frankie's.",
-    image: "/social/linkedin-event-sept28.jpg",
+    blurb: "Zach Robins, Head of Legal at Brale, showed a full house at Frankie's how stablecoins are reinventing the dollar.",
+    image: "/news/reinventing-the-dollar-2026.jpg",
     type: "meetup" as const,
+    slug: "reinventing-the-dollar-stablecoins",
   },
   {
     date: "August 31, 2026",
