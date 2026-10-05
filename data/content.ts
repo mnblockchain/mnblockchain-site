@@ -7,7 +7,7 @@ export const nextEvent = {
   // (2026-10-02). Registration happens on their site, not Eventbrite.
   title: "Culture Convergence 2026",
   badge: "Partner Event",
-  registerUrl: "https://culture-convergence.com/buy-tickets",
+  registerUrl: "https://culture-convergence.com/tickets",
   date: "2026-10-22T16:00:00-05:00",
   dateLabel: "Thursday, October 22, 2026",
   time: "4:00 - 10:00 PM",
