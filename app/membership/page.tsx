@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { Badge, SectionLabel } from "../components/ui";
-import { membershipTiers } from "@/data/content";
+import NewsletterForm from "../components/NewsletterForm";
 import ZeffySignup from "./ZeffySignup";
 
 export const metadata: Metadata = {
@@ -21,9 +21,77 @@ const nftCollection = [
   { year: "2026", name: "EMBARK", image: "/membership/nft/2026-embark.jpg" },
 ];
 
+// MOCKUP (committee review, Oct 2026): sample levels and sample names only.
+// Real names/aliases come from members at sign-up. Not final.
+const levels = [
+  {
+    name: "Community",
+    price: "Free",
+    tagline: "Stay in the loop and show up.",
+    perks: [
+      "Monthly newsletter and event invites",
+      "Join the MNblockchain Slack",
+      "Informal member hangouts (no speaker, no agenda)",
+    ],
+  },
+  {
+    name: "Member",
+    price: "$99 / year",
+    tagline: "Belong to the community.",
+    perks: [
+      "Everything in Community",
+      "Exclusive MNblockchain Membership NFT",
+      "Special member pricing on all paid events",
+      "Members-only events",
+      "15 free courses via partner The Blockchain Academy",
+      "Your name (or alias) on the supporter wall",
+    ],
+    featured: true,
+  },
+  {
+    name: "Supporter",
+    price: "$250 / year",
+    tagline: "Help us do more.",
+    perks: [
+      "Everything in Member",
+      "Early registration for events",
+      "MNblockchain shirt",
+      "Featured placement on the supporter wall",
+    ],
+  },
+];
+
+// alias: true means the person chose to be listed under a handle, not a real name.
+const wall = [
+  {
+    level: "Supporters",
+    names: [
+      { name: "Jordan Example" },
+      { name: "Block Wizard", alias: true },
+      { name: "Sample Supporter" },
+    ],
+  },
+  {
+    level: "Members",
+    names: [
+      { name: "Alex Sample" },
+      { name: "Satoshi's Neighbor", alias: true },
+      { name: "Morgan Placeholder" },
+      { name: "Anonymous Member", alias: true },
+      { name: "Taylor Example" },
+      { name: "HODL Hockey Fan", alias: true },
+      { name: "Casey Sample" },
+      { name: "Riley Placeholder" },
+    ],
+  },
+];
+
 export default function MembershipPage() {
   return (
     <>
+      <div className="bg-bitcoin-orange px-6 py-2 text-center text-xs font-bold uppercase tracking-widest text-navy-black">
+        Draft mockup for committee review - levels, prices, and names are samples
+      </div>
       <section className="relative overflow-hidden py-20 text-center">
         <Image
           src="/membership/header-collage.jpg"
@@ -59,11 +127,11 @@ export default function MembershipPage() {
             more than the price tag suggests. Every member is a real part of how far we can take
             this, not just a name on a list.
           </p>
-          <div className="mx-auto mt-8 grid max-w-md gap-6">
-            {membershipTiers.map((tier) => (
+          <div className="mt-8 grid gap-6 md:grid-cols-3">
+            {levels.map((tier) => (
               <div
                 key={tier.name}
-                className={`rounded-2xl border p-8 ${
+                className={`flex flex-col rounded-2xl border p-8 ${
                   tier.featured
                     ? "border-brand-blue bg-navy-black text-white shadow-lg"
                     : "border-slate-200 bg-cloud"
@@ -75,16 +143,51 @@ export default function MembershipPage() {
                 <p className={`mt-1 text-2xl font-extrabold ${tier.featured ? "text-brand-blue" : "text-navy-black"}`}>
                   {tier.price}
                 </p>
+                <p className={`mt-2 text-sm ${tier.featured ? "text-white/70" : "text-slate"}`}>{tier.tagline}</p>
                 <ul className="mt-6 space-y-3">
                   {tier.perks.map((perk) => (
                     <li key={perk} className={`flex gap-2 text-sm ${tier.featured ? "text-white/80" : "text-slate"}`}>
-                      <span className="text-navy-black">✦</span>
+                      <span className={tier.featured ? "text-brand-blue" : "text-navy-black"}>✦</span>
                       {perk}
                     </li>
                   ))}
                 </ul>
+                {tier.name === "Community" && (
+                  <div className="mt-6 rounded-xl bg-navy-black p-4">
+                    <NewsletterForm />
+                  </div>
+                )}
               </div>
             ))}
+          </div>
+
+          <div className="mt-16">
+            <p className="text-center text-xs font-bold uppercase tracking-widest text-brand-blue">
+              Thank You
+            </p>
+            <h3 className="mt-2 text-center font-heading text-2xl font-extrabold text-navy-black">
+              Our Members &amp; Supporters
+            </h3>
+            <p className="mx-auto mt-3 max-w-xl text-center text-sm text-slate">
+              These are the people who make MNblockchain possible. Prefer not to use your real name?
+              List yourself under an alias or stay anonymous - just tell us when you join.
+            </p>
+            <div className="mt-8 space-y-8">
+              {wall.map((group) => (
+                <div key={group.level} className="rounded-2xl border border-slate-200 bg-cloud p-6">
+                  <p className="font-heading text-sm font-bold uppercase tracking-widest text-navy-black">
+                    {group.level}
+                  </p>
+                  <ul className="mt-4 grid gap-x-6 gap-y-2 text-sm text-slate sm:grid-cols-2 md:grid-cols-3">
+                    {group.names.map((n) => (
+                      <li key={n.name} className={n.alias ? "italic" : ""}>
+                        {n.name}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
           </div>
 
           <div className="mx-auto mt-14 max-w-3xl text-center">
