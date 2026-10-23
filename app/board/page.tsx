@@ -11,6 +11,11 @@ export const metadata: Metadata = {
 // Add new internal pages here as they are built.
 const pages = [
   {
+    title: "Membership Discussion 2026",
+    href: "/board/membership-discussion-2026",
+    blurb: "Talking points for the membership committee: levels, swag, referrals, holiday party, and open questions.",
+  },
+  {
     title: "Committee Chairs",
     href: "/committee-chairs",
     blurb: "What each committee chair is responsible for, plus expectations that apply to every chair.",
