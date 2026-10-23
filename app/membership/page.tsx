@@ -21,34 +21,19 @@ const nftCollection = [
   { year: "2026", name: "EMBARK", image: "/membership/nft/2026-embark.jpg" },
 ];
 
-// MOCKUP (committee review, Oct 2026): two levels, Community (free) and Member ($99).
+// MOCKUP (committee review, Oct 2026): Member ($99) is the main card; the free community signup is a quiet line below it.
 // The member name wall (with aliases) is built but hidden - to ideate on later.
 const SHOW_NAME_WALL = false;
-const levels = [
-  {
-    name: "Community",
-    price: "Free",
-    tagline: "Stay in the loop and show up.",
-    perks: [
-      "Monthly newsletter and event invites",
-      "Join the MNblockchain Slack",
-      "Informal member hangouts (no speaker, no agenda)",
-    ],
-  },
-  {
-    name: "Member",
-    price: "$99 / year",
-    tagline: "Belong to the community.",
-    perks: [
-      "Everything in Community",
-      "Exclusive MNblockchain Membership NFT",
-      "Special member pricing on all paid events",
-      "Members-only events",
-      "15 free courses via partner The Blockchain Academy",
-    ],
-    featured: true,
-  },
-];
+const memberLevel = {
+  name: "Annual Membership",
+  price: "$99 / year",
+  perks: [
+    "Exclusive MNblockchain Membership NFT",
+    "Special member pricing on all paid events",
+    "Members-only events",
+    "15 free courses via partner The Blockchain Academy",
+  ],
+};
 
 // alias: true means the person chose to be listed under a handle, not a real name.
 const wall = [
@@ -116,39 +101,32 @@ export default function MembershipPage() {
             more than the price tag suggests. Every member is a real part of how far we can take
             this, not just a name on a list.
           </p>
-          <div className="mx-auto mt-8 grid max-w-3xl gap-6 md:grid-cols-2">
-            {levels.map((tier) => (
-              <div
-                key={tier.name}
-                className={`flex flex-col rounded-2xl border p-8 ${
-                  tier.featured
-                    ? "border-brand-blue bg-navy-black text-white shadow-lg"
-                    : "border-slate-200 bg-cloud"
-                }`}
-              >
-                <p className={`font-heading text-xl font-bold ${tier.featured ? "text-white" : "text-navy-black"}`}>
-                  {tier.name}
-                </p>
-                <p className={`mt-1 text-2xl font-extrabold ${tier.featured ? "text-brand-blue" : "text-navy-black"}`}>
-                  {tier.price}
-                </p>
-                <p className={`mt-2 text-sm ${tier.featured ? "text-white/70" : "text-slate"}`}>{tier.tagline}</p>
-                <ul className="mt-6 space-y-3">
-                  {tier.perks.map((perk) => (
-                    <li key={perk} className={`flex gap-2 text-sm ${tier.featured ? "text-white/80" : "text-slate"}`}>
-                      <span className={tier.featured ? "text-brand-blue" : "text-navy-black"}>✦</span>
-                      {perk}
-                    </li>
-                  ))}
-                </ul>
-                {tier.name === "Community" && (
-                  <div className="mt-6 rounded-xl bg-navy-black p-4">
-                    <NewsletterForm />
-                  </div>
-                )}
-              </div>
-            ))}
+          <div className="mx-auto mt-8 grid max-w-md gap-6">
+            <div className="rounded-2xl border border-brand-blue bg-navy-black p-8 text-white shadow-lg">
+              <p className="font-heading text-xl font-bold text-white">{memberLevel.name}</p>
+              <p className="mt-1 text-2xl font-extrabold text-brand-blue">{memberLevel.price}</p>
+              <ul className="mt-6 space-y-3">
+                {memberLevel.perks.map((perk) => (
+                  <li key={perk} className="flex gap-2 text-sm text-white/80">
+                    <span className="text-brand-blue">✦</span>
+                    {perk}
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
+
+          <details className="group mx-auto mt-4 max-w-md text-center">
+            <summary className="cursor-pointer list-none text-sm text-slate underline decoration-slate/40 underline-offset-4 hover:text-navy-black">
+              Not ready yet? Join the free community
+            </summary>
+            <div className="mt-3 rounded-xl bg-navy-black p-4 text-left">
+              <p className="mb-3 text-xs text-white/70">
+                Free newsletter, event invites, our Slack, and informal hangouts.
+              </p>
+              <NewsletterForm />
+            </div>
+          </details>
 
           {SHOW_NAME_WALL && (
           <div className="mt-16">
