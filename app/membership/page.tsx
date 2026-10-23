@@ -21,8 +21,9 @@ const nftCollection = [
   { year: "2026", name: "EMBARK", image: "/membership/nft/2026-embark.jpg" },
 ];
 
-// MOCKUP (committee review, Oct 2026): sample levels and sample names only.
-// Real names/aliases come from members at sign-up. Not final.
+// MOCKUP (committee review, Oct 2026): two levels, Community (free) and Member ($99).
+// The member name wall (with aliases) is built but hidden - to ideate on later.
+const SHOW_NAME_WALL = false;
 const levels = [
   {
     name: "Community",
@@ -44,20 +45,8 @@ const levels = [
       "Special member pricing on all paid events",
       "Members-only events",
       "15 free courses via partner The Blockchain Academy",
-      "Your name (or alias) on the supporter wall",
     ],
     featured: true,
-  },
-  {
-    name: "Supporter",
-    price: "$250 / year",
-    tagline: "Help us do more.",
-    perks: [
-      "Everything in Member",
-      "Early registration for events",
-      "MNblockchain shirt",
-      "Featured placement on the supporter wall",
-    ],
   },
 ];
 
@@ -90,7 +79,7 @@ export default function MembershipPage() {
   return (
     <>
       <div className="bg-bitcoin-orange px-6 py-2 text-center text-xs font-bold uppercase tracking-widest text-navy-black">
-        Draft mockup for committee review - levels, prices, and names are samples
+        Draft mockup for committee review - two levels, Community and Member
       </div>
       <section className="relative overflow-hidden py-20 text-center">
         <Image
@@ -127,7 +116,7 @@ export default function MembershipPage() {
             more than the price tag suggests. Every member is a real part of how far we can take
             this, not just a name on a list.
           </p>
-          <div className="mt-8 grid gap-6 md:grid-cols-3">
+          <div className="mx-auto mt-8 grid max-w-3xl gap-6 md:grid-cols-2">
             {levels.map((tier) => (
               <div
                 key={tier.name}
@@ -161,6 +150,7 @@ export default function MembershipPage() {
             ))}
           </div>
 
+          {SHOW_NAME_WALL && (
           <div className="mt-16">
             <p className="text-center text-xs font-bold uppercase tracking-widest text-brand-blue">
               Thank You
@@ -189,6 +179,7 @@ export default function MembershipPage() {
               ))}
             </div>
           </div>
+          )}
 
           <div className="mx-auto mt-14 max-w-3xl text-center">
             <p className="text-xs font-bold uppercase tracking-widest text-brand-blue">
