@@ -86,15 +86,6 @@ const sections = [
       "Do we publish member names, or wait?",
     ],
   },
-  {
-    title: "Other items (for the board, not this meeting)",
-    points: [
-      "Funding beyond Stand With Crypto: Ethereum Foundation, Solana and Superteam, Shavlik, and exchange sponsors.",
-      "Crypto donations: PayPal's Pay with Crypto converts to dollars, and nonprofit eligibility is unconfirmed.",
-      "Committee chair responsibilities draft is at /committee-chairs.",
-      "The 2027 Stand With Crypto proposal is due by December.",
-    ],
-  },
 ];
 
 export default function MembershipDiscussionPage() {
