@@ -11,6 +11,27 @@ export const metadata: Metadata = {
 // they are easy to edit as decisions get made.
 const sections = [
   {
+    title: "Decisions so far (Colin and Brandon, Oct 23)",
+    points: [
+      "Keep \"Member\" as the term, with two levels: free community (email, Slack, hangouts) and $99 a year.",
+      "$99 stays. Colin wouldn't go lower. A level above it is possible later.",
+      "Member name wall (aliases allowed) is a fun idea but parked for later.",
+      "Approach: keep doing what we're doing, but do it better, the way Minnestar does. More shout-outs, a member name tag sticker, welcome emails, and a shirt.",
+      "Board members: all added as members, with honorary members noted separately.",
+      "Open disagreement to settle: Andy leans toward free membership to grow the count toward the 1,200 email list; Brandon wants a clear line so membership means something.",
+    ],
+  },
+  {
+    title: "Monday 4:00 PM check-in (Colin and Brandon, about 30 min)",
+    points: [
+      "Review this page and make edits before Tuesday.",
+      "Agree on the 2027 membership proposal to bring to Andy and Ben-Collins, who are unlikely to bring ideas themselves.",
+      "Decide the holiday party location: last year's dance studio was far west and drew under 30. Options are Colin's office at University and 280 (free, chairs, kitchen, big room) or the Just for Kix space through Alex.",
+      "Start on ideas for the Stand With Crypto proposal and for guests.",
+      "Mailchimp vs. Resend, and whether to clean the email list now or wait until Mailchimp's price goes up.",
+    ],
+  },
+  {
     title: "Where we are",
     points: [
       "29 members, down from 31. Most of the drop is normal attrition, and two joined at the last meetup.",
@@ -64,14 +85,14 @@ const sections = [
       "Other low-cost thank-yous: an enamel pin, a \"Community Builder\" Slack tag, a coffee or drink at the next meetup, early event registration, or a personal note from a board member.",
       "Avoid prize-drawing entries as the thank-you, since tying a drawing to paying for membership can trigger Minnesota raffle rules.",
       "Track referrals with a \"Who referred you?\" question on the Zeffy form, if Zeffy supports one.",
-      "Board members: free membership, plus an ask that every board member gives something. Funders often ask about 100% board giving.",
+      "Board members: decided to add all as members. Still worth asking every board member to give something, since funders often ask about 100% board giving.",
       "Report paid and comped members separately.",
     ],
   },
   {
     title: "Housekeeping on the platform",
     points: [
-      "Zeffy auto-renew: confirm it's set to yearly, and check when reminder emails go out.",
+      "Zeffy already sends a thank-you, an expiration notice, and an auto-renew notice. Rewrite them in MNblockchain's voice (friendly, not prompting cancellations). Not urgent, since it won't apply until next fall.",
       "Define \"priority access,\" which is on the site today but not explained.",
       "Email list: about 1,200 contacts, and we want it under 1,000. A cleaning pass and a \"Still want to hear from us?\" email would get us there. Needs a Mailchimp export.",
     ],
@@ -82,8 +103,7 @@ const sections = [
       "Does free mean newsletter only, or newsletter plus Slack?",
       "Who chairs the hangouts, and how often do they happen?",
       "Who owns welcome emails and renewal reminders?",
-      "Is the shirt for all members, or only new ones?",
-      "Do we publish member names, or wait?",
+      "Shirt: free for new members and discounted each renewal year? Brandon and Colin liked that idea.",
     ],
   },
 ];
