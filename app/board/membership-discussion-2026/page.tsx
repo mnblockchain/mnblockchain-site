@@ -117,7 +117,6 @@ const sections = [
   {
     title: "Questions to settle",
     points: [
-      "Does free mean newsletter only, or newsletter plus Slack?",
       "Who chairs the hangouts, and how often do they happen?",
       "Who owns welcome emails and renewal reminders?",
       "Shirt: free for new members and discounted each renewal year? Brandon and Colin liked that idea.",
