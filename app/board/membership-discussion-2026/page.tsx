@@ -11,24 +11,36 @@ export const metadata: Metadata = {
 // they are easy to edit as decisions get made.
 const sections = [
   {
-    title: "Decisions so far (Colin and Brandon, Oct 23)",
+    title: "Where Colin and Brandon landed (Oct 23 and Oct 26)",
     points: [
-      "Keep \"Member\" as the term, with two levels: free community (email, Slack, hangouts) and $99 a year.",
-      "$99 stays. Colin wouldn't go lower. A level above it is possible later.",
-      "Member name wall (aliases allowed) is a fun idea but parked for later.",
-      "Approach: keep doing what we're doing, but do it better, the way Minnestar does. More shout-outs, a member name tag sticker, welcome emails, and a shirt.",
+      "Direction: keep doing what we're doing, and do it better. Brandon moved away from building a \"club\" because it matches the Minnestar model (people support the organization because of what it does), it matches who we have in leadership today, and we can still add club-like touches if it feels right.",
+      "Build value first. If the events, speakers, and partnerships are strong, people will want to join and give.",
+      "Keep \"Member\" as the term, with two levels: free community (email, Slack, hangouts) and $99 a year. Colin's framing: the free community is open to anyone, and members choose to support the organization and get extra access.",
+      "$99 stays. A level above it is possible later. Member name wall (aliases allowed) is parked for later.",
+      "Thank and acknowledge members: shout-outs, a member name tag or sticker, welcome emails, and a shirt. Today nobody can tell who has paid at an event.",
       "Board members: all added as members, with honorary members noted separately.",
-      "Open disagreement to settle: Andy leans toward free membership to grow the count toward the 1,200 email list; Brandon wants a clear line so membership means something.",
+      "Holiday party: hold it at Colin's office (University and 280). Still need a date.",
     ],
   },
   {
-    title: "Monday 4:00 PM check-in (Colin and Brandon, about 30 min)",
+    title: "Andy's question: 1,200 emails vs. 30 members",
     points: [
-      "Review this page and make edits before Tuesday.",
-      "Agree on the 2027 membership proposal to bring to Andy and Ben-Collins, who are unlikely to bring ideas themselves.",
-      "Decide the holiday party location: last year's dance studio was far west and drew under 30. Options are Colin's office at University and 280 (free, chairs, kitchen, big room) or the Just for Kix space through Alex.",
-      "Start on ideas for the Stand With Crypto proposal and for guests.",
-      "Mailchimp vs. Resend, and whether to clean the email list now or wait until Mailchimp's price goes up.",
+      "Andy's point: we have a large community and a small membership. Do we lower the bar for what a member is, sell more memberships, or both?",
+      "Our numbers: about 1,200 live emails, about 300 in Slack (some may be bots), 15-30 at a typical monthly event (low 20s on average), and about 30 paying members.",
+      "Minnestar may be a useful comparison. Brandon's guess is roughly 150-200 members against 500 at a big event, but that's unverified. We counted about 266 supporters listed on their page.",
+      "Options raised: a lower-priced tier (Brandon floated $40-$60 a year), specific member-drive campaigns, and promoting membership in the newsletter around each event, which is how Minnestar sells it.",
+      "A lower tier means more work: new perks, a name, and a clear difference from the $99 level.",
+      "Proof of value this year: member discounts on three events (Crypto Spring, the Bitcoin Mining Tour, and Culture Convergence). Use \"here's what members got in 2026\" at the holiday party.",
+    ],
+  },
+  {
+    title: "Tuesday committee meeting (Oct 27, 3:45 PM)",
+    points: [
+      "Present where Colin and Brandon landed: keep doing what we do, do it better, and acknowledge members.",
+      "Hear Andy's concern about the gap between the email list and membership, and decide whether to try a lower tier or a member drive.",
+      "Decide whether to test the $10 a month option for 2027 and announce it at the holiday party.",
+      "Agree the 2027 membership proposal to bring to the Dec 8 board meeting.",
+      "Set the holiday party date and who handles what.",
     ],
   },
   {
@@ -66,6 +78,7 @@ const sections = [
       "One good shirt for paid members, ideally using the year's NFT artwork, picked up at meetups.",
       "Stickers for the free community and hangouts.",
       "Rough budget: about $450-725 for 29 members, but get a real quote first.",
+      "Other ideas raised Oct 26: custom name tags members bring to every meetup, a member sticker next to the name tag (Minnestar does this), a wearable NFT member button instead of a shirt, and asking Stand With Crypto about co-branded shirts (quantities may be too small for them).",
     ],
   },
   {
@@ -108,18 +121,21 @@ const sections = [
   {
     title: "Monthly payment option (Zeffy)",
     points: [
-      "A $10 a month membership is set up in Zeffy next to the $99 yearly one. Zeffy can't split the $99 into installments, so monthly is its own product that renews every month until the member cancels.",
-      "$10 a month is $120 a year, about $21 more than $99. Is that the right premium, or would $9 a month work better?",
-      "Risk: someone could join for one month, get the NFT, shirt, and member pricing, then cancel. Option: give the shirt and NFT only after a set number of paid months, or keep them for yearly members.",
-      "Decide whether it shows on the public Membership page now or waits until the committee agrees.",
+      "Zeffy can't split the $99 into installments or quarterly payments. A $10 a month membership is set up next to the $99 yearly one as its own product, which renews every month until the member cancels. It isn't published yet.",
+      "$10 a month is $120 a year, about $21 more than $99. Brandon likes that: it meets people where they are, and even a member who drops off midyear still pays something.",
+      "Brandon's idea of a 6-month membership at $50: Zeffy doesn't offer a 6-month duration. Workarounds are a custom yearly expiration twice a year, or monthly with cancelling after six months.",
+      "Risk: someone could join for one month to get a discount, then cancel. Brandon doesn't expect many to do that at our size. Option: give the shirt and NFT only after a set number of paid months, or keep them for yearly members.",
+      "Brandon would try it for 2027 as an experiment and announce it at the holiday party. Bounce it off Andy and Ben-Collins first.",
     ],
   },
   {
     title: "Questions to settle",
     points: [
+      "Lower the bar, sell more, or both? Is a lower tier worth the extra work?",
+      "Test the $10 a month option for 2027? When does it go live?",
       "Who chairs the hangouts, and how often do they happen?",
       "Who owns welcome emails and renewal reminders?",
-      "Shirt: free for new members and discounted each renewal year? Brandon and Colin liked that idea.",
+      "Shirt: free for new members and discounted each renewal year? Brandon and Colin liked that idea. Or name tags and member stickers first?",
     ],
   },
 ];
