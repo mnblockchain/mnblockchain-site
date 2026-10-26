@@ -106,6 +106,15 @@ const sections = [
     ],
   },
   {
+    title: "Monthly payment option (Zeffy)",
+    points: [
+      "A $10 a month membership is set up in Zeffy next to the $99 yearly one. Zeffy can't split the $99 into installments, so monthly is its own product that renews every month until the member cancels.",
+      "$10 a month is $120 a year, about $21 more than $99. Is that the right premium, or would $9 a month work better?",
+      "Risk: someone could join for one month, get the NFT, shirt, and member pricing, then cancel. Option: give the shirt and NFT only after a set number of paid months, or keep them for yearly members.",
+      "Decide whether it shows on the public Membership page now or waits until the committee agrees.",
+    ],
+  },
+  {
     title: "Questions to settle",
     points: [
       "Does free mean newsletter only, or newsletter plus Slack?",
