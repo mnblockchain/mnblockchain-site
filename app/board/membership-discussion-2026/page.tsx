@@ -98,6 +98,14 @@ const sections = [
     ],
   },
   {
+    title: "Ideas to explore later",
+    points: [
+      "Points and rewards (Brandon, Oct 26): do something creative and fun for the community, members, and sponsors, where people earn points or a reward for actions we want, like retailer rewards emails. Example: attend an event, bring a friend, claim your NFT, or volunteer.",
+      "Partner with a sponsor on the promos, so a sponsor funds or features the reward and gets visibility with members.",
+      "Start simple and manual. If prizes depend on paying for something, check Minnesota raffle rules first.",
+    ],
+  },
+  {
     title: "Questions to settle",
     points: [
       "Does free mean newsletter only, or newsletter plus Slack?",
