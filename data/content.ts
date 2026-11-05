@@ -41,6 +41,14 @@ export const stats = [
 
 export const pastEvents = [
   {
+    date: "October 22, 2026",
+    title: "Culture Convergence 2026",
+    blurb: "About 70 people at Baja Haus for three expert panels on AI, decentralization, and Minnesota's challenges, plus dinner and live music.",
+    image: "/news/cc26-p1.jpg",
+    type: "flagship" as const,
+    slug: "culture-convergence-2026-recap",
+  },
+  {
     date: "September 28, 2026",
     title: "Building Stablecoins Under the GENIUS Act",
     blurb: "Zach Robins, Head of Legal at Brale, showed a full house at Frankie's how stablecoins are reinventing the dollar.",
