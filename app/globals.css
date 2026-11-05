@@ -64,3 +64,11 @@ button:not(:disabled) {
     margin: auto !important;
   }
 }
+
+@keyframes snowfall {
+  0% { transform: translateY(0) rotate(0deg); opacity: 0; }
+  10% { opacity: 1; }
+  100% { transform: translateY(110vh) rotate(360deg); opacity: 0.2; }
+}
+.animate-snowfall { animation: snowfall linear infinite; }
+@media (prefers-reduced-motion: reduce) { .animate-snowfall { animation: none; display: none; } }

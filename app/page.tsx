@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import Countdown from "./components/Countdown";
 import NewsletterForm from "./components/NewsletterForm";
 import {
   Badge,
@@ -20,6 +19,7 @@ import {
   boardOfficers,
   boardMembers,
 } from "@/data/content";
+import HolidayBanner, { Snow } from "./components/HolidayBanner";
 import { newsArticles } from "@/data/news";
 
 export default function Home() {
@@ -68,22 +68,23 @@ export default function Home() {
           of the hero photo, then bleeds down into the section below. */}
       <div className="relative z-10 -mt-28 px-6 sm:-mt-32">
         <div className="mx-auto max-w-4xl">
-          <div className="rounded-3xl border border-white/10 bg-navy-black/90 px-6 py-10 text-center shadow-2xl sm:px-12 sm:py-12">
+          <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-b from-[#0f2a1f] via-navy-black to-navy-black px-6 py-10 text-center shadow-2xl sm:px-12 sm:py-12">
+            <Snow />
             <div className="mb-5 flex items-center justify-center gap-3">
               <span className="relative flex h-3 w-3">
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-bitcoin-orange opacity-75" />
                 <span className="relative inline-flex h-3 w-3 rounded-full bg-bitcoin-orange" />
               </span>
               <p className="font-heading text-xl font-extrabold uppercase tracking-[0.1em] text-bitcoin-orange drop-shadow-[0_0_18px_rgba(247,147,26,0.45)] sm:text-3xl">
-                Countdown to Next Event
+                Next Event: Holiday Party
               </p>
             </div>
             <div className="flex justify-center">
-              <Countdown target={nextEvent.date} />
+              <HolidayBanner />
             </div>
 
             <div className="mt-10 flex justify-center">
-              <PrimaryButton href={nextEvent.registerUrl}>Register here</PrimaryButton>
+              <PrimaryButton href={nextEvent.registerUrl}>{nextEvent.registerLabel}</PrimaryButton>
             </div>
 
             <div className="mt-6 grid grid-cols-2 gap-8 border-t border-white/10 pt-6">
@@ -97,13 +98,13 @@ export default function Home() {
               (the old "Next Event" section wrapper and "You'll Learn" list
               were removed; this card is what's left of it). */}
           <div className="relative mt-8 overflow-hidden rounded-3xl border border-slate-200 bg-cloud text-left shadow-sm">
-            <div className="h-1.5 w-full bg-brand-blue" />
+            <div className="h-1.5 w-full bg-gradient-to-r from-[#c8102e] via-[#f7931a] to-[#1f7a4d]" />
             <div className="p-8 sm:p-10">
               <div className="inline-flex items-center gap-1.5 rounded-full bg-brand-blue/10 px-3 py-1 text-xs font-bold uppercase tracking-widest text-brand-blue">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="h-3.5 w-3.5">
                   <path d="M12 3.5l2.6 5.3 5.9.8-4.3 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8-4.3-4.1 5.9-.8z" />
                 </svg>
-                {nextEvent.badge}
+                🎄 {nextEvent.badge}
               </div>
               <h3 className="mt-6 font-heading text-2xl font-bold text-brand-blue [filter:drop-shadow(0_0_3px_rgba(247,147,26,0.6))_drop-shadow(0_0_8px_rgba(247,147,26,0.35))]">
                 {nextEvent.title}
@@ -113,7 +114,7 @@ export default function Home() {
             <p className="text-sm text-slate">{nextEvent.location}</p>
             <p className="mt-4 text-sm leading-relaxed text-slate">{nextEvent.description}</p>
             <div className="mt-6">
-              <PrimaryButton href={nextEvent.registerUrl}>Register Here →</PrimaryButton>
+              <PrimaryButton href={nextEvent.registerUrl}>{nextEvent.registerLabel} →</PrimaryButton>
             </div>
             <MemberPerk {...nextEvent.memberPerk} />
             {nextEvent.speakers[0] && (

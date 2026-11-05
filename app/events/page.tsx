@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import Countdown from "../components/Countdown";
+import HolidayBanner, { Snow } from "../components/HolidayBanner";
 import { Badge, EventCard, EventSpeaker, MemberPerk, PrimaryButton, SectionLabel } from "../components/ui";
 import { nextEvent, pastEvents } from "@/data/content";
 
@@ -23,8 +23,9 @@ export default function EventsPage() {
         />
         {/* Solid scrim so headline text stays legible over the photo. */}
         <div className="absolute inset-0 bg-navy-black/70" />
+        <Snow />
         <div className="relative mx-auto max-w-3xl px-6">
-          <Badge>12 monthly meetups + 2–3 flagship events every year</Badge>
+          <Badge>🎄 Join us for the Holiday Party this December</Badge>
           <h1 className="mt-6 font-heading text-4xl font-extrabold text-white sm:text-5xl">
             Events
           </h1>
@@ -33,10 +34,10 @@ export default function EventsPage() {
             &ldquo;spotlight&rdquo; speaker series.
           </p>
           <div className="mt-8 flex justify-center">
-            <Countdown target={nextEvent.date} />
+            <HolidayBanner />
           </div>
           <div className="mt-8">
-            <PrimaryButton href={nextEvent.registerUrl}>Register for the Next Event</PrimaryButton>
+            <PrimaryButton href={nextEvent.registerUrl}>{nextEvent.registerLabel}</PrimaryButton>
           </div>
         </div>
       </section>
@@ -45,13 +46,13 @@ export default function EventsPage() {
         <div className="mx-auto max-w-5xl px-6">
           <SectionLabel>Up Next</SectionLabel>
           <div className="relative mt-6 overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
-            <div className="h-1.5 w-full bg-brand-blue" />
+            <div className="h-1.5 w-full bg-gradient-to-r from-[#c8102e] via-[#f7931a] to-[#1f7a4d]" />
             <div className="p-8">
               <div className="inline-flex items-center gap-1.5 rounded-full bg-brand-blue/10 px-3 py-1 text-xs font-bold uppercase tracking-widest text-brand-blue">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="h-3.5 w-3.5">
                   <path d="M12 3.5l2.6 5.3 5.9.8-4.3 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8-4.3-4.1 5.9-.8z" />
                 </svg>
-                {nextEvent.badge}
+                🎄 {nextEvent.badge}
               </div>
               <h2 className="mt-6 font-heading text-2xl font-bold text-brand-blue [filter:drop-shadow(0_0_3px_rgba(247,147,26,0.6))_drop-shadow(0_0_8px_rgba(247,147,26,0.35))]">
                 {nextEvent.title}
@@ -63,7 +64,7 @@ export default function EventsPage() {
                   <p className="text-sm text-slate">{nextEvent.location}</p>
                   <p className="mt-4 text-sm leading-relaxed text-slate">{nextEvent.description}</p>
                   <div className="mt-6">
-                    <PrimaryButton href={nextEvent.registerUrl}>Register Here →</PrimaryButton>
+                    <PrimaryButton href={nextEvent.registerUrl}>{nextEvent.registerLabel} →</PrimaryButton>
                   </div>
                   {nextEvent.speakers[0] && (
                     <EventSpeaker

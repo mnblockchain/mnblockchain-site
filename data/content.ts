@@ -3,25 +3,26 @@
 // Keeping it in one file makes a content swap a data edit, not a design edit.
 
 export const nextEvent = {
-  // Partner event with Culture Convergence. Details from culture-convergence.com
-  // (2026-10-02). Registration happens on their site, not Eventbrite.
-  title: "Culture Convergence 2026",
-  badge: "Partner Event",
-  registerUrl: "https://culture-convergence.com/tickets",
-  date: "2026-10-22T16:00:00-05:00",
-  dateLabel: "Thursday, October 22, 2026",
-  time: "4:00 - 10:00 PM",
-  location: "Baja Haus, 830 Lake St E, Wayzata, MN 55391",
+  // Date not finalized yet: December 2026. When it is set, add `date` (ISO)
+  // and update dateLabel/time; the countdown will come back on its own.
+  title: "MNblockchain Holiday Party",
+  badge: "Holiday Party",
+  registerUrl: "/contact",
+  registerLabel: "Get Notified",
+  date: null as string | null,
+  dateLabel: "December 2026 (date coming soon)",
+  time: "Time to be announced",
+  location: "Vandalia Tower, 550 Vandalia St, Suite 231, St Paul, MN 55114",
   description:
-    "We're partnering with Culture Convergence for an intimate evening of tech, art, and innovation: three moderated panels, dinner, and conversation with founders, developers, artists, and educators from across blockchain, AI, data, and real estate.",
+    "Our year-end celebration is open to everyone. Come raise a glass with the Minnesota blockchain community, meet new people, and toast a great year. Bring a friend!",
   learn: [
-    "Three moderated panels on decentralized data and compute, electric vehicle infrastructure, and digital and tokenized assets",
-    "How these technologies are changing the game locally and beyond",
-    "Dinner and real conversation with Minnesota's founders, builders, and creators",
+    "Open to everyone, members and newcomers alike",
+    "A relaxed night of food, drinks, and conversation with Minnesota's builders and founders",
+    "Special treats for members, plus a chance to join the community on the night",
   ],
   memberPerk: {
-    headline: "MNblockchain members get 50% off",
-    detail: "Members receive a discount code from MNblockchain leadership. Not a member yet? Join to unlock this discount, plus member pricing on future paid events.",
+    headline: "Members get something special",
+    detail: "We're planning member treats for the night. Not a member yet? Join now and be first in line, or sign up on the night.",
   },
   speakers: [] as {
     name: string;
