@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import NewsletterForm from "./components/NewsletterForm";
 import {
   Badge,
   EventSpeaker,
@@ -19,6 +18,7 @@ import {
   boardOfficers,
   boardMembers,
 } from "@/data/content";
+import NewsletterForm from "./components/NewsletterForm";
 import HolidayBanner, { Snow } from "./components/HolidayBanner";
 import { newsArticles } from "@/data/news";
 
@@ -84,7 +84,7 @@ export default function Home() {
             </div>
 
             <div className="mt-10 flex justify-center">
-              <PrimaryButton href={nextEvent.registerUrl}>{nextEvent.registerLabel}</PrimaryButton>
+              <NewsletterForm />
             </div>
 
             <div className="mt-6 grid grid-cols-2 gap-8 border-t border-white/10 pt-6">

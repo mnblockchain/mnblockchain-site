@@ -84,7 +84,7 @@ export default function Footer() {
             </nav>
           </div>
 
-          <div>
+          <div id="subscribe">
             <p className="mb-4 text-xs font-bold uppercase tracking-widest text-white/40">
               Get Notified
             </p>

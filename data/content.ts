@@ -7,7 +7,7 @@ export const nextEvent = {
   // and update dateLabel/time; the countdown will come back on its own.
   title: "MNblockchain Holiday Party",
   badge: "Holiday Party",
-  registerUrl: "/contact",
+  registerUrl: "#subscribe",
   registerLabel: "Get Notified",
   date: null as string | null,
   dateLabel: "December 2026 (date coming soon)",

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import NewsletterForm from "../components/NewsletterForm";
 import HolidayBanner, { Snow } from "../components/HolidayBanner";
 import { Badge, EventCard, EventSpeaker, MemberPerk, PrimaryButton, SectionLabel } from "../components/ui";
 import { nextEvent, pastEvents } from "@/data/content";
@@ -36,8 +37,8 @@ export default function EventsPage() {
           <div className="mt-8 flex justify-center">
             <HolidayBanner />
           </div>
-          <div className="mt-8">
-            <PrimaryButton href={nextEvent.registerUrl}>{nextEvent.registerLabel}</PrimaryButton>
+          <div className="mt-8 flex justify-center">
+            <NewsletterForm />
           </div>
         </div>
       </section>
