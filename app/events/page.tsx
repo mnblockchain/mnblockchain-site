@@ -38,7 +38,7 @@ export default function EventsPage() {
             <HolidayBanner />
           </div>
           <div className="mt-8 flex justify-center">
-            <NewsletterForm buttonLabel="Notify Me" placeholder="Email me the date" />
+            <NewsletterForm buttonLabel="Notify Me" placeholder="Email" />
           </div>
         </div>
       </section>
@@ -65,7 +65,7 @@ export default function EventsPage() {
                   <p className="text-sm text-slate">{nextEvent.location}</p>
                   <p className="mt-4 text-sm leading-relaxed text-slate">{nextEvent.description}</p>
                   <div className="mt-6">
-                    <NewsletterForm light buttonLabel="Notify Me" placeholder="Email me the date" />
+                    <NewsletterForm light buttonLabel="Notify Me" placeholder="Email" />
                   </div>
                   {nextEvent.speakers[0] && (
                     <EventSpeaker
