@@ -4,11 +4,11 @@ import { useActionState } from "react";
 import { submitNewsletter } from "@/actions/contact.action";
 import BotTrap from "./BotTrap";
 
-export default function NewsletterForm() {
+export default function NewsletterForm({ light = false }: { light?: boolean }) {
   const [state, action, pending] = useActionState(submitNewsletter, null);
 
   if (state?.success) {
-    return <p className="text-sm font-semibold text-brand-blue">You're on the list - thanks!</p>;
+    return <p className={`text-sm font-semibold ${light ? "text-navy-black" : "text-brand-blue"}`}>You're on the list - thanks!</p>;
   }
 
   return (
@@ -19,7 +19,7 @@ export default function NewsletterForm() {
         name="email"
         required
         placeholder="you@company.com"
-        className="w-full rounded-full border border-white/20 bg-white/5 px-5 py-3 text-sm text-white placeholder:text-white/40 focus:border-brand-blue focus:outline-none sm:w-72"
+        className={`w-full rounded-full border px-5 py-3 text-sm focus:border-brand-blue focus:outline-none sm:w-72 ${light ? "border-slate-300 bg-white text-navy-black placeholder:text-slate/60" : "border-white/20 bg-white/5 text-white placeholder:text-white/40"}`}
       />
       <button
         type="submit"
@@ -28,7 +28,7 @@ export default function NewsletterForm() {
       >
         {pending ? "Subscribing…" : "Subscribe"}
       </button>
-      {state?.error && <p className="text-xs text-red-300">{state.error}</p>}
+      {state?.error && <p className="text-xs text-red-500">{state.error}</p>}
     </form>
   );
 }

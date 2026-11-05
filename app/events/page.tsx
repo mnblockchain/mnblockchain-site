@@ -65,7 +65,7 @@ export default function EventsPage() {
                   <p className="text-sm text-slate">{nextEvent.location}</p>
                   <p className="mt-4 text-sm leading-relaxed text-slate">{nextEvent.description}</p>
                   <div className="mt-6">
-                    <PrimaryButton href={nextEvent.registerUrl}>{nextEvent.registerLabel} →</PrimaryButton>
+                    <NewsletterForm light />
                   </div>
                   {nextEvent.speakers[0] && (
                     <EventSpeaker

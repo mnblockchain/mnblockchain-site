@@ -114,7 +114,7 @@ export default function Home() {
             <p className="text-sm text-slate">{nextEvent.location}</p>
             <p className="mt-4 text-sm leading-relaxed text-slate">{nextEvent.description}</p>
             <div className="mt-6">
-              <PrimaryButton href={nextEvent.registerUrl}>{nextEvent.registerLabel} →</PrimaryButton>
+              <NewsletterForm light />
             </div>
             <MemberPerk {...nextEvent.memberPerk} />
             {nextEvent.speakers[0] && (
