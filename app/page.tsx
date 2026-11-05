@@ -84,7 +84,7 @@ export default function Home() {
             </div>
 
             <div className="mt-10 flex justify-center">
-              <NewsletterForm />
+              <NewsletterForm buttonLabel="Notify Me" placeholder="Email me the date" />
             </div>
 
             <div className="mt-6 grid grid-cols-2 gap-8 border-t border-white/10 pt-6">
@@ -114,7 +114,7 @@ export default function Home() {
             <p className="text-sm text-slate">{nextEvent.location}</p>
             <p className="mt-4 text-sm leading-relaxed text-slate">{nextEvent.description}</p>
             <div className="mt-6">
-              <NewsletterForm light />
+              <NewsletterForm light buttonLabel="Notify Me" placeholder="Email me the date" />
             </div>
             <MemberPerk {...nextEvent.memberPerk} />
             {nextEvent.speakers[0] && (
