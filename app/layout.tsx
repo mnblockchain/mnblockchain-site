@@ -26,9 +26,15 @@ const cloudBold = localFont({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://mnblockchain.org"),
   title: "MNblockchain - Minnesota Blockchain & Web3 Community",
   description:
     "MNblockchain is a Minnesota nonprofit building community and industry in blockchain & web3 through events, education, and policy advocacy.",
+  openGraph: {
+    siteName: "MNblockchain",
+    type: "website",
+  },
+  twitter: { card: "summary_large_image" },
 };
 
 export default function RootLayout({

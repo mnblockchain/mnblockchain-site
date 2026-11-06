@@ -20,6 +20,13 @@ export async function generateMetadata({
   return {
     title: `${article.title} - MNblockchain`,
     description: article.excerpt,
+    openGraph: {
+      title: article.title,
+      description: article.excerpt,
+      siteName: "MNblockchain",
+      type: "article",
+      images: article.image ? [{ url: article.image }] : undefined,
+    },
   };
 }
 
