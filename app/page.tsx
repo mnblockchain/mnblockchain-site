@@ -3,7 +3,6 @@ import Link from "next/link";
 import {
   Badge,
   EventSpeaker,
-  MemberPerk,
   NewsCard,
   PrimaryButton,
   SectionLabel,
@@ -116,7 +115,6 @@ export default function Home() {
             <div className="mt-6">
               <NewsletterForm light buttonLabel="Notify Me" placeholder="Email" />
             </div>
-            <MemberPerk {...nextEvent.memberPerk} />
             {nextEvent.speakers[0] && (
               <EventSpeaker
                 name={nextEvent.speakers[0].name}

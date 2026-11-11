@@ -20,10 +20,6 @@ export const nextEvent = {
     "A relaxed night of food, drinks, and conversation with Minnesota's builders and founders",
     "Special treats for members, plus a chance to join the community on the night",
   ],
-  memberPerk: {
-    headline: "Members get something special",
-    detail: "We're planning member treats for the night. Not a member yet? Join now and be first in line, or sign up on the night.",
-  },
   speakers: [] as {
     name: string;
     title: string;

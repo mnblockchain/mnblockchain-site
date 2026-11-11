@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import NewsletterForm from "../components/NewsletterForm";
 import HolidayBanner, { Snow } from "../components/HolidayBanner";
-import { Badge, EventCard, EventSpeaker, MemberPerk, PrimaryButton, SectionLabel } from "../components/ui";
+import { Badge, EventCard, EventSpeaker, PrimaryButton, SectionLabel } from "../components/ui";
 import { nextEvent, pastEvents } from "@/data/content";
 
 export const metadata: Metadata = {
@@ -89,7 +89,6 @@ export default function EventsPage() {
                   </ul>
                 </div>
               </div>
-              <MemberPerk {...nextEvent.memberPerk} wide />
             </div>
           </div>
         </div>
