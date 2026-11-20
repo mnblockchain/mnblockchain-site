@@ -11,6 +11,11 @@ export const metadata: Metadata = {
 // Add new internal pages here as they are built.
 const pages = [
   {
+    title: "SWC Proposal 2027",
+    href: "/board/swc-proposal-2027",
+    blurb: "Drafts of the Stand With Crypto proposal (TL;DR and full plan) and the community levels page.",
+  },
+  {
     title: "Membership Discussion 2026",
     href: "/board/membership-discussion-2026",
     blurb: "Talking points for the membership committee: levels, swag, referrals, holiday party, and open questions.",
