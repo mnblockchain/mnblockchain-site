@@ -16,7 +16,7 @@ const docs = [
   },
   {
     title: "SWC Proposal: Full Plan",
-    blurb: "Three pages: what we'll do in 2027, how we grow, and what partners get.",
+    blurb: "Three pages: Community, Events and Conversations, plus what partners get.",
     file: "/board-docs/swc-proposal-2027.pdf",
   },
   {
