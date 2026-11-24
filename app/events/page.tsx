@@ -26,7 +26,7 @@ export default function EventsPage() {
         <div className="absolute inset-0 bg-navy-black/70" />
         <Snow />
         <div className="relative mx-auto max-w-3xl px-6">
-          <Badge>🎄 Join us for the Holiday Party this December</Badge>
+          <Badge>🎄 Join us for the Holiday Party on December 19</Badge>
           <h1 className="mt-6 font-heading text-4xl font-extrabold text-white sm:text-5xl">
             Events
           </h1>
@@ -38,7 +38,7 @@ export default function EventsPage() {
             <HolidayBanner />
           </div>
           <div className="mt-8 flex justify-center">
-            <NewsletterForm buttonLabel="Notify Me" placeholder="Email" />
+            <a href={nextEvent.registerUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-full bg-bitcoin-orange px-8 py-3 font-heading text-sm font-bold uppercase tracking-wider text-navy-black transition hover:brightness-110">{nextEvent.registerLabel}</a>
           </div>
         </div>
       </section>
@@ -65,7 +65,7 @@ export default function EventsPage() {
                   <p className="text-sm text-slate">{nextEvent.location}</p>
                   <p className="mt-4 text-sm leading-relaxed text-slate">{nextEvent.description}</p>
                   <div className="mt-6">
-                    <NewsletterForm light buttonLabel="Notify Me" placeholder="Email" />
+                    <a href={nextEvent.registerUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-full bg-bitcoin-orange px-8 py-3 font-heading text-sm font-bold uppercase tracking-wider text-navy-black transition hover:brightness-110">{nextEvent.registerLabel}</a>
                   </div>
                   {nextEvent.speakers[0] && (
                     <EventSpeaker

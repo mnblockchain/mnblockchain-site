@@ -3,15 +3,13 @@
 // Keeping it in one file makes a content swap a data edit, not a design edit.
 
 export const nextEvent = {
-  // Date not finalized yet: December 2026. When it is set, add `date` (ISO)
-  // and update dateLabel/time; the countdown will come back on its own.
   title: "MNblockchain Holiday Party",
   badge: "Holiday Party",
-  registerUrl: "#subscribe",
-  registerLabel: "Get Notified",
-  date: null as string | null,
-  dateLabel: "December 2026 (date coming soon)",
-  time: "Time to be announced",
+  registerUrl: "https://www.eventbrite.com/e/2026-mnblockchain-community-holiday-party-tickets-2005225643880?aff=oddtdtcreator",
+  registerLabel: "Register",
+  date: "2026-12-19T17:30:00-06:00" as string | null,
+  dateLabel: "Saturday, December 19, 2026",
+  time: "5:30 PM - 9:00 PM CT",
   location: "Vandalia Tower, 550 Vandalia St, Suite 231, St Paul, MN 55114",
   description:
     "Our year-end celebration is open to everyone. Come raise a glass with the Minnesota blockchain community, meet new people, and toast a great year. Bring a friend!",

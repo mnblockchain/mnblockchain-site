@@ -83,7 +83,7 @@ export default function Home() {
             </div>
 
             <div className="mt-10 flex justify-center">
-              <NewsletterForm buttonLabel="Notify Me" placeholder="Email" />
+              <a href={nextEvent.registerUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-full bg-bitcoin-orange px-8 py-3 font-heading text-sm font-bold uppercase tracking-wider text-navy-black transition hover:brightness-110">{nextEvent.registerLabel}</a>
             </div>
 
             <div className="mt-6 grid grid-cols-2 gap-8 border-t border-white/10 pt-6">
@@ -113,7 +113,7 @@ export default function Home() {
             <p className="text-sm text-slate">{nextEvent.location}</p>
             <p className="mt-4 text-sm leading-relaxed text-slate">{nextEvent.description}</p>
             <div className="mt-6">
-              <NewsletterForm light buttonLabel="Notify Me" placeholder="Email" />
+              <a href={nextEvent.registerUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-full bg-bitcoin-orange px-8 py-3 font-heading text-sm font-bold uppercase tracking-wider text-navy-black transition hover:brightness-110">{nextEvent.registerLabel}</a>
             </div>
             {nextEvent.speakers[0] && (
               <EventSpeaker
