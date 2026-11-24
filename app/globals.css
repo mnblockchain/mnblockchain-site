@@ -41,6 +41,29 @@ button:not(:disabled) {
   cursor: pointer;
 }
 
+@keyframes twinkle {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+.animate-twinkle { animation: twinkle 1.6s ease-in-out infinite; }
+
+@keyframes santa-fly {
+  0% { transform: translate3d(-120px, 0, 0); }
+  50% { transform: translate3d(50cqw, -14px, 0); }
+  100% { transform: translate3d(calc(100cqw + 120px), 6px, 0); }
+}
+.animate-santa { animation: santa-fly 9s linear forwards; left: 0; }
+.animate-santa-rev { left: auto; right: 0; animation-name: santa-fly-rev; }
+@keyframes santa-fly-rev {
+  0% { transform: translate3d(120px, 0, 0); }
+  50% { transform: translate3d(-50cqw, -14px, 0); }
+  100% { transform: translate3d(calc(-100cqw - 120px), 6px, 0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .animate-santa, .animate-twinkle { animation: none; }
+  .animate-santa { display: none; }
+}
+
 @keyframes ticker {
   0% { transform: translate3d(0, 0, 0); }
   100% { transform: translate3d(-50%, 0, 0); }
