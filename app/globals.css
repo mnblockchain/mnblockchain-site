@@ -47,8 +47,10 @@ button:not(:disabled) {
 }
 
 .animate-ticker {
-  animation: ticker 75s linear infinite;
+  animation: ticker 90s linear infinite;
   will-change: transform;
+  backface-visibility: hidden;
+  transform: translateZ(0);
 }
 
 /* Zeffy donation popup: its script sizes the box to 80% x 90% of the screen with
