@@ -26,7 +26,7 @@ export default function EventsPage() {
         <div className="absolute inset-0 bg-navy-black/70" />
         <Snow />
         <div className="relative mx-auto max-w-3xl px-6">
-          <Badge>🎄 Join us for the Holiday Party on December 19</Badge>
+          <Badge>🎄 Join us for the Holiday Party on December 15</Badge>
           <h1 className="mt-6 font-heading text-4xl font-extrabold text-white sm:text-5xl">
             Events
           </h1>

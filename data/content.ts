@@ -7,8 +7,8 @@ export const nextEvent = {
   badge: "Holiday Party",
   registerUrl: "https://www.eventbrite.com/e/2026-mnblockchain-community-holiday-party-tickets-2005225643880?aff=oddtdtcreator",
   registerLabel: "Register",
-  date: "2026-12-19T17:30:00-06:00" as string | null,
-  dateLabel: "Saturday, December 19, 2026",
+  date: "2026-12-15T17:30:00-06:00" as string | null,
+  dateLabel: "Tuesday, December 15, 2026",
   time: "5:30 PM - 9:00 PM CT",
   location: "Vandalia Tower, 550 Vandalia St, Suite 231, St Paul, MN 55114",
   description:
