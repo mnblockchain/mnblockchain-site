@@ -64,6 +64,16 @@ button:not(:disabled) {
   .animate-santa { display: none; }
 }
 
+@keyframes ticker {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
+}
+
+.animate-ticker {
+  animation: ticker 40s linear infinite;
+  will-change: transform;
+}
+
 /* Zeffy donation popup: its script sizes the box to 80% x 90% of the screen with
    inline styles, which is huge on desktop. Override to a compact centered card. */
 @media (min-width: 769px) {

@@ -1,23 +1,22 @@
 import { nextEvent } from "@/data/content";
 
-/** Still announcement bar for the next event. */
+// Keep the strip short. Very wide moving layers (past roughly 16,000 screen
+// pixels, which a Retina display reaches quickly) can scroll unevenly.
+const venue = nextEvent.location.split(",")[0];
+const message = `Next event: ${nextEvent.title} - ${nextEvent.dateLabel} · ${nextEvent.time} · ${venue}`;
+const items = Array.from({ length: 3 }, () => message);
+
 export default function Ticker() {
   return (
-    <div className="bg-brand-blue px-4 py-2 text-center text-xs font-bold uppercase tracking-wide text-navy-black">
-      <span aria-hidden>🎄 </span>
-      {nextEvent.title}
-      <span className="mx-2">·</span>
-      <span className="whitespace-nowrap">{nextEvent.dateLabel}</span>
-      <span className="mx-2">·</span>
-      <span className="whitespace-nowrap">{nextEvent.time}</span>
-      <a
-        href={nextEvent.registerUrl}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="ml-3 inline-block whitespace-nowrap rounded-full bg-navy-black px-3 py-0.5 text-white hover:bg-navy-black/80"
-      >
-        {nextEvent.registerLabel} &rarr;
-      </a>
+    <div className="overflow-hidden whitespace-nowrap bg-brand-blue py-2 text-navy-black">
+      <div className="animate-ticker flex w-max text-xs font-bold uppercase tracking-wide">
+        {[...items, ...items].map((text, i) => (
+          <span key={i} className="inline-flex items-center gap-3 pr-12">
+            <span aria-hidden>✦</span>
+            {text}
+          </span>
+        ))}
+      </div>
     </div>
   );
 }
